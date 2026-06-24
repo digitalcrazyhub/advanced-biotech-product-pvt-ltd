@@ -1,0 +1,368 @@
+
+    
+    
+   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700;800&display=swap');
+
+
+:root {
+
+        /* Primary Brand Colors */
+        --purple-brand: #6B2D5C;     /* Main pill button & lower headline text */
+        --navy-brand: #131E51;       /* Top description text */
+        --purple-mid: #fdecf9;       /* Mid-tone purple for hover states/ui elements */
+
+        /* Accent Colors */
+        --lavender-accent: #E2D6E6;  /* Soft lavender-pink from background wave */
+        --lavender-light: #F6F0F8;   /* Lightened tint for background highlights */
+        --plum-bright: #A13D84;      /* Vibrant purple variation for interactive elements */
+
+        /* Neutrals */
+        --white: #FFFFFF;
+        --off-white: #FDF9FF;        /* Extremely light purple-tinted background from image */
+
+        /* Text Colors */
+        --text-dark: #182230;        /* Main high-contrast bold headline text */
+        --text-mid: #434B57;         /* Readable description/body text */
+        --text-light: #807D8C;       /* Muted text and captions */
+
+        /* Borders & Shadows */
+        --border: rgba(107, 45, 92, 0.12);
+
+        --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
+        --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
+        --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
+
+        --glass: rgba(255, 255, 255, 0.85);
+
+        --gradient-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
+        --gradient-accent: linear-gradient(90deg, #E2D6E6 0%, #F2E9F5 50%, #FFFFFF 100%);
+        --gradient-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111111);
+        --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
+
+        --radius: 18px;
+        --radius-sm: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background: var(--off-white);
+        color: var(--text-mid);
+    }
+
+    .services-section {
+        background: var(--gradient-section);
+        padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 64px);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .services-section::before {
+        content: "";
+        position: absolute;
+        top: -120px;
+        right: -120px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: var(--lavender-accent);
+        opacity: 0.5;
+        filter: blur(10px);
+    }
+
+    .services-header {
+        text-align: center;
+        max-width: 680px;
+        margin: 0 auto 56px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .services-eyebrow {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--plum-bright);
+        background: var(--purple-mid);
+        padding: 6px 16px;
+        border-radius: 999px;
+        margin-bottom: 16px;
+    }
+
+    .services-header h2 {
+        font-size: clamp(28px, 4vw, 40px);
+        font-weight: 700;
+        color: var(--text-dark);
+        line-height: 1.2;
+        margin-bottom: 14px;
+    }
+
+    .services-header h2 span {
+        color: var(--purple-brand);
+    }
+
+    .services-header p {
+        font-size: 16px;
+        color: var(--navy-brand);
+        line-height: 1.6;
+    }
+
+    /* ─── GRID: fixed 3-per-row, every card stretched to equal height ─── */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        align-items: stretch;
+    }
+
+    .service-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 32px 26px;
+        box-shadow: var(--shadow-sm);
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                    box-shadow 0.4s ease,
+                    border-color 0.4s ease;
+
+        /* Equal-height card with footer pinned to the bottom */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* Animated fill layer that expands from the cursor point */
+    .service-card::before {
+        content: "";
+        position: absolute;
+        left: var(--mx, 50%);
+        top: var(--my, 50%);
+        width: 28px;
+        height: 28px;
+        background: var(--gradient-bar);
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.55s cubic-bezier(0.33, 1, 0.68, 1);
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .service-card:hover::before {
+        transform: translate(-50%, -50%) scale(22);
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+        border-color: transparent;
+    }
+
+    .service-icon,
+    .service-card h3,
+    .service-card p,
+    .service-card .indi-link {
+        position: relative;
+        z-index: 1;
+    }
+
+    .service-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: var(--radius-sm);
+        background: var(--lavender-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: background 0.4s ease 0.05s, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+        flex-shrink: 0;
+    }
+
+    .service-icon svg {
+        width: 26px;
+        height: 26px;
+        stroke: var(--purple-brand);
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: stroke 0.4s ease 0.05s;
+    }
+
+    .service-card:hover .service-icon {
+        background: rgba(255, 255, 255, 0.18);
+        transform: scale(1.12) rotate(-6deg);
+    }
+
+    .service-card:hover .service-icon svg {
+        stroke: var(--white);
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 10px;
+        transition: color 0.4s ease 0.05s, transform 0.4s ease 0.05s;
+        flex-shrink: 0;
+    }
+
+    .service-card p {
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: var(--text-light);
+        transition: color 0.4s ease 0.08s;
+        flex-grow: 1;
+    }
+
+    .service-card:hover h3 {
+        color: var(--white);
+        transform: translateX(2px);
+    }
+
+    .service-card:hover p {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    @media (max-width: 980px) {
+        .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 560px) {
+        .services-grid { grid-template-columns: 1fr; }
+    }
+
+     /* ─── PAGE BANNER ─────────────────────────────────────── */
+ .abp-banner {
+     position: relative;
+     width: 100%;
+     min-height: 480px;
+     margin-top: 8px;
+     background: #000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+ }
+
+ .abp-banner__bg {
+     position: absolute;
+     inset: 0;
+ }
+
+ .abp-banner__bg img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     opacity: .35;
+     animation: abpZoom 12s ease-in-out infinite alternate;
+ }
+
+ .abp-banner::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background: rgba(0, 0, 0, .45);
+     z-index: 1;
+ }
+
+ .abp-banner__title {
+     position: relative;
+     z-index: 2;
+     font-family: 'Jost', sans-serif;
+     font-weight: 800;
+     font-size: clamp(2.2rem, 7vw, 5rem);
+     color: #fff;
+     text-align: center;
+     line-height: 1.15;
+     padding: 0 20px;
+     animation: abpFadeUp 1.2s ease both;
+ }
+
+ @keyframes abpZoom {
+     0%   { transform: scale(1); }
+     100% { transform: scale(1.12); }
+ }
+
+ @keyframes abpFadeUp {
+     from {
+         opacity: 0;
+         transform: translateY(24px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+/* Container styling */
+.indi-link {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally; change to flex-start for left-align */
+    margin: 20px 0 0;
+    padding: 0 15px; /* Prevents edge-bleeding on tiny screens */
+    flex-shrink: 0;
+    right: 15px;
+    margin-top:14px; /* Pins the button to the bottom of every card, regardless of text length */
+}
+
+/* Responsive Link/Button styling */
+.indi-link a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1rem; /* Scales with user browser settings */
+    color: #ffffff;
+    background-color: var(--purple-brand); /* Brand purple; swap with your brand color */
+    
+    /* Padding ensures a minimum 48px touch target for mobile compliance */
+    padding: 12px 24px; 
+    border-radius: 4px;
+    
+    /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+    /* Fluid width: takes full width on small screens up to a point */
+    width: 100%;
+    max-width: 200px; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Hover and Active states for desktop/interaction */
+.indi-link a:hover {
+    background-color: var(--purple-mid);
+}
+
+.indi-link a:active {
+    transform: scale(0.98); /* Subtle click effect */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .indi-link {
+        justify-content: flex-start; /* Aligns to the left on desktop, standard for articles */
+    }
+    
+    .indi-link a {
+        width: auto; /* Lets the button size to its content on desktop */
+        font-size: 1.05rem;
+    }
+}
+
+.service-card:hover .indi-link a {
+    color: var(--purple-brand);
+    background-color: var(--white);
+}
+

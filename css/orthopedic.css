@@ -1,0 +1,373 @@
+  /** Montserrat Font **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/**Jost Font **/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+  
+  /* ── Root tokens ─────────────────────────────────────────── */
+  :root {
+    --purple-brand: #6B2D5C;
+    --navy-brand: #131E51;
+    --purple-mid: #fdecf9;
+    --lavender-accent: #E2D6E6;
+    --lavender-light: #F6F0F8;
+    --plum-bright: #A13D84;
+    --white: #FFFFFF;
+    --off-white: #FDF9FF;
+    --text-dark: #182230;
+    --text-mid: #434B57;
+    --text-light: #807D8C;
+    --border: rgba(107, 45, 92, 0.12);
+    --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
+    --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
+    --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
+    --glass: rgba(255, 255, 255, 0.85);
+    --gradient-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
+    --gradient-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111111);
+    --gradient-accent: linear-gradient(90deg, #E2D6E6 0%, #F2E9F5 50%, #FFFFFF 100%);
+    --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
+    --radius: 18px;
+    --radius-sm: 10px;
+  }
+
+  /* ── Reset ───────────────────────────────────────────────── */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--off-white);
+    color: var(--text-mid);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    color: var(--plum-bright);
+    text-decoration: none;
+  }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 6rem 0;
+  }
+
+  section+section {
+    padding-top: 0;
+  }
+
+  /* ── Top bar ─────────────────────────────────────────────── */
+  /* ─── PAGE BANNER ─────────────────────────────────────── */
+  .abp-banner {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    margin-top: 8px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .abp-banner__bg {
+    position: absolute;
+    inset: 0;
+  }
+
+  .abp-banner__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .35;
+    animation: abpZoom 12s ease-in-out infinite alternate;
+  }
+
+  .abp-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    z-index: 1;
+  }
+
+  .abp-banner__title {
+    position: relative;
+    z-index: 2;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 7vw, 5rem);
+    color: #fff;
+    text-align: center;
+    line-height: 1.15;
+    padding: 0 20px;
+    animation: abpFadeUp 1.2s ease both;
+  }
+
+  /* ── Ortho section bg ────────────────────────────────────── */
+  .section-ortho {
+    background: var(--gradient-section);
+  }
+
+  /* ── Ortho card ──────────────────────────────────────────── */
+  .orth-card {
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .orth-card:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .orth-card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--purple-brand);
+    margin-bottom: 1rem;
+  }
+
+  .orth-card-title .icon-wrap {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: var(--purple-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--purple-brand);
+    flex-shrink: 0;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .orth-card p {
+    font-size: 13.5px;
+    color: var(--text-mid);
+    line-height: 1.75;
+  }
+
+  /* ── Highlight box ───────────────────────────────────────── */
+  .highlight {
+    background: var(--purple-mid);
+    border-left: 3px solid var(--purple-brand);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: .8rem 1rem;
+    margin: .85rem 0 0;
+    font-size: 12.5px;
+    color: var(--purple-brand);
+    line-height: 1.65;
+  }
+
+  /* ── Visual diagram box ──────────────────────────────────── */
+  .visual-box {
+    background: var(--lavender-light);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .visual-box svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .visual-box figcaption {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-top: .5rem;
+    font-style: italic;
+  }
+
+  /* ── Steps ───────────────────────────────────────────────── */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: .85rem 0;
+  }
+
+  .step {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: var(--lavender-light);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: .6rem .9rem;
+    font-size: 13px;
+    color: var(--text-dark);
+  }
+
+  .step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--purple-brand);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── Healing stages ──────────────────────────────────────── */
+  .stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 1rem 0 .5rem;
+  }
+
+  .stage {
+    background: var(--lavender-light);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: .85rem .75rem;
+    text-align: center;
+  }
+
+  .stage img{
+    width: 294px;
+    height: 314px;
+  }
+
+  .stage.healed {
+    background: var(--purple-mid);
+    border-color: var(--plum-bright);
+  }
+
+  .stage.healed .stage-day {
+    color: var(--plum-bright);
+  }
+
+  .stage-label {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.45;
+  }
+
+  .stage.healed .stage-label {
+    color: var(--purple-brand);
+  }
+
+  .stage-ref {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-top: .5rem;
+    font-style: italic;
+  }
+
+  /* ── References ──────────────────────────────────────────── */
+  .ref-card {
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .ref-list {
+    list-style: none;
+  }
+
+  .ref-list li {
+    font-size: 12.5px;
+    color: var(--text-mid);
+    padding: .5rem 0;
+    border-bottom: 0.5px solid var(--border);
+    line-height: 1.65;
+  }
+
+  .ref-list li:last-child {
+    border-bottom: none;
+  }
+
+  .ref-num {
+    color: var(--plum-bright);
+    font-weight: 600;
+    margin-right: 6px;
+  }
+
+
+  /* ── Responsive ──────────────────────────────────────────── */
+  @media (max-width: 700px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-emblem {
+      display: none;
+    }
+
+    .two-col {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    section {
+      padding: 2rem 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .spec-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .25rem;
+    }
+
+    .spec-row .val {
+      text-align: left;
+    }
+
+    .stages {
+      grid-template-columns: 1fr;
+    }
+  }

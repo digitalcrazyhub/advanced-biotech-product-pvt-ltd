@@ -1,0 +1,140 @@
+/* ==========================
+   RESPONSIVE
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.abp-contact{
+    margin-top: 100px;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#FDF9FF 0%,#F2EAF5 100%);
+    font-family:'Segoe UI',sans-serif;
+}
+
+.abp-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.abp-title{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 50px;
+}
+
+.abp-title h2{
+    font-size:2.3rem;
+    color:#6B2D5C;
+    margin-bottom:15px;
+}
+
+.abp-title p{
+    color:#434B57;
+    line-height:1.8;
+}
+
+.abp-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-bottom:40px;
+}
+
+.abp-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    box-shadow:0 8px 25px rgba(107,45,92,.08);
+    border:1px solid rgba(107,45,92,.12);
+    transition:.3s;
+}
+
+.abp-card:hover{
+    transform:translateY(-5px);
+}
+
+.abp-icon{
+    width:60px;
+    height:60px;
+    min-width:60px;
+    border-radius:12px;
+    background:#fdecf9;
+    color:#6B2D5C;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+
+.abp-card h3{
+    color:#131E51;
+    margin-bottom:8px;
+    font-size:1.2rem;
+}
+
+.abp-card p,
+.abp-card a{
+    color:#434B57;
+    text-decoration:none;
+    line-height:1.7;
+}
+
+.abp-card a{
+    color:#A13D84;
+    font-weight:600;
+}
+
+.abp-map{
+    width:100%;
+    height:450px;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(107,45,92,.08);
+}
+
+.abp-map iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/* Tablet */
+@media(max-width:991px){
+    .abp-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .abp-map{
+        height:380px;
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .abp-contact{
+        padding:60px 16px;
+    }
+
+    .abp-title h2{
+        font-size:2rem;
+    }
+
+    .abp-grid{
+        grid-template-columns:1fr;
+    }
+
+    .abp-card{
+        padding:24px;
+    }
+
+    .abp-map{
+        height:300px;
+    }
+}
