@@ -1,54 +1,47 @@
 function initNavbar() {
 
-    /* NAV SCROLL */
-
     const mvNav = document.getElementById("mvNav");
 
+    if (!mvNav) return;
+
+    /* NAV SCROLL */
+
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 40) {
-            mvNav.classList.add("mv-nav-solid");
-        } else {
-            mvNav.classList.remove("mv-nav-solid");
-        }
+        mvNav.classList.toggle("mv-nav-solid", window.scrollY > 40);
     });
 
     /* MOBILE MENU */
 
     const mvToggle = document.getElementById("mvMobileToggle");
     const mvMenu = document.getElementById("mvNavMenu");
-    const mvIcon = mvToggle.querySelector("i");
 
-    mvToggle.addEventListener("click", () => {
+    if (mvToggle && mvMenu) {
 
-        mvMenu.classList.toggle("mv-menu-active");
-        document.body.classList.toggle("mv-body-lock");
+        const mvIcon = mvToggle.querySelector("i");
 
-        if (mvMenu.classList.contains("mv-menu-active")) {
+        mvToggle.addEventListener("click", () => {
 
-            mvIcon.classList.remove("fa-bars");
-            mvIcon.classList.add("fa-xmark");
+            mvMenu.classList.toggle("mv-menu-active");
+            document.body.classList.toggle("mv-body-lock");
 
-        } else {
+            mvIcon.classList.toggle("fa-bars");
+            mvIcon.classList.toggle("fa-xmark");
 
-            mvIcon.classList.remove("fa-xmark");
-            mvIcon.classList.add("fa-bars");
+        });
 
-        }
-
-    });
+    }
 
     /* MOBILE DROPDOWN */
 
-    document.querySelectorAll(".mv-has-dropdown > .mv-nav-link").forEach((dropdownLink) => {
+    document.querySelectorAll(".mv-has-dropdown > .mv-nav-link").forEach(link => {
 
-        dropdownLink.addEventListener("click", function (e) {
+        link.addEventListener("click", function(e){
 
-            if (window.innerWidth <= 992) {
+            if(window.innerWidth <= 992){
 
                 e.preventDefault();
 
-                const parent = this.parentElement;
-                parent.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
 
             }
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,1456 +8,11 @@
   <title>Soft Tissue | Advanced Biotech Product [P] Ltd</title>
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/nav_footer.css">
-  <link rel="stylesheet" href="../css/softtissue.css">
-  <!--Font awsome link-->
+  <link rel="stylesheet" href="/css/softtissue.css">
+  <!--Font awesome link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-  --purple-brand: #6B2D5C;
-  --navy-brand: #131E51;
-  --purple-mid: #fdecf9;
-  --lavender-accent: #E2D6E6;
-  --lavender-light: #F6F0F8;
-  --plum-bright: #A13D84;
-  --white: #FFFFFF;
-  --off-white: #FDF9FF;
-  --text-dark: #182230;
-  --text-mid: #434B57;
-  --text-light: #807D8C;
-  --border: rgba(107, 45, 92, 0.12);
-  --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
-  --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
-  --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
-  --glass: rgba(255, 255, 255, 0.85);
-  --gradient-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
-  --gradient-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111111);
-  --gradient-accent: linear-gradient(90deg, #E2D6E6 0%, #F2E9F5 50%, #FFFFFF 100%);
-  --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
-  --radius: 18px;
-  --radius-sm: 10px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: var(--off-white);
-  color: var(--text-dark);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ─── PAGE BANNER ─────────────────────────────────────── */
-.abp-banner {
-  position: relative;
-  width: 100%;
-  min-height: 480px;
-  margin-top: 8px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.abp-banner__bg {
-  position: absolute;
-  inset: 0;
-}
-
-.abp-banner__bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: .35;
-  animation: abpZoom 12s ease-in-out infinite alternate;
-}
-
-.abp-banner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, .45);
-  z-index: 1;
-}
-
-.abp-banner__title {
-  position: relative;
-  z-index: 2;
-  font-family: 'Jost', sans-serif;
-  font-weight: 800;
-  font-size: clamp(2.2rem, 7vw, 5rem);
-  color: #fff;
-  text-align: center;
-  line-height: 1.15;
-  padding: 0 20px;
-  animation: abpFadeUp 1.2s ease both;
-}
-
-/* ─── PRODUCT HEADING STRIP ──────────────────────────── */
-.abp-strip {
-  background: var(--purple-brand);
-  padding: 18px 0 14px 100px;
-  margin-top: 50px;
-}
-
-.abp-strip h2 {
-  font-family: 'Jost', sans-serif;
-  font-weight: 800;
-  font-size: 1.8rem;
-  color: #fff;
-}
-
-
-/* ── SECTION WRAPPER ── */
-.section {
-  padding: 72px 5%;
-}
-
-.section-alt {
-  background: var(--gradient-section);
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.section-title {
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  font-weight: 800;
-  color: var(--navy-brand);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-  margin-bottom: 14px;
-}
-
-.section-desc {
-  font-size: 1rem;
-  color: var(--text-dark);
-  max-width: 1120px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-/* ── FEATURE STRIP ── */
-.feature-strip {
-  background: var(--gradient-bar);
-  padding: 28px 5%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0;
-}
-
-.feature-strip-item {
-  text-align: center;
-  padding: 18px 20px;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
-}
-
-.feature-strip-item:last-child {
-  border-right: none;
-}
-
-.feature-strip-item .fs-icon {
-  font-size: 1.8rem;
-  margin-bottom: 6px;
-}
-
-.feature-strip-item .fs-label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  opacity: 0.9;
-}
-
-/* ── ABOUT GRID ── */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.about-features {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.feature-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.feature-num {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  background: var(--purple-brand);
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 800;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-item p {
-  font-size: 0.9rem;
-  color: var(--text-dark);
-  padding-top: 5px;
-  line-height: 1.55;
-}
-
-.advantage-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.adv-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 16px 20px;
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s, transform 0.15s;
-}
-
-.adv-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateX(4px);
-}
-
-.adv-card .adv-title {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--purple-brand);
-  margin-bottom: 4px;
-}
-
-.adv-card p {
-  font-size: 0.82rem;
-  color: var(--text-dark);
-  line-height: 1.5;
-}
-
-/* ── INDICATIONS ── */
-.indications-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.indication-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 24px 22px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s, transform 0.15s;
-  position: relative;
-  overflow: hidden;
-}
-
-.indication-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: var(--gradient-bar);
-}
-
-.indication-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
-}
-
-.ind-icon {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.ind-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--navy-brand);
-  margin-bottom: 6px;
-}
-
-.ind-desc {
-  font-size: 0.82rem;
-  color: var(--text-dark);
-  line-height: 1.5;
-}
-
-/* ── HERNIA TYPES ── */
-.hernia-types {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-bottom: 48px;
-}
-
-.hernia-type-card {
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  padding: 20px 16px;
-  text-align: center;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s, transform 0.15s;
-}
-
-.hernia-type-card:hover {
-  background-color: var(--plum-bright);
-  transition: 0.4s;
-  box-shadow: var(--purple-brand);
-  transform: translateY(-2px);
-  cursor: pointer;
-}
-
-.hernia-type-card:hover .ht-name {
-  color: var(--white);
-
-}
-
-.ht-name {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--purple-brand);
-  margin-bottom: 4px;
-}
-
-/* ── SURGERY APPROACH ── */
-.surgery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 32px;
-}
-
-.surgery-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 28px 28px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-}
-
-.surgery-card h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--navy-brand);
-  margin-bottom: 12px;
-  align-items: center;
-  gap: 10px;
-}
-
-.surgery-card p {
-  font-size: 0.85rem;
-  color: var(--text-dark);
-  line-height: 1.6;
-}
-
-/* ───────── PELVIC FLOOR SECTION ───────── */
-
-.prolapse-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 50px;
-}
-
-.prolapse-card {
-  background: #fff;
-  border-radius: 18px;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
-}
-
-.prolapse-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.prolapse-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  padding: 18px;
-}
-
-.prolapse-card-content {
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.prolapse-card h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--purple-brand);
-  margin-bottom: 12px;
-  line-height: 1.4;
-}
-
-.prolapse-card p {
-  font-size: 0.92rem;
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 14px;
-  text-align: justify;
-}
-
-.prolapse-card ul {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.prolapse-card ul li {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 8px;
-}
-
-/* ───── TABLET VIEW ───── */
-@media (max-width: 991px) {
-  .prolapse-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .prolapse-card img {
-    height: 230px;
-  }
-}
-
-/* ───── MOBILE VIEW ───── */
-@media (max-width: 767px) {
-  .prolapse-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .prolapse-card img {
-    height: 220px;
-  }
-
-  .prolapse-card-content {
-    padding: 18px;
-  }
-
-  .prolapse-card h3 {
-    font-size: 1rem;
-  }
-
-  .prolapse-card p,
-  .prolapse-card ul li {
-    font-size: 0.88rem;
-  }
-}
-
-.timeline-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.day-item {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 15px;
-  text-align: center;
-}
-
-.day-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
-.di-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--plum-bright);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.day-item p {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--text-dark);
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-  .timeline-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .timeline-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ── GASTRO / GENERAL SURGERY ── */
-.gastro-content {
-  align-items: start;
-}
-
-.gastro-info h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--navy-brand);
-  margin-bottom: 12px;
-}
-
-.gastro-info p {
-  font-size: 0.88rem;
-  color: var(--text-dark);
-  line-height: 1.65;
-  margin-bottom: 16px;
-}
-
-.products-comparison {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  margin-top: 35px;
-}
-
-.product-compare-card {
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  padding: 20px 22px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-}
-
-.product-compare-card img {
-
-  display: block;
-  margin: 0 auto;
-}
-
-.product-compare-card h4 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--purple-brand);
-  margin-bottom: 6px;
-}
-
-.product-compare-card .pcc-form {
-  font-size: 0.72rem;
-  color: var(--text-dark);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 10px;
-}
-
-.product-compare-card p {
-  font-size: 0.82rem;
-  color: var(--text-dark);
-  line-height: 1.5;
-}
-
-/* ── BREAST RECONSTRUCTION ── */
-.breast-recon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.breast-app-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 22px 20px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s, transform 0.15s;
-}
-
-.breast-app-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
-}
-
-.breast-app-card .bac-icon {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.breast-app-card h3 {
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--navy-brand);
-  margin-bottom: 8px;
-}
-
-.breast-app-card p {
-  font-size: 0.82rem;
-  color: var(--text-dark);
-  line-height: 1.55;
-}
-
-/* ── CASE SERIES ── */
-.case-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 24px;
-}
-
-.case-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 24px 24px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s;
-}
-
-.case-card img {
-  width: 100%;
-  height: 250px;
-  border-radius: 9px;
-}
-
-.case-card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.case-num {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-
-.case-num .cn-label {
-  background: var(--purple-brand);
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 50px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.case-card h3 {
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--navy-brand);
-  margin: 10px 0 0 0;
-  text-align: center;
-}
-
-/* ── COMPARISON TABLE ── */
-.comparison-section {
-  background: var(--gradient-section);
-}
-
-.comparison-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  font-size: 0.85rem;
-}
-
-.comparison-table th {
-  padding: 16px 20px;
-  text-align: left;
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.comparison-table th:first-child {
-  background: var(--navy-brand);
-  color: #fff;
-}
-
-.comparison-table th:nth-child(2) {
-  background: var(--purple-brand);
-  color: #fff;
-}
-
-.comparison-table th:nth-child(3) {
-  background: var(--text-dark);
-  color: #fff;
-}
-
-.comparison-table td {
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-  line-height: 1.5;
-}
-
-.comparison-table tr:last-child td {
-  border-bottom: none;
-}
-
-.comparison-table tr:nth-child(odd) td {
-  background: var(--white);
-}
-
-.comparison-table tr:nth-child(even) td {
-  background: var(--off-white);
-}
-
-.comparison-table td:first-child {
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.comparison-table td:nth-child(2) {
-  color: var(--purple-brand);
-}
-
-.comparison-table td:nth-child(3) {
-  color: var(--text-dark);
-}
-
-/* ── SIZES ── */
-.sizes-section {
-  background: var(--gradient-bar);
-  padding: 48px 5%;
-  text-align: center;
-}
-
-.sizes-section h2 {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
-
-.sizes-section p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.85rem;
-  margin-bottom: 28px;
-}
-
-.sizes-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.size-chip {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: background 0.2s;
-  cursor: default;
-}
-
-.size-chip:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-
-/* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-
-  .soft-tissue-content {
-    grid-template-columns: 1fr;
-  }
-
-  .surgery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gastro-content {
-    grid-template-columns: 1fr;
-  }
-
-  .hand-surgery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .complications-grid {
-    grid-template-columns: 1fr;
-  }
-
-
-}
-
-@media (max-width: 480px) {
-  .hand-surgery-visual .day-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .case-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .products-comparison {
-    flex-direction: column;
-  }
-
-  .product-compare-card img {
-    width: 250px;
-  }
-
-  .abp-strip h2 {
-
-    padding-right: 50px;
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .sizes-grid .size-chip {
-    padding: 8px 14px;
-    font-size: 0.8rem;
-  }
-
-  .spec-item:nth-child(2) {
-    border-right: none;
-  }
-
-
-}
-
-@media (max-width: 400px) {
-  .section {
-    padding: 48px 4%;
-  }
-}
-
-/* HERNIA REPAIR  */
-
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-section.hernia-repair {
-  position: relative;
-  padding: 96px 24px 120px;
-  overflow: hidden;
-  background: var(--off-white);
-}
-
-/* faint topo-style background wash, echoing the brochure's wave bg without copying it literally */
-section.hernia-repair::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 900px 500px at 85% -5%, rgba(225, 214, 230, 0.55), transparent 60%),
-    radial-gradient(ellipse 700px 600px at -10% 60%, rgba(253, 236, 249, 0.7), transparent 55%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-/* ---------- Section header ---------- */
-.sec-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12.5px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--purple-brand);
-  background: var(--purple-mid);
-  border: 1px solid var(--border);
-  padding: 7px 14px 7px 12px;
-  border-radius: 100px;
-  margin-bottom: 22px;
-}
-
-.sec-eyebrow::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--plum-bright);
-  box-shadow: 0 0 0 3px rgba(161, 61, 132, 0.18);
-}
-
-.sec-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
-  margin-bottom: 56px;
-  flex-wrap: wrap;
-}
-
-.sec-head h2 {
-  font-family: 'Source Serif Pro', serif;
-  font-weight: 700;
-  font-size: clamp(32px, 4.2vw, 50px);
-  line-height: 1.08;
-  color: var(--text-dark);
-  max-width: 620px;
-  letter-spacing: -0.01em;
-}
-
-.sec-head h2 em {
-  font-style: italic;
-  color: var(--purple-brand);
-  font-weight: 600;
-}
-
-.sec-head p {
-  max-width: 360px;
-  color: var(--text-mid);
-  font-size: 15.5px;
-  padding-bottom: 6px;
-}
-
-/* ---------- Hero strip: hernia sites image + shelf-life chip ---------- */
-.hero-strip {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 28px;
-  margin-bottom: 80px;
-  align-items: stretch;
-}
-
-.hero-img-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-img-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  min-height: 260px;
-  padding: 20px;
-}
-
-.hero-img-card .tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  background: var(--glass);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--border);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--navy-brand);
-  padding: 6px 11px;
-  border-radius: 100px;
-}
-
-.hero-side {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.shelf-card {
-  background: var(--gradient-bar);
-  border-radius: var(--radius);
-  padding: 28px 26px;
-  color: var(--white);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
-}
-
-.shelf-card::after {
-  content: "";
-  position: absolute;
-  right: -30px;
-  bottom: -30px;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.shelf-card .big {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 4px;
-}
-
-.shelf-card .label {
-  font-size: 13.5px;
-  color: rgba(255, 255, 255, 0.82);
-  max-width: 220px;
-}
-
-.quickfacts {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 22px 24px;
-  box-shadow: var(--shadow-sm);
-}
-
-.quickfacts ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.quickfacts li {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--text-mid);
-}
-
-.quickfacts li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 2px;
-  background: var(--plum-bright);
-  flex-shrink: 0;
-  transform: translateY(-1px);
-}
-
-.quickfacts li b {
-  color: var(--text-dark);
-  font-weight: 600;
-}
-
-/* ---------- Types of hernia ---------- */
-.types-block {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 48px;
-  align-items: center;
-  margin-bottom: 96px;
-}
-
-.types-visual {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  padding: 28px;
-  position: relative;
-}
-
-.types-visual img {
-  border-radius: var(--radius-sm);
- margin-left: 50px;
-  
-  left: 100px;
-}
-
-.types-visual .cap {
-  margin-top: 14px;
-  font-size: 12.5px;
-  color: var(--text-light);
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-.h3-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--plum-bright);
-  margin-bottom: 10px;
-  display: block;
-}
-
-.types-text h3 {
-  font-family:"Montserrat", sans-serif;
-  font-size: 28px;
-  color: var(--navy-brand);
-  margin-bottom: 22px;
-  font-weight: 700;
-}
-
-.type-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.type-item {
-  border: 1px solid var(--border);
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  padding: 14px 16px;
-  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
-}
-
-.type-item:hover {
-  border-color: var(--plum-bright);
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-2px);
-}
-
-.type-item .name {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: var(--purple-brand);
-  font-size: 14.5px;
-  margin-bottom: 3px;
-}
-
-.type-item .desc {
-  font-size: 12.5px;
-  color: var(--text-dark);
-  line-height: 1.45;
-}
-
-/* ---------- Procedure pathway rail (signature element) ---------- */
-.pathway-head {
-  margin-bottom: 48px;
-}
-
-.pathway-head h3 {
-  font-family: 'Source Serif Pro', serif;
-  font-size: clamp(26px, 3vw, 34px);
-  color: var(--text-dark);
-  font-weight: 700;
-  max-width: 560px;
-}
-
-.pathway {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-/* the connecting spine */
-.pathway::before {
-  content: "";
-  position: absolute;
-  left: 27px;
-  top: 14px;
-  bottom: 14px;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--purple-brand), var(--plum-bright), var(--lavender-accent));
-  z-index: 0;
-}
-
-.proc {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 28px;
-  padding: 36px 0;
-  position: relative;
-  align-items: start;
-}
-
-.proc:not(:last-child) {
-  border-bottom: 1px dashed var(--border);
-}
-
-.proc-node {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: var(--white);
-  border: 2px solid var(--purple-brand);
-  color: var(--purple-brand);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 600;
-  font-size: 9.5px;
-  letter-spacing: 0.01em;
-  text-align: center;
-  line-height: 1.3;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0 0 6px var(--off-white);
-  flex-shrink: 0;
-  align-self: start;
-  padding: 2px;
-}
-
-.proc-body {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 36px;
-  align-items: start;
-}
-
-.proc-text h4 {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 22px;
-  color: var(--navy-brand);
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.proc-text p {
-  font-size: 14.8px;
-  color: var(--text-mid);
-  line-height: 1.65;
-}
-
-.proc-text p b {
-  color: var(--purple-brand);
-  font-weight: 600;
-}
-
-.proc-media {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
-}
-
-.proc-media img {
-  border-radius: 6px;
-  width: 100%;
-}
-
-.proc-media .cap {
-  font-size: 11.5px;
-  color: var(--text-light);
-  text-align: center;
-  margin-top: 10px;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-.proc-media.dual {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.proc-media.dual figure {
-  margin: 0;
-}
-
-.proc-media.dual img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.proc-media.dual figcaption {
-  font-size: 10.5px;
-  text-align: center;
-  margin-top: 6px;
-  color: var(--text-light);
-  font-family: 'IBM Plex Mono', monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-/* strangulated callout — urgency without leaving the palette */
-.proc.urgent .proc-node {
-  border-color: var(--plum-bright);
-  color: var(--white);
-  background: var(--plum-bright);
-  box-shadow: 0 0 0 6px var(--off-white), 0 0 0 9px rgba(161, 61, 132, 0.18);
-}
-
-.urgent-banner {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--plum-bright);
-  border: 1px solid rgba(161, 61, 132, 0.25);
-  color: var(--white);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11.5px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 6px 12px;
-  border-radius: 100px;
-  margin-bottom: 14px;
-}
-
-.urgent-banner::before {
-  content: "⚠";
-  font-size: 13px;
-}
-
-.step-pair {
-  display: flex;
-  gap: 14px;
-  margin-top: 16px;
-}
-
-.step-pair .step {
-  flex: 1;
-  background: var(--lavender-light);
-  border-radius: var(--radius-sm);
-  padding: 14px 16px;
-  border: 1px solid var(--border);
-}
-
-.step-pair .step .num {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-  color: var(--plum-bright);
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.step-pair .step p {
-  font-size: 13px;
-  color: var(--text-mid);
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 920px) {
-  .hero-strip {
-    grid-template-columns: 1fr;
-  }
-
-  .types-block {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .proc-body {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .proc {
-    grid-template-columns: 44px 1fr;
-    gap: 18px;
-  }
-
-  .proc-node {
-    width: 44px;
-    height: 44px;
-    font-size: 8px;
-  }
-
-  .pathway::before {
-    left: 21px;
-  }
-}
-
-@media (max-width: 600px) {
-  section.hernia-repair {
-    padding: 64px 16px 80px;
-  }
-
-  .sec-head {
-    margin-bottom: 40px;
-  }
-
-  .sec-head h2 {
-    font-size: 30px;
-  }
-
-  .hero-strip {
-    margin-bottom: 56px;
-  }
-
-  .types-block {
-    margin-bottom: 64px;
-  }
-
-  .type-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pathway-head {
-    margin-bottom: 32px;
-  }
-
-  .proc {
-    grid-template-columns: 1fr;
-    padding: 28px 0;
-  }
-
-  .pathway::before {
-    display: none;
-  }
-
-  .proc-node {
-    margin-bottom: 8px;
-  }
-
-  .step-pair {
-    flex-direction: column;
-  }
-
-  .proc-media.dual {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
-
-  .proc-media.dual figcaption {
-    font-size: 9.5px;
-  }
-}
-</style>
 </head>
 
 <body>
@@ -1464,12 +20,13 @@ section.hernia-repair::before {
   <!--Header-->
   <div id="rs-header"></div>
   <script>
-    fetch("../page/nav.html")
+    fetch("/page/nav.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
         initNavbar();
-      });</script>
+      });
+  </script>
 
   <!-- ═══ PAGE BANNER ══════════════════════════════════════ -->
   <div class="abp-banner">
@@ -1478,202 +35,219 @@ section.hernia-repair::before {
     </div>
     <h1 class="abp-banner__title">Soft Tissue Reinforcement</h1>
   </div>
+
   <!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
   <div class="abp-strip">
     <h2>Hernia Repair</h2>
   </div>
+
   <!-- HERNIA REPAIR -->
   <section class="hernia-repair">
-  <div class="wrap" style="max-width :1180px ;">
+    <div class="wrap">
 
-    <!-- Section header -->
-    <div class="sec-head">
-      <div>
-        
-        <h2>Built for the <em>repair pathway</em>,<br>not just the patch.</h2>
-      </div>
-      <p>From component separation in open abdominal repair to a two-step rescue in strangulated hernia — Surgicoll-Mesh reinforces the site as native tissue regrows through it.</p>
-    </div>
-
-    <!-- Hero strip -->
-    <div class="hero-strip">
-      <div class="hero-img-card">
-        <img src="/image/hernia-1.png" alt="">
-      </div>
-      <div class="hero-side">
-        <div class="shelf-card">
-          <div class="big">3 yrs</div>
-          <div class="label">Clinically usable shelf life at room temperature — no cold chain required.</div>
+      <!-- Section header -->
+      <div class="sec-head">
+        <div>
+          <h2>Built for the <span>Repair Pathway</span>, not just the patch.</h2>
         </div>
-        <div class="quickfacts">
-          <ul>
-            <li><b>Absorbable</b> — degrades as native tissue regrows for lasting strength</li>
-            <li><b>No washing</b> needed prior to use</li>
-            <li>Can be <b>sutured or stapled</b> directly to surrounding tissue</li>
-          </ul>
+        <p>From component separation in open abdominal repair to a two-step rescue in strangulated hernia —
+          Surgicoll-Mesh reinforces the site as native tissue regrows through it.</p>
+      </div>
+
+      <!-- Hero strip -->
+      <div class="hero-strip">
+        <div class="hero-img-card">
+          <img src="/image/hernia-1.png" alt="">
         </div>
-      </div>
-    </div>
-
-    <!-- Types of hernia -->
-    <div class="types-block">
-      <div class="types-visual">
-        <img src="/image/hernia-2.png" alt="">
-        <div class="cap">Fig. 1 — Hernia sites across the abdominal wall and groin</div>
-      </div>
-      <div class="types-text">
-        <h3>Six presentations, one reinforcement principle.</h3>
-        <div class="type-grid">
-          <div class="type-item">
-            <div class="name">Inguinal</div>
-            <div class="desc">Inner groin — the most common hernia type</div>
+        <div class="hero-side">
+          <div class="shelf-card">
+            <div class="big">3 Years</div>
+            <div class="label">Clinically usable shelf life at room temperature — no cold chain required.</div>
           </div>
-          <div class="type-item">
-            <div class="name">Femoral</div>
-            <div class="desc">Upper thigh / outer groin</div>
-          </div>
-          <div class="type-item">
-            <div class="name">Incisional</div>
-            <div class="desc">Through a prior surgical incision or scar</div>
-          </div>
-          <div class="type-item">
-            <div class="name">Ventral</div>
-            <div class="desc">General abdominal / ventral wall</div>
-          </div>
-          <div class="type-item">
-            <div class="name">Umbilical</div>
-            <div class="desc">At the belly button</div>
-          </div>
-          <div class="type-item">
-            <div class="name">Hiatal</div>
-            <div class="desc">Inside the abdomen, along the upper stomach/diaphragm</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Procedure pathway -->
-    <div class="pathway-head">
-      <span class="h3-label">Procedure pathway</span>
-      <h3>How Surgicoll-Mesh is placed, by approach.</h3>
-    </div>
-
-    <div class="pathway">
-
-      <!-- 01 Open abdominal -->
-      <div class="proc">
-        <div class="proc-node">01<br>OPEN</div>
-        <div class="proc-body">
-          <div class="proc-text">
-            <h4>Abdominal hernia — open surgery</h4>
-            <p>An open incision is made at the hernia site and protruded tissue is pushed back into place. For larger defects, a component separation procedure may free the abdominal wall muscles before <b>Surgicoll-Mesh</b> is placed to reinforce the damaged site and reduce recurrence. The skin is typically closed with dissolvable stitches and glue.</p>
-          </div>
-          <div class="proc-media dual">
-            <figure>
-              <img src="/image/hernia 3.png" alt="">
-              <figcaption>Hernia vs. after repair</figcaption>
-            </figure>
-            <figure>
-            <img src="/image/hernia 4.png" alt="">      
-              <figcaption>Pre- &amp; post-placement detail</figcaption>
-            </figure>
+          <div class="quickfacts">
+            <ul>
+              <li><b>Absorbable</b> — degrades as native tissue regrows for lasting strength</li>
+              <li><b>No washing</b> needed prior to use</li>
+              <li>Can be <b>sutured or stapled</b> directly to surrounding tissue</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- 02 Laparoscopic -->
-      <div class="proc">
-        <div class="proc-node">02<br>LAPSC</div>
-        <div class="proc-body">
-          <div class="proc-text">
-            <h4>Laparoscopic surgery</h4>
-            <p>Several small incisions are made away from the hernia site. A laparoscope — a thin, lighted tube with a camera — guides the surgery through one of the openings. <b>Surgicoll-Mesh</b> may be inserted through the same access points to strengthen the weakened abdominal wall with minimal disruption to surrounding tissue.</p>
-          </div>
-          <div class="proc-media" style="width: 350px;align-items: center;justify-content: center;align-content: center;">
-            <img src="/image/hernia-5.png" alt="" style="width: 200px;height: 250px;margin-left: 50px;" >
-            <div class="cap">Laparoscopic access &amp; mesh placement</div>
-          </div>
+      <!-- Types of hernia -->
+      <div class="types-block">
+        <div class="types-visual">
+          <img src="/image/hernia-2.png" alt="">
+          <div class="cap">Hernia sites across the abdominal wall and groin</div>
         </div>
-      </div>
-
-      <!-- 03 Inguinal -->
-      <div class="proc">
-        <div class="proc-node">03<br>INGUIN.</div>
-        <div class="proc-body">
-          <div class="proc-text">
-            <h4>Inguinal hernia repair</h4>
-            <p>An approximate 10-cm incision is made in the groin. Once exposed, the hernia sac is pushed back into the abdominal cavity or excised, and the abdominal wall is then reinforced with <b>Surgicoll-mesh</b> to restore structural integrity at the weakened layer.</p>
-          </div>
-          <div class="proc-media dual">
-            <figure>
-              <img src="/image/hernia-6.png" alt="">
-              <figcaption>Inguinal hernia</figcaption>
-            </figure>
-            <figure>
-              <img src="/image/hernia-5.png" alt="">
-              <figcaption>Post-repair</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-      <!-- 04 Umbilical -->
-      <div class="proc">
-        <div class="proc-node">04<br>UMBIL.</div>
-        <div class="proc-body">
-          <div class="proc-text">
-            <h4>Umbilical hernia</h4>
-            <p>The hernia sac is removed and <b>Surgicoll-Mesh</b> is placed over the site, attached using sutures to the stronger surrounding tissue. The mesh extends 3 to 4 cm beyond the edges of the hernia, and the umbilicus is fixed back to the muscle — suited to both open and laparoscopic technique.</p>
-          </div>
-          <div class="proc-media">
-            <img src="/image/hernia-7.png" alt="">
-            <div class="cap">Open repair → mesh placement → laparoscopic repair</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 05 Strangulated -->
-      <div class="proc urgent">
-        <div class="proc-node">05<br>URGENT</div>
-        <div class="proc-body">
-          <div class="proc-text">
-            <span class="urgent-banner">Surgical emergency</span>
-            <h4>Strangulated hernia</h4>
-            <p>Surgery is the only treatment option. Local or general anesthesia is selected based on the surgical modality, and the procedure follows a two-step sequence to release trapped tissue before the site is rebuilt.</p>
-            <div class="step-pair">
-              <div class="step">
-                <div class="num">STEP 01 — REDUCE</div>
-                <p>Gentle pressure releases the trapped tissue back into the abdominal cavity, clearing any twist or volvulus.</p>
-              </div>
-              <div class="step">
-                <div class="num">STEP 02 — REPAIR</div>
-                <p>The hernia is repaired with <b>Surgicoll-Mesh</b> to prevent recurrence, manage complications, and strengthen the tissue.</p>
-              </div>
+        <div class="types-text">
+          <h3>Six presentations, one reinforcement principle.</h3>
+          <div class="type-grid">
+            <div class="type-item">
+              <div class="name">Inguinal</div>
+              <div class="desc">Inner groin — the most common hernia type</div>
+            </div>
+            <div class="type-item">
+              <div class="name">Femoral</div>
+              <div class="desc">Upper thigh / outer groin</div>
+            </div>
+            <div class="type-item">
+              <div class="name">Incisional</div>
+              <div class="desc">Through a prior surgical incision or scar</div>
+            </div>
+            <div class="type-item">
+              <div class="name">Ventral</div>
+              <div class="desc">General abdominal / ventral wall</div>
+            </div>
+            <div class="type-item">
+              <div class="name">Umbilical</div>
+              <div class="desc">At the belly button</div>
+            </div>
+            <div class="type-item">
+              <div class="name">Hiatal</div>
+              <div class="desc">Inside the abdomen, along the upper stomach/diaphragm</div>
             </div>
           </div>
-          <div class="proc-media">
-            <img src="/image/hernia-8.png" alt="">
-            <div class="cap">Herniation → strangulation/volvulus → intussusception</div>
-          </div>
         </div>
       </div>
 
-    </div><!-- /.pathway -->
+      <!-- Procedure pathway -->
+      <div class="pathway-head">
+        <h3>How Surgicoll-Mesh is placed, by approach.</h3>
+      </div>
 
-  </div>
-</section>
+      <div class="pathway">
+
+        <!-- 01 Open abdominal -->
+        <div class="proc">
+          <div class="proc-node">01<br>OPEN</div>
+          <div class="proc-body">
+            <div class="proc-text">
+              <h4>Abdominal hernia — open surgery</h4>
+              <p>An open incision is made at the hernia site and protruded tissue is pushed back into place. For
+                larger defects, a component separation procedure may free the abdominal wall muscles before
+                <b>Surgicoll-Mesh</b> is placed to reinforce the damaged site and reduce recurrence. The skin is
+                typically closed with dissolvable stitches and glue.</p>
+            </div>
+            <div class="proc-media dual">
+              <figure>
+                <img src="/image/hernia 3.png" alt="">
+                <figcaption>Hernia vs. after repair</figcaption>
+              </figure>
+              <figure>
+                <img src="/image/hernia 4.png" alt="">
+                <figcaption>Pre- &amp; post-placement detail</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Laparoscopic -->
+        <div class="proc">
+          <div class="proc-node">02<br>LAPSC</div>
+          <div class="proc-body">
+            <div class="proc-text">
+              <h4>Laparoscopic surgery</h4>
+              <p>Several small incisions are made away from the hernia site. A laparoscope — a thin, lighted tube
+                with a camera — guides the surgery through one of the openings. <b>Surgicoll-Mesh</b> may be
+                inserted through the same access points to strengthen the weakened abdominal wall with minimal
+                disruption to surrounding tissue.</p>
+            </div>
+            <div class="proc-media proc-media--lapsc">
+              <img src="/image/hernia-5.png" alt="">
+              <div class="cap">Laparoscopic access &amp; mesh placement</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Inguinal -->
+        <div class="proc">
+          <div class="proc-node">03<br>INGUIN.</div>
+          <div class="proc-body">
+            <div class="proc-text">
+              <h4>Inguinal hernia repair</h4>
+              <p>An approximate 10-cm incision is made in the groin. Once exposed, the hernia sac is pushed back
+                into the abdominal cavity or excised, and the abdominal wall is then reinforced with
+                <b>Surgicoll-mesh</b> to restore structural integrity at the weakened layer.</p>
+            </div>
+            <div class="proc-media dual">
+              <figure>
+                <img src="/image/hernia-6.png" alt="">
+                <figcaption>Inguinal hernia</figcaption>
+              </figure>
+              <figure>
+                <img src="/image/hernia-5.png" alt="">
+                <figcaption>Post-repair</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 Umbilical -->
+        <div class="proc">
+          <div class="proc-node">04<br>UMBIL.</div>
+          <div class="proc-body">
+            <div class="proc-text">
+              <h4>Umbilical hernia</h4>
+              <p>The hernia sac is removed and <b>Surgicoll-Mesh</b> is placed over the site, attached using
+                sutures to the stronger surrounding tissue. The mesh extends 3 to 4 cm beyond the edges of the
+                hernia, and the umbilicus is fixed back to the muscle — suited to both open and laparoscopic
+                technique.</p>
+            </div>
+            <div class="proc-media">
+              <img src="/image/hernia-7.png" alt="">
+              <div class="cap">Open repair → mesh placement → laparoscopic repair</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 Strangulated -->
+        <div class="proc urgent">
+          <div class="proc-node">05<br>URGENT</div>
+          <div class="proc-body">
+            <div class="proc-text">
+              <span class="urgent-banner">Surgical emergency</span>
+              <h4>Strangulated hernia</h4>
+              <p>Surgery is the only treatment option. Local or general anesthesia is selected based on the
+                surgical modality, and the procedure follows a two-step sequence to release trapped tissue before
+                the site is rebuilt.</p>
+              <div class="step-pair">
+                <div class="step">
+                  <div class="num">STEP 01 — REDUCE</div>
+                  <p>Gentle pressure releases the trapped tissue back into the abdominal cavity, clearing any
+                    twist or volvulus.</p>
+                </div>
+                <div class="step">
+                  <div class="num">STEP 02 — REPAIR</div>
+                  <p>The hernia is repaired with <b>Surgicoll-Mesh</b> to prevent recurrence, manage
+                    complications, and strengthen the tissue.</p>
+                </div>
+              </div>
+            </div>
+            <div class="proc-media">
+              <img src="/image/hernia-8.png" alt="">
+              <div class="cap">Herniation → strangulation/volvulus → intussusception</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.pathway -->
+
+    </div>
+  </section>
+
   <!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
   <div class="abp-strip">
-    <h2>Pelvic Floor Reconstruction & Prolapse Treatment</h2>
+    <h2>Pelvic Floor Reconstruction &amp; Prolapse Treatment</h2>
   </div>
 
   <!-- PELVIC FLOOR RECONSTRUCTION -->
   <section id="pelvic" class="section section-alt">
     <div class="section-header">
       <p class="section-desc">Surgicoll-Mesh<sup>®</sup> offers superior advantages over synthetic and biological
-        collagen products for the treatment of pelvic floor reconstruction including vaginal, urethral, bladder, and
-        rectal prolapse. It acts as a scaffold that can be naturally bioabsorbed and progressively integrated with new
-        host tissue.</p>
+        collagen products for the treatment of pelvic floor reconstruction including vaginal, urethral, bladder,
+        and rectal prolapse. It acts as a scaffold that can be naturally bioabsorbed and progressively integrated
+        with new host tissue.</p>
     </div>
 
     <div class="prolapse-grid">
@@ -1682,10 +256,8 @@ section.hernia-repair::before {
       <div class="prolapse-card">
         <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 1.jpg"
           alt="Vaginal Prolapse">
-
         <div class="prolapse-card-content">
           <h3>Vaginal Prolapse</h3>
-
           <p>
             Weak pelvic muscles and ligaments may cause organs to shift
             and bulge into the vagina. Surgicoll-Mesh<sup>®</sup> reinforces the
@@ -1697,11 +269,10 @@ section.hernia-repair::before {
 
       <!-- CARD 2 -->
       <div class="prolapse-card">
-        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 2.jpg" alt="Urethrocele">
-
+        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 2.jpg"
+          alt="Urethrocele">
         <div class="prolapse-card-content">
           <h3>Urethrocele (Urethra Prolapse)</h3>
-
           <p>
             A urethrocele occurs when tissues around the urethra sag
             downward into the vagina. Surgicoll-Mesh<sup>®</sup> urethral slings
@@ -1713,11 +284,10 @@ section.hernia-repair::before {
 
       <!-- CARD 3 -->
       <div class="prolapse-card">
-        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 3.jpg" alt="Cystocele">
-
+        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 3.jpg"
+          alt="Cystocele">
         <div class="prolapse-card-content">
           <h3>Cystocele (Bladder Prolapse)</h3>
-
           <p>
             A cystocele occurs when the bladder presses against the
             vaginal wall. Surgicoll-Mesh<sup>®</sup> urethral slings help hold the
@@ -1730,10 +300,8 @@ section.hernia-repair::before {
       <div class="prolapse-card">
         <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 4.jpg"
           alt="Uterine Prolapse">
-
         <div class="prolapse-card-content">
           <h3>Uterine Prolapse</h3>
-
           <p>
             Uterine prolapse happens when pelvic muscles weaken and can
             no longer support the uterus. Surgicoll-Mesh<sup>®</sup> helps restore
@@ -1749,24 +317,24 @@ section.hernia-repair::before {
 
       <!-- CARD 5 -->
       <div class="prolapse-card">
-        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 5.jpg" alt="Enterocele">
-
+        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 5.jpg"
+          alt="Enterocele">
         <div class="prolapse-card-content">
           <h3>Enterocele (Small Bowel Prolapse)</h3>
-
           <p>
-            An enterocele occurs when the small bowel bulges into the vaginal wall due to weakened pelvic support tissues. Surgicol-Mesh helps reinforce the affected area, providing support and promoting tissue integration.
+            An enterocele occurs when the small bowel bulges into the vaginal wall due to weakened pelvic support
+            tissues. Surgicol-Mesh helps reinforce the affected area, providing support and promoting tissue
+            integration.
           </p>
         </div>
       </div>
 
       <!-- CARD 6 -->
       <div class="prolapse-card">
-        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 6.jpg" alt="Rectocele">
-
+        <img src="../indications/Soft Tissue Reinforcement/Pelvic floor reconstruction/Pelvic 6.jpg"
+          alt="Rectocele">
         <div class="prolapse-card-content">
           <h3>Rectocele (Rectum Prolapse)</h3>
-
           <p>
             Rectocele is the bulging of the rectum into the vaginal wall.
             Surgicoll-Mesh<sup>®</sup> is placed behind the rectum and fixed to the
@@ -1778,7 +346,6 @@ section.hernia-repair::before {
     </div>
   </section>
 
-
   <!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
   <div class="abp-strip">
     <h2>Repair of Tendon Damage</h2>
@@ -1786,105 +353,104 @@ section.hernia-repair::before {
 
   <!-- HAND SURGERY -->
   <section id="handsurgery" class="section section-alt">
-  <div class="section-header">
-    <div class="eyebrow">Hand Surgery</div>
-    <h2 class="section-title">Reconstructive Surgeries of the Hand</h2>
-    <p class="section-desc">
-      Excellent coverage over exposed bones and joints can be achieved faster through
-      Surgicoll-Mesh<sup>®</sup>'s nanotechnological approach clinically proven for
-      reconstruction of complex wounds, obviating the need for flap cover.
-    </p>
-  </div>
+    <div class="section-header">
+      <h2 class="section-title">Reconstructive Surgeries of the Hand</h2>
+      <p class="section-desc">
+        Excellent coverage over exposed bones and joints can be achieved faster through
+        Surgicoll-Mesh<sup>®</sup>'s nanotechnological approach clinically proven for
+        reconstruction of complex wounds, obviating the need for flap cover.
+      </p>
+    </div>
 
-  <div class="hand-surgery-content">
-    <h3>Clinically Proven for Complex Wound Reconstruction Without Flap Cover</h3>
+    <div class="hand-surgery-content">
+      <h3>Clinically Proven for Complex Wound Reconstruction Without Flap Cover</h3>
+      <p>
+        Surgicoll-Mesh<sup>®</sup> offers clear advantages over synthetic and other collagen products for
+        Reconstructive surgeries. It acts as a scaffold that can be naturally and progressively
+        integrated, remodeled and eventually replaced by functional host tissue.
+      </p>
+    </div>
 
-    <p>
-      Surgicoll-Mesh<sup>®</sup> offers clear advantages over synthetic and other
-      collagen products for reconstructive surgeries.
-    </p>
+    <!-- Images Row -->
+    <div class="timeline-row">
+      <div class="day-item">
+        <div class="di-label">Pre-Op</div>
+        <img src="../image/hand before .png" alt="">
+        <p>Hand deformation before surgery complex wound with exposed structures</p>
+      </div>
 
-    <p>
-      The product's unique nanotechnological approach ensures faster coverage over
-      exposed bones and joints making it the preferred choice for complex hand
-      deformity reconstruction.
-    </p>
+      <div class="day-item">
+        <div class="di-label">Day 1</div>
+        <img src="../image/hand_day 1.png" alt="">
+        <p>Surgicoll-Mesh<sup>®</sup> applied to exposed bones and joints</p>
+      </div>
 
-    <div class="hand-stat">
-      <div class="hs-num">90%</div>
-      <div class="hs-label">
-        Healing achieved by Day 10 in complex hand reconstruction cases
+      <div class="day-item">
+        <div class="di-label">Day 3</div>
+        <img src="../image/hand day_3.png" alt="">
+        <p>Active granulation tissue formation and scaffold integration</p>
+      </div>
+
+      <div class="day-item">
+        <div class="di-label">Day 10</div>
+        <img src="../image/hand day_10.png" alt="">
+        <p>90% healing achieved without flap coverage</p>
       </div>
     </div>
-  </div>
-
-  <!-- Images Row -->
-  <div class="timeline-row">
-    <div class="day-item">
-      <div class="di-label">Pre-Op</div>
-      <img src="../image/hand before .png" alt="">
-      <p>Hand deformation before surgery complex wound with exposed structures</p>
-    </div>
-
-    <div class="day-item">
-      <div class="di-label">Day 1</div>
-      <img src="../image/hand_day 1.png" alt="">
-      <p>Surgicoll-Mesh<sup>®</sup> applied to exposed bones and joints</p>
-    </div>
-
-    <div class="day-item">
-      <div class="di-label">Day 3</div>
-      <img src="../image/hand day_3.png" alt="">
-      <p>Active granulation tissue formation and scaffold integration</p>
-    </div>
-
-    <div class="day-item">
-      <div class="di-label">Day 10</div>
-      <img src="../image/hand day_10.png" alt="">
-      <p>90% healing achieved without flap coverage</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- GASTRO / GENERAL SURGERY -->
-
-   <div class="abp-strip">
+  <div class="abp-strip">
     <h2>General Surgery</h2>
   </div>
 
-  <section id="gastro" class="section">
-    <div class="section-header">
-      <div class="eyebrow">General Surgery</div>
-      <h2 class="section-title">Gastro-Intestinal & General Surgery Applications</h2>
-      <p class="section-desc">Surgicoll-Mesh<sup>®</sup> and Hemocoll<sup>®</sup> together offer disruptive technology
+  <section id="gastro" class="gastro-app-section">
+    <div class="gastro-app-header">
+      <h2 class="gastro-app-title">
+        Gastro-Intestinal &amp; General Surgery Applications
+      </h2>
+      <p class="gastro-app-description">
+        Surgicoll-Mesh<sup>®</sup> and Hemocoll<sup>®</sup> together offer disruptive technology
         solutions for eminent general surgeons covering anastomosis reinforcement and complex abdominal
-        wall reconstruction.</p>
+        wall reconstruction.
+      </p>
     </div>
 
-    <div class="gastro-content">
-      <div class="gastro-info">
-        <h3>Gastrointestinal Anastomosis Reinforcement</h3>
-        <p>Surgicoll-Mesh<sup>®</sup> can be used in reinforcing gastrointestinal anastomosis. This product fulfils
-          the clinical requirement for offering essential physical support. As the product gradually degrades over time,
-          it prompts the growth of new tissue, thereby enhancing the strength of the treated area.</p>
-        <p>This application is particularly valuable following bowel resection procedures where end-to-end
-          reattachment requires additional mechanical support during the healing phase, reducing the risk of anastomotic leakage and
-          associated complications.</p>
+    <div class="gastro-app-wrapper">
+      <div class="gastro-app-content">
 
-        <!-- Case Series highlight -->
-        <div style="background:var(--purple-mid); border-radius:var(--radius-sm); padding:18px 20px; margin-top:20px;">
-          <div
-            style="font-size:0.78rem; font-weight:700; color:var(--purple-brand); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">
-            Published Case Series — JCDR 2024</div>
-          <p style="font-size:0.84rem; color:var(--text-mid); line-height:1.6;">A peer-reviewed case series published
-            in the <em>Journal of Clinical and Diagnostic Research</em> (September 2024) demonstrated excellent outcomes
-            in three patients with infected posthernioplasty abdominal wounds treated using Surgicoll-Mesh<sup>®</sup>.
-            All cases showed resolution of infection, effective wound healing, and no hernia recurrence at one-year
-            follow-up.</p>
+        <h3 class="gastro-app-heading">
+          Gastrointestinal Anastomosis Reinforcement
+        </h3>
+
+        <p class="gastro-app-text">
+          Surgicoll-Mesh<sup>®</sup> can be used in reinforcing gastrointestinal anastomosis.
+          This product fulfils the clinical requirement for offering essential physical support.
+          As the product gradually degrades over time, it prompts the growth of new tissue,
+          thereby enhancing the strength of the treated area.
+        </p>
+
+        <p class="gastro-app-text">
+          This application is particularly valuable following bowel resection procedures where
+          end-to-end reattachment requires additional mechanical support during the healing phase,
+          reducing the risk of anastomotic leakage and associated complications.
+        </p>
+
+        <div class="gastro-case-card">
+          <div class="gastro-case-label">
+            Published Case Series — JCDR 2024
+          </div>
+          <p class="gastro-case-text">
+            A peer-reviewed case series published in the
+            <em>Journal of Clinical and Diagnostic Research</em>
+            (September 2024) demonstrated excellent outcomes in three patients
+            with infected posthernioplasty abdominal wounds treated using
+            Surgicoll-Mesh<sup>®</sup>. All cases showed resolution of infection,
+            effective wound healing, and no hernia recurrence at one-year follow-up.
+          </p>
         </div>
-      </div>
 
-      
+      </div>
     </div>
   </section>
 
@@ -1894,112 +460,171 @@ section.hernia-repair::before {
   </div>
 
   <!-- CASE SERIES -->
-  <section class="section section-alt">
-    <div class="section-header">
-      <h2 class="section-title">FOR SOFT TISSUE REPAIR & RECONSTRUCTION</h2>
-    </div>
-    <div class="case-grid">
-      <div class="case-card">
-      
-        <img src="../image/skin-1.png" alt="">
-        <h3>Day 1</h3>
-      </div>
-      <div class="case-card">
-        
-        <img src="../image/skin-2.png" alt="">
-        <h3>Day 2</h3>
-      </div>
-      <div class="case-card">
-        <img src="../image/skin-3.png" alt="">
-        <h3>Day 3</h3>
-      </div>
-      <div class="case-card">
-       
-        <img src="../image/skin-4.png" alt="">
-        <h3>Day 4</h3>
-      </div>
-    </div><br><br>
+  <section class="section section-alt sg-case-section">
 
-    <div class="section-header">
-      <h2 class="section-title">BURN RECONSTRUCTION</h2>
+    <!-- SOFT TISSUE -->
+    <div class="sg-section-title">
+      <h2>FOR SOFT TISSUE REPAIR &amp; RECONSTRUCTION</h2>
     </div>
-    <div class="case-grid">
-      <div class="case-card">
-        
-        <img src="../image/skin_graft1.png" alt="">
-        <h3>Day-0</h3>
-      </div>
-      <div class="case-card">
-        
-        <img src="../image/skin_graft2.png" alt="">
-        <h3>Surgical Opening</h3>
-      </div>
-      <div class="case-card">
-        
-        <img src="../image/skin_graft3.png" alt="">
-        <h3>Day-1: Surgicoll-Mesh<sup>®</sup> Equi
-          applied and stapled</h3>
-      </div>
-      <div class="case-card">
-       
-        <img src="../image/skin_graft4.png" alt="">
-        <h3>21 days upon Skin-graft
-          application over Surgicoll-
-          Mesh<sup>®</sup> Equi on day 5</h3>
-      </div>
-    </div><br><br>
 
-    <div class="section-header">
-      <h2 class="section-title">SACRAL PRESSURE SORE</h2>
-    </div>
-    <div class="case-grid">
-      <div class="case-card">
-       
-        <img src="../image/sacral 1.png" alt="">
-        <h3>Stage 4 pressure
-          sore</h3>
+    <div class="sg-case-grid">
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin-1.png" alt="Day 1">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day 1</h3>
+        </div>
       </div>
-      <div class="case-card">
-        
-        <img src="../image/sacral 2.png" alt="">
-        <h3>10 Days Post "Surgicoll-Mesh<sup>®</sup>
-          Equi" application</h3>
-      </div>
-      <div class="case-card">
-       
-        <img src="../image/sacral 3.png" alt="">
-        <h3>Completely healed using
-          "Surgicoll-Mesh<sup>®</sup> Equi"</h3>
-      </div>
-    </div><br><br>
 
-    <div class="section-header">
-      <h2 class="section-title">KELOID EXCISION AND CLOSURE</h2>
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin-2.png" alt="Day 2">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day 2</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin-3.png" alt="Day 3">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day 3</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin-4.png" alt="Day 4">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day 4</h3>
+        </div>
+      </div>
     </div>
-    <div class="case-grid">
-      <div class="case-card">
-        
-        <img src="../image/kelodi 1.png" alt="">
-        <h3>Day - 0</h3>
+
+    <!-- BURN RECONSTRUCTION -->
+    <div class="sg-section-title">
+      <h2>BURN RECONSTRUCTION</h2>
+    </div>
+
+    <div class="sg-case-grid">
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin_graft1.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day-0</h3>
+        </div>
       </div>
-      <div class="case-card">
-        
-        <img src="../image/kelodi 2.png" alt="">
-        <h3>Day- 1: Insertion of Surgicoll-Mesh<sup>®</sup> equi
-          into the wound</h3>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin_graft2.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Surgical Opening</h3>
+        </div>
       </div>
-      <div class="case-card">
-       
-        <img src="../image/kelodi 3.png" alt="">
-        <h3>Day - 15</h3>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin_graft3.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day-1: Surgicoll-Mesh<sup>®</sup> Equi applied and stapled</h3>
+        </div>
       </div>
-      <div class="case-card">
-        
-        <img src="../image/kelodi 4.png" alt="">
-        <h3>5 years- No
-          Recurrence</h3>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/skin_graft4.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>21 days upon Skin-graft application over Surgicoll-Mesh<sup>®</sup> Equi on day 5</h3>
+        </div>
       </div>
     </div>
+
+    <!-- SACRAL -->
+    <div class="sg-section-title">
+      <h2>SACRAL PRESSURE SORE</h2>
+    </div>
+
+    <div class="sg-case-grid">
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/sacral 1.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Stage 4 Pressure Sore</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/sacral 2.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>10 Days Post Surgicoll-Mesh<sup>®</sup> Equi Application</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/sacral 3.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Completely Healed Using Surgicoll-Mesh<sup>®</sup> Equi</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- KELOID -->
+    <div class="sg-section-title">
+      <h2>KELOID EXCISION AND CLOSURE</h2>
+    </div>
+
+    <div class="sg-case-grid">
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/kelodi 1.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day - 0</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/kelodi 2.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day-1: Insertion of Surgicoll-Mesh<sup>®</sup> Equi into the wound</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/kelodi 3.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>Day - 15</h3>
+        </div>
+      </div>
+
+      <div class="sg-case-card">
+        <div class="sg-case-image">
+          <img src="../image/kelodi 4.png" alt="">
+        </div>
+        <div class="sg-case-content">
+          <h3>5 Years - No Recurrence</h3>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- SIZES -->
@@ -2032,7 +657,7 @@ section.hernia-repair::before {
         document.getElementById("rs-footer").innerHTML = data;
       });
   </script>
-  
+
   <script src="/js/nav.js"></script>
 </body>
 
