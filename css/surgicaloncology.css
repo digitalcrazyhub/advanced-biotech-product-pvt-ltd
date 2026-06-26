@@ -2909,3 +2909,109 @@ process-section {
         padding: 24px 24px 28px;
     }
 }
+
+/* PDF */
+.docvault-section {
+  padding: 100px 0;
+  background: var(--gradient-section);
+}
+
+.docvault-header {
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.docvault-header h2 {
+  color: var(--navy-brand);
+  font-weight: 700;
+  text-align: center;
+}
+
+.docvault-bar {
+  width: 64px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 4px;
+  background: var(--gradient-bar);
+}
+
+.docvault-subtext {
+  margin-top: 16px;
+  color: var(--text-mid);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.docvault-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 20px;
+}
+
+.docvault-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 40px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.docvault-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.docvault-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--lavender-light);
+  color: var(--purple-brand);
+  font-size: 1.5rem;
+}
+
+.docvault-card h3 {
+  color: var(--text-dark);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.docvault-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  background: var(--purple-brand);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.docvault-btn:hover {
+  background: var(--white);
+  transform: translateY(-2px);
+  border: 2px solid var(--plum-bright);
+  color: var(--plum-bright);
+}
+
+@media (max-width: 768px) {
+  .docvault-grid {
+    grid-template-columns: 1fr;
+  }
+}

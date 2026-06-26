@@ -334,7 +334,7 @@
         background: var(--purple-brand);
     }
     .mv-nav-logo img {
-    width: auto;
+    width: 250px;
 }
 
 }
@@ -502,3 +502,23 @@
     }
 
 }
+@media(max-width:375px){
+    .mv-nav-logo img {
+        width:210px;
+        height: 50px;
+    }
+}
+/* @media(max-width:320px){
+    .mv-nav-logo img{
+        width: 200px;
+    } */
+/* } */
+@media(max-width:480px){
+    .mv-nav-logo-img{
+        width: 200px;
+    }
+    .mv-mobile-toggle{
+        width: 50px;
+    }
+}
+    
