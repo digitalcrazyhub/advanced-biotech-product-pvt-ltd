@@ -79,15 +79,7 @@ a {
     border-radius: 50px;
 }
 
-.abp-badge--outline {
-    background: transparent;
-    border: 1.5px solid var(--purple);
-    color: var(--purple);
-}
 
-.abp-badge--green {
-    background: #1a7a4a;
-}
 
 .abp-section-title {
     font-family: 'Jost', sans-serif;
@@ -442,18 +434,6 @@ a {
     text-align: center;
 }
 
-.abp-card__day {
-    display: inline-block;
-    background: var(--lav-light);
-    color: var(--purple);
-    font-size: .8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    padding: 3px 12px;
-    border-radius: 50px;
-    margin-bottom: 10px;
-}
 
 .abp-card__title {
     font-family: 'Jost', sans-serif;
@@ -463,11 +443,6 @@ a {
     margin-bottom: 6px;
 }
 
-.abp-card__desc {
-    font-size: clamp(.85rem, .15vw + .8rem, .95rem);
-    color: var(--text-dark);
-    line-height: 1.6;
-}
 
 /* ============================
    DFU TREATMENT SECTION
@@ -719,17 +694,8 @@ a {
         grid-area: image;
     }
 
-    .abp-science__grid {
-        grid-template-columns: 1fr;
-    }
 
-    .abp-science__block--highlight {
-        grid-column: auto;
-    }
 
-    .abp-evidence__grid {
-        grid-template-columns: 1fr;
-    }
 
     .abp-strip {
         padding-left: 24px;
@@ -863,7 +829,7 @@ a {
 /* 3 cards in one row */
 .abp-cards__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
