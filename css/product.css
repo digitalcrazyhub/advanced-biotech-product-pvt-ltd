@@ -53,9 +53,17 @@ html {
 /* ================= COMMON ================= */
 
 .container {
-    width: 90%;
-    max-width: 1280px;
+    width: 100%;
+    max-width: 1950px;
     margin: auto;
+    padding: 0 30px;
+}
+
+.containers{
+    width:100%;
+    max-width:1950px;
+    margin:auto;
+    padding:0 30px;
 }
 
 section {
@@ -171,7 +179,6 @@ a {
     position: relative;
     z-index: 3;
     width: 100%;
-    max-width: 1300px;
     margin: auto;
     padding: 0 5%;
     display: flex;
@@ -255,67 +262,6 @@ a {
     line-height: 1.6;
 }
 
-/* TABLET */
-@media (max-width: 992px) {
-
-    .heros {
-        padding: 100px 0;
-    }
-
-    .heros-content h1 {
-        font-size: 44px;
-    }
-
-    .heros-content p {
-        font-size: 18px;
-    }
-
-    .heros-stats {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* MOBILE */
-@media (max-width: 576px) {
-
-    .heros {
-        min-height: auto;
-        padding: 90px 0;
-    }
-
-    .containers.heros-grid {
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .heros-content h4 {
-        font-size: 12px;
-        letter-spacing: 1.5px;
-    }
-
-    .heros-content h1 {
-        font-size: 32px;
-        line-height: 1.3;
-    }
-
-    .heros-content p {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    .btn {
-        width: 100%;
-        max-width: 280px;
-    }
-
-    .heros-stat {
-        padding: 28px 20px;
-    }
-
-    .heros-stat-num {
-        font-size: 38px;
-    }
-}
 /* ==========================================
    SURGICOLL ABOUT SECTION
 ========================================== */
@@ -423,88 +369,6 @@ a {
     color: var(--text-mid);
 }
 
-
-/* ==========================================
-   TABLET RESPONSIVE
-========================================== */
-
-@media (max-width: 992px) {
-
-    .sc-about-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .sc-about-content {
-        text-align: center;
-    }
-
-    .sc-about-content p {
-        text-align: center;
-    }
-
-    .sc-about-content h3 {
-        font-size: 40px;
-    }
-
-    .sc-about-content h4 {
-        font-size: 22px;
-    }
-
-    .sc-vision-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
-@media (max-width: 576px) {
-
-    .sc-about-section,
-    .sc-vision-section {
-        padding: 70px 0;
-    }
-
-    .sc-about-grid {
-        gap: 40px;
-    }
-
-    .sc-about-title {
-        font-size: 14px;
-    }
-
-    .sc-about-content h3 {
-        font-size: 32px;
-    }
-
-    .sc-about-content h4 {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-    .sc-about-content p {
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    .sc-vision-card {
-        padding: 35px 25px;
-    }
-
-    .sc-vision-card h3 {
-        font-size: 28px;
-    }
-
-    .sc-vision-card p {
-        font-size: 16px;
-    }
-}
-
-/*** Dual Action Cards ***/
-
 /* ─── DUAL ACTION ─── */
 .dual-section {
     background: var(--text-mid);
@@ -599,10 +463,6 @@ a {
     padding: 32px 40px;
 }
 
-.neovascular-icon {
-    font-size: 48px;
-    flex-shrink: 0;
-}
 
 .neovascular-title {
     font-size: 26px;
@@ -724,15 +584,7 @@ a {
     text-align: center;
 }
 
-.check {
-    color: #00b894;
-    font-size: 16px;
-}
 
-.cross {
-    color: #d63031;
-    font-size: 16px;
-}
 
 .science-points {
     display: flex;
@@ -754,10 +606,6 @@ a {
     transform: translateX(4px);
 }
 
-.science-point-icon {
-    font-size: 28px;
-    flex-shrink: 0;
-}
 
 .science-point-title {
     font-size: 15px;
@@ -777,7 +625,6 @@ a {
 /* ================= PRODUCT THEORY ================= */
 .about-product {
     width: 90%;
-    max-width: 1280px;
     margin: 40px auto;
     padding: 20px 0;
 }
@@ -853,7 +700,6 @@ a {
 /* ================= CASE STUDIES (Optimized & Responsive) ================= */
 .case-study {
     width: 90%;
-    max-width: 1280px;
     margin: 60px auto;
 }
 
@@ -861,13 +707,6 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 40px;
-}
-
-/* Fallback for very small mobile screens */
-@media (max-width: 500px) {
-    .case-study-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .case_video {
@@ -1005,7 +844,6 @@ a {
 }
 
 .app-card img {
-    height: 240px;
     object-fit: fill;
 }
 
@@ -1071,248 +909,6 @@ a {
     border: 0.5px solid var(--purple-brand);
 }
 
-/* ================= FOOTER ================= */
-
-footer {
-    background: #102739;
-    color: var(--white);
-    padding: 90px 0 30px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 50px;
-    margin-bottom: 50px;
-}
-
-.footer-about p {
-    margin-top: 24px;
-    color: rgba(255, 255, 255, 0.72);
-}
-
-.footer-links h4 {
-    font-size: 22px;
-    margin-bottom: 22px;
-}
-
-.footer-links a {
-    display: block;
-    color: rgba(255, 255, 255, 0.72);
-    margin-bottom: 14px;
-    transition: 0.3s;
-}
-
-.footer-links a:hover {
-    color: var(--cyan);
-    transform: translateX(5px);
-}
-
-.copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 24px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65);
-}
-
-/* ================= RESPONSIVE ================= */
-
-/* ==================================
-   RESPONSIVE DESIGN
-================================== */
-
-@media (max-width:1200px){
-
-    .heros-content h1{
-        font-size:clamp(2.5rem,6vw,4rem);
-    }
-
-}
- .abp-indications__grid {
-         grid-template-columns: repeat(2, 1fr);
-     }
-
-@media (max-width:992px){
-
-    section{
-        padding:90px 0;
-    }
-
-    .heros{
-        min-height:auto;
-        padding:140px 0 90px;
-    }
-
-    .heros-grid,
-    .about-grid,
-    .list-grid,
-    .dual-grid{
-        grid-template-columns:1fr;
-        gap:50px;
-    }
-
-    .heros-content{
-        text-align:center;
-    }
-
-    .heros-content p{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .footer-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-    .about-content h3{
-        font-size:1.45rem;
-    }
-    .section-titles{
-        line-height:1.1;
-    }
-    .cta h2 {
-    font-size: 32px;
-}
-
-}
-
-@media (max-width:768px){
-
-    section{
-        padding:80px 0;
-    }
-
-    .container{
-        width:92%;
-    }
-
-    .heros{
-        padding-top:120px;
-    }
-
-    .heros-content h1{
-        font-size:clamp(2rem,7vw,3rem);
-        line-height:1.2;
-    }
-
-    .heros-content p{
-        font-size:16px;
-    }
-
-    .heros-stats{
-        grid-template-columns:1fr;
-    }
-
-    .about-content{
-        text-align:center;
-    }
-
-    .about-content p{
-        text-align:left;
-    }
-
-    .dual-card{
-        padding:30px;
-    }
-
-    .dual-card-title{
-        font-size:24px;
-    }
-
-    .neovascular-box{
-        padding:25px;
-    }
-
-    .info-card,
-    .feature-card,
-    .benefit-box,
-    .vision-card{
-        padding:30px;
-    }
-
-    .app-content{
-        padding:25px;
-    }
-
-    .app-content h3{
-        font-size:24px;
-    }
-     .abp-indications__grid {
-         grid-template-columns: 1fr;
-     }
-
-}
-
-@media (max-width:576px){
-
-    section{
-        padding:70px 0;
-    }
-
-    .container{
-        width:94%;
-    }
-
-    .card-grid,
-    .feature-grid,
-    .applications-grid,
-    .benefits-grid,
-    .vision-grid,
-    .container-wireframe{
-        grid-template-columns:1fr;
-    }
-
-    .btn{
-        width:100%;
-    }
-
-    .dual-card{
-        padding:24px;
-    }
-
-    .comp-header,
-    .comp-row{
-        padding:10px;
-        font-size:12px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-        gap:30px;
-    }
-
-}
-
-@media (max-width:400px){
-
-    .heros-content h1{
-        font-size:2rem;
-    }
-
-    .section-title h2{
-        font-size:1.8rem;
-    }
-
-    .about-content h3{
-        font-size:1.25rem;
-    }
-
-    .cta h2{
-        font-size:1.8rem;
-    }
-
-    .dual-section .section-titles,
-    .science-sections .section-titles{
-        font-size:28px;
-    }
-
-}
-@media (max-width:480px){
-    .abp-indications__grid {
-         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
  /* ─── INDICATIONS DARK SECTION ───────────────────────── */
  .abp-indications {
      background: linear-gradient(135deg, var(--navy-brand), #2A267A);
@@ -1363,3 +959,275 @@ footer {
      color: rgba(255, 255, 255, .65);
      line-height: 1.6;
  }
+
+ /* ==========================================================
+   RESPONSIVE SYSTEM
+   BASE WIDTH : 1950px
+========================================================== */
+
+/* ---------- Mobile ----------
+   320px – 575px
+------------------------------------------ */
+@media (max-width: 575px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    .container,
+    .containers {
+        width: 95%;
+    }
+
+    .heros {
+        min-height: auto;
+        padding: 120px 0 70px;
+    }
+
+    .heros-content {
+        text-align: center;
+    }
+
+    .heros-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .heros-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .heros-stats,
+    .sc-about-grid,
+    .sc-vision-grid,
+    .dual-grid,
+    .list-grid,
+    .footer-grid,
+    .abp-indications__grid,
+    .applications-grid,
+    .feature-grid,
+    .container-wireframe,
+    .case-study-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .dual-card,
+    .feature-card,
+    .abp-indication,
+    .app-content {
+        padding: 24px;
+    }
+
+    .dual-section .section-titles,
+    .science-sections .section-titles,
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .video-container {
+        padding-bottom: 75%;
+    }
+
+    .abp-indications {
+        padding: 60px 20px;
+    }
+}
+
+/* ---------- Large Mobile ----------
+   576px – 767px
+------------------------------------------ */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .container,
+    .containers {
+        width: 94%;
+    }
+
+    .heros-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .heros-stats,
+    .sc-about-grid,
+    .sc-vision-grid,
+    .dual-grid,
+    .list-grid,
+    .case-study-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .applications-grid,
+    .feature-grid,
+    .container-wireframe,
+    .abp-indications__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ---------- Tablet ----------
+   768px – 991px
+------------------------------------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    section {
+        padding: 80px 0;
+    }
+
+    .container,
+    .containers {
+        width: 92%;
+    }
+
+    .heros-content h1 {
+        font-size: 3rem;
+    }
+
+    .sc-about-grid,
+    .list-grid,
+    .dual-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid,
+    .applications-grid,
+    .container-wireframe,
+    .abp-indications__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-study-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- Small Laptop ----------
+   992px – 1199px
+------------------------------------------ */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container,
+    .containers {
+        width: 92%;
+        max-width: 1100px;
+    }
+
+    .heros-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .abp-indications__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-grid,
+    .applications-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ---------- Desktop ----------
+   1200px – 1439px
+------------------------------------------ */
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+    .container,
+    .containers {
+        width: 92%;
+        max-width: 1280px;
+    }
+
+    .heros-content h1 {
+        font-size: 4rem;
+    }
+}
+
+/* ---------- Large Desktop ----------
+   1440px – 1919px
+------------------------------------------ */
+@media (min-width: 1440px) and (max-width: 1919px) {
+
+    .container,
+    .containers {
+        width: 92%;
+        max-width: 1600px;
+    }
+
+    .heros-content h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* ---------- Full HD ----------
+   1920px – 2559px
+------------------------------------------ */
+@media (min-width: 1920px) and (max-width: 2559px) {
+
+    .container,
+    .containers {
+        width: 95%;
+        max-width: 1950px;
+    }
+
+    .heros-content h1 {
+        font-size: 5rem;
+    }
+
+    .section-title h2,
+    .section-titles {
+        font-size: 3rem;
+    }
+}
+
+/* ---------- 2K ----------
+   2560px – 3839px
+------------------------------------------ */
+@media (min-width: 2560px) and (max-width: 3839px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .container,
+    .containers {
+        max-width: 2200px;
+    }
+
+    .heros-content h1 {
+        font-size: 6rem;
+    }
+
+    .section-title h2,
+    .section-titles {
+        font-size: 4rem;
+    }
+}
+
+/* ---------- 4K ----------
+   3840px+
+------------------------------------------ */
+@media (min-width: 3840px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .container,
+    .containers {
+        max-width: 2800px;
+    }
+
+    .heros-content h1 {
+        font-size: 7rem;
+    }
+
+    .section-title h2,
+    .section-titles {
+        font-size: 5rem;
+    }
+}
