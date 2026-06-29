@@ -326,7 +326,7 @@ section {
 .section-h2 {
     font-size: clamp(1.8rem, 3.5vw, 2.6rem);
     font-weight: 700;
-    color: var(--navy);
+    color: var(--navy-brand);
     line-height: 1.2;
     margin-bottom: 16px;
 }
@@ -378,7 +378,7 @@ section {
      font-family: "Jost", sans-serif;
     font-size: clamp(1.8rem, 3.5vw, 2.6rem);
     font-weight: 700;
-    color: var(--navy);
+    color: var(--navy-brand);
     line-height: 1.2;
     margin-bottom: 16px;
 }
@@ -425,7 +425,7 @@ section {
     border-radius: 24px;
     overflow: hidden;
     aspect-ratio: 4/5;
-    background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+    background: linear-gradient(135deg, var(--blue) 0%, var(--navy-brand) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -519,7 +519,7 @@ section {
 .sc-title {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--navy-brand);
     margin-bottom: 8px;
     transition: .3s;
 }
@@ -589,7 +589,7 @@ section {
 .ta-name {
     font-size: .92rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--navy-brand);
 }
 
 .ta-info {
@@ -649,7 +649,7 @@ section {
     font-size:17px;
     font-weight:600;
     line-height:1.6;
-    color:var(--navy);
+    color:var(--navy-brand);
 }
 
 .faq-q span:first-child{

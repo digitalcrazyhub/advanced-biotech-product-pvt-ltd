@@ -170,23 +170,20 @@ img {
 }
 
 .abp-hero__grid{
- 
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:40px;
     align-items:center;
+
     grid-template-areas:
-"content"
-"image";
+    "content image";
 }
 
 .abp-hero-content{
-    order:1;
     grid-area: "content";
 }
 
 .abp-hero__image{
-    order:2;
     grid-area: "image";
 }
 .abp-hero__eyebrow {
@@ -236,11 +233,7 @@ img {
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(107, 45, 92, .2);
 }
-.abp-hero-content{
-    order: 1;
-    
-    
-}
+
 .abp-hero__image {
     display: flex;
     justify-content: center;
@@ -254,222 +247,7 @@ img {
     animation: abpFloat 6s ease-in-out infinite;
     filter: drop-shadow(0 20px 40px rgba(107, 45, 92, .15));
 }
-/* ======================================================
-   4K Screens (2560px+)
-====================================================== */
 
-@media (min-width:2560px){
-
-    :root{
-        --container-max:2200px;
-    }
-
-    .abp-hero{
-        padding:120px 0;
-    }
-
-    .abp-hero__grid{
-        grid-template-columns:2.2fr 1fr;
-        gap:100px;
-    }
-
-    .abp-hero__heading{
-        font-size:5rem;
-    }
-
-    .abp-hero__sub{
-        font-size:2rem;
-    }
-
-    .abp-hero__lead{
-        font-size:2rem;
-        line-height:1.8;
-        max-width:1100px;
-    }
-
-    .abp-hero__image img{
-        max-width:800px;
-    }
-
-    .abp-hero__cta{
-        font-size:1.3rem;
-        padding:20px 40px;
-    }
-}
-
-/* ======================================================
-   2K Screens
-====================================================== */
-
-@media (min-width:1600px) and (max-width:2559px){
-
-    :root{
-        --container-max:1700px;
-    }
-
-    .abp-hero{
-        padding:100px 0;
-    }
-
-    .abp-hero__grid{
-        gap:70px;
-    }
-
-    .abp-hero__heading{
-        font-size:4rem;
-    }
-
-    .abp-hero__lead{
-        font-size:1.7rem;
-        max-width:850px;
-    }
-
-    .abp-hero__image img{
-        max-width:650px;
-    }
-}
-
-/* ======================================================
-   Desktop
-====================================================== */
-
-@media (max-width:1400px){
-
-    .abp-container{
-        width:94%;
-    }
-
-    .abp-hero__grid{
-        gap:50px;
-    }
-
-    .abp-hero__lead{
-        font-size:1.3rem;
-    }
-}
-
-/* ======================================================
-   Laptop
-====================================================== */
-
-@media (max-width:1024px){
-
-    .abp-hero{
-        padding:70px 0;
-    }
-
-    .abp-hero__grid{
-        grid-template-columns:1.5fr 1fr;
-        gap:40px;
-    }
-
-    .abp-hero__lead{
-        font-size:1.1rem;
-        line-height:1.8;
-    }
-
-    .abp-hero__image img{
-        max-width:420px;
-    }
-}
-
-/* ======================================================
-   Tablet
-====================================================== */
-
-@media (max-width:768px){
-
-    .abp-container{
-        width:92%;
-    }
-
-    .abp-hero{
-        padding:60px 0;
-    }
-
-    .abp-hero__grid{
-        grid-template-columns:1fr;
-        text-align:center;
-        gap:35px;
-    }
-
-    .abp-hero-content{
-        order:1;
-    }
-
-    .abp-hero__image{
-        order:2;
-    }
-
-    .abp-hero__image img{
-        max-width:380px;
-    }
-
-    .abp-hero__lead{
-        font-size:1rem;
-        line-height:1.7;
-    }
-
-    .abp-hero__cta{
-        margin-inline:auto;
-    }
-
-    .abp-subtitle{
-        margin-inline:auto;
-    }
-}
-
-/* ======================================================
-   Mobile
-====================================================== */
-
-@media (max-width:576px){
-
-    .abp-hero{
-        padding:50px 0;
-    }
-
-    .abp-hero__heading{
-        font-size:2rem;
-    }
-
-    .abp-hero__sub{
-        font-size:1rem;
-    }
-
-    .abp-hero__lead{
-        font-size:0.95rem;
-        line-height:1.7;
-    }
-
-    .abp-hero__image img{
-        max-width:280px;
-    }
-
-    .abp-hero__cta{
-        padding:12px 22px;
-        font-size:15px;
-    }
-}
-
-/* ======================================================
-   Small Mobile
-====================================================== */
-
-@media (max-width:380px){
-
-    .abp-hero__heading{
-        font-size:1.7rem;
-    }
-
-    .abp-hero__image img{
-        max-width:230px;
-    }
-
-    .abp-hero__lead{
-        font-size:.9rem;
-    }
-}
 /* ─── PRODUCT HEADING STRIP ──────────────────────────── */
 .abp-strip {
   background: var(--purple-brand);
@@ -540,7 +318,6 @@ img {
  
 .prolapse-card img {
   width: 100%;
-  height: 260px;
   object-fit: cover;
   padding: 18px;
 }
@@ -579,42 +356,6 @@ img {
   margin-bottom: 8px;
 }
  
-/* ───── TABLET VIEW ───── */
-@media (max-width: 991px) {
-  .prolapse-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
- 
-  .prolapse-card img {
-    height: 230px;
-  }
-}
- 
-/* ───── MOBILE VIEW ───── */
-@media (max-width: 767px) {
-  .prolapse-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
- 
-  .prolapse-card img {
-    height: 220px;
-  }
- 
-  .prolapse-card-content {
-    padding: 18px;
-  }
- 
-  .prolapse-card h3 {
-    font-size: 1rem;
-  }
- 
-  .prolapse-card p,
-  .prolapse-card ul li {
-    font-size: 0.92rem;
-  }
-}
- 
 /* ───────── HAND SURGERY TIMELINE ───────── */
  
 .timeline-row {
@@ -634,7 +375,6 @@ img {
  
 .day-item img {
   width: 100%;
-  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin: 10px 0;
@@ -652,24 +392,6 @@ img {
   font-size: clamp(0.85rem, 1.3vw, 1.1rem);
   line-height: 1.5;
   color: var(--text-dark);
-}
- 
-/* Tablet */
-@media (max-width: 992px) {
-  .timeline-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
- 
-/* Mobile */
-@media (max-width: 576px) {
-  .timeline-row {
-    grid-template-columns: 1fr;
-  }
- 
-  .day-item img {
-    height: auto;
-  }
 }
  
 /* ==============================
@@ -701,6 +423,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   justify-content: center;
+  margin-bottom: 36px;
 }
  
 /* CARD */
@@ -725,7 +448,6 @@ img {
  
 .sg-case-image {
   width: 100%;
-  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -751,81 +473,6 @@ img {
   line-height: 1.5;
   font-weight: 700;
   margin: 0;
-}
- 
-/* ======================
-      RESPONSIVE
-====================== */
- 
-@media (max-width: 1200px) {
-  .sg-case-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
- 
-@media (max-width: 992px) {
-  .sg-case-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
- 
-  .sg-case-image {
-    height: 200px;
-  }
- 
-  .sg-section-title h2 {
-    font-size: 28px;
-  }
-}
- 
-@media (max-width: 768px) {
-  .sg-case-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
- 
-  .sg-case-image {
-    height: 190px;
-  }
- 
-  .sg-section-title {
-    margin: 40px 0 20px;
-  }
- 
-  .sg-section-title h2 {
-    font-size: 24px;
-  }
- 
-  .sg-case-content h3 {
-    font-size: 15px;
-  }
-}
- 
-@media (max-width: 576px) {
-  .sg-case-grid {
-    grid-template-columns: 1fr;
-  }
- 
-  .sg-case-card {
-    padding: 15px;
-  }
- 
-  .sg-case-image {
-    height: 220px;
-  }
- 
-  .sg-case-image img {
-    height: 100%;
-    object-fit: cover;
-  }
- 
-  .sg-section-title h2 {
-    font-size: 20px;
-  }
- 
-  .sg-case-content h3 {
-    font-size: 14px;
-    line-height: 1.4;
-  }
 }
  
 /* ── SIZES ── */
@@ -873,13 +520,6 @@ img {
   background: rgba(255, 255, 255, 0.25);
 }
  
-@media (max-width: 600px) {
-  .size-chip {
-    padding: 8px 14px;
-    font-size: 0.8rem;
-  }
-}
- 
 /* ====================================================
    GASTRO APPLICATION SECTION
 ==================================================== */
@@ -891,7 +531,7 @@ img {
 }
  
 .gastro-app-header {
-  max-width: 1200px;
+  max-width: 1950px;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -914,7 +554,7 @@ img {
 }
  
 .gastro-app-wrapper {
-  max-width: 1300px;
+  max-width: 1950px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -962,112 +602,6 @@ img {
   color: var(--text-mid);
   line-height: 1.8;
   margin: 0;
-}
- 
-@media (max-width: 1400px) {
-  .gastro-app-wrapper {
-    max-width: 1200px;
-  }
-}
- 
-@media (max-width: 1200px) {
-  .gastro-app-section {
-    padding: 70px 25px;
-  }
-}
- 
-@media (max-width: 992px) {
-  .gastro-app-section {
-    padding: 60px 20px;
-  }
- 
-  .gastro-app-header {
-    margin-bottom: 40px;
-  }
-}
- 
-@media (max-width: 768px) {
-  .gastro-app-section {
-    padding: 50px 18px;
-  }
- 
-  .gastro-case-card {
-    padding: 18px;
-  }
-}
- 
-@media (max-width: 480px) {
-  .gastro-app-section {
-    padding: 40px 15px;
-  }
- 
-  .gastro-case-label {
-    font-size: .75rem;
-  }
- 
-  .gastro-case-text {
-    font-size: .88rem;
-  }
-}
- 
-@media (min-width: 2560px) {
-  .gastro-app-section {
-    padding: 120px 80px;
-  }
- 
-  .gastro-app-wrapper {
-    max-width: 1800px;
-  }
- 
-  .gastro-app-header {
-    max-width: 1600px;
-  }
- 
-  .gastro-app-description {
-    max-width: 1400px;
-  }
- 
-  .gastro-case-card {
-    padding: 35px;
-  }
- 
-  .gastro-case-label {
-    font-size: 1.1rem;
-  }
- 
-  .gastro-case-text {
-    font-size: 1.2rem;
-  }
-}
- 
-@media (min-width: 3840px) {
-  .gastro-app-section {
-    padding: 150px 120px;
-  }
- 
-  .gastro-app-wrapper {
-    max-width: 2400px;
-  }
- 
-  .gastro-app-header {
-    max-width: 2000px;
-  }
- 
-  .gastro-app-description {
-    max-width: 1800px;
-  }
- 
-  .gastro-case-card {
-    padding: 45px;
-  }
- 
-  .gastro-case-label {
-    font-size: 1.3rem;
-  }
- 
-  .gastro-case-text {
-    font-size: 1.45rem;
-  }
 }
  
 /* ======================================================
@@ -1524,112 +1058,294 @@ section.hernia-repair::before {
   margin: 50px auto;
   padding: 0 5%;
 }
- 
-/* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
-  .proc-body {
-    grid-template-columns: 1fr;
-    gap: 20px;
+
+/* ==========================================================
+   RESPONSIVE SYSTEM
+   BASE WIDTH : 1950px
+========================================================== */
+
+/* ---------- Extra Small Mobile ----------
+   320px – 479px
+------------------------------------------ */
+@media (max-width: 479px) {
+
+  .abp-container,
+  .wrap,
+  .gastro-app-wrapper,
+  #pelvic,
+  #handsurgery,
+  .sg-case-section {
+    width: 95%;
+    padding-left: 0;
+    padding-right: 0;
   }
- 
-  .proc-media--lapsc {
-    max-width: 100%;
+
+  .abp-banner {
+    min-height: 250px;
   }
-}
- 
-@media (max-width: 920px) {
-  .hero-strip {
-    grid-template-columns: 1fr;
-  }
- 
-  .types-block {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
- 
-  .proc {
-    grid-template-columns: 44px 1fr;
-    gap: 18px;
-  }
- 
-  .proc-node {
-    width: 44px;
-    height: 44px;
-    font-size: 8px;
-  }
- 
-  .pathway::before {
-    left: 21px;
-  }
-}
- 
-@media (max-width: 600px) {
-  section.hernia-repair {
-    padding: 64px 16px 80px;
-  }
- 
-  .sec-head {
-    margin-bottom: 40px;
-  }
- 
-  .sec-head h2 {
-    font-size: 30px;
-  }
- 
-  .hero-strip {
-    margin-bottom: 56px;
-  }
- 
-  .hero-img-card img {
-    min-height: 200px;
-    padding: 14px;
-  }
- 
-  .types-block {
-    margin-bottom: 64px;
-  }
- 
-  .type-grid {
+
+  .abp-hero__grid,
+  .hero-strip,
+  .types-block,
+  .proc-body,
+  .prolapse-grid,
+  .timeline-row,
+  .sg-case-grid {
     grid-template-columns: 1fr;
   }
- 
-  .pathway-head {
-    margin-bottom: 32px;
+
+  .abp-hero-content {
+    text-align: center;
   }
- 
+
+  .abp-hero__heading {
+    font-size: 2rem;
+  }
+
+  .abp-hero__lead {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
   .proc {
     grid-template-columns: 1fr;
-    padding: 28px 0;
   }
- 
+
   .pathway::before {
     display: none;
   }
- 
-  .proc-node {
-    margin-bottom: 8px;
-  }
- 
+
   .step-pair {
     flex-direction: column;
   }
- 
+
   .proc-media.dual {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: 1fr;
   }
- 
-  .proc-media.dual figcaption {
-    font-size: 9.5px;
+
+  .prolapse-card img,
+  .sg-case-image,
+  .day-item img {
+    height: auto;
+  }
+
+  .type-grid{
+    grid-template-columns: 1fr;
   }
 }
- 
-@media (max-width: 400px) {
-  .section {
-    padding: 48px 4%;
+
+/* ---------- Large Mobile ----------
+   480px – 767px
+------------------------------------------ */
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .abp-hero__grid,
+  .hero-strip,
+  .types-block,
+  .proc-body {
+    grid-template-columns: 1fr;
   }
- 
-  .abp-strip h2 {
-    padding-right: 30px;
+
+  .prolapse-grid,
+  .timeline-row,
+  .sg-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-pair {
+    flex-direction: column;
+  }
+
+  .proc-media.dual {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .type-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Tablet Portrait ----------
+   768px – 991px
+------------------------------------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .abp-container,
+  .wrap {
+    width: 94%;
+  }
+
+  .abp-hero__grid,
+  .hero-strip,
+  .types-block,
+  .proc-body {
+    grid-template-columns: 1fr;
+  }
+
+  .prolapse-grid,
+  .timeline-row,
+  .sg-case-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .abp-hero__heading {
+    font-size: 3rem;
+  }
+  .type-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Tablet Landscape / Small Laptop ----------
+   992px – 1199px
+------------------------------------------ */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .abp-container,
+  .wrap {
+    width: 94%;
+    max-width: 1100px;
+  }
+
+  .hero-strip {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .types-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .prolapse-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Desktop ----------
+   1200px – 1439px
+------------------------------------------ */
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .abp-container,
+  .wrap {
+    max-width: 1400px;
+  }
+
+  .prolapse-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Large Desktop ----------
+   1440px – 1919px
+------------------------------------------ */
+@media (min-width: 1440px) and (max-width: 1919px) {
+
+  .abp-container,
+  .wrap {
+    max-width: 1700px;
+  }
+
+  .abp-hero__heading {
+    font-size: 4rem;
+  }
+
+  .abp-hero__lead {
+    font-size: 1.4rem;
+  }
+}
+
+/* ---------- Full HD ----------
+   1920px – 2559px
+------------------------------------------ */
+@media (min-width: 1920px) and (max-width: 2559px) {
+
+  .abp-container,
+  .wrap,
+  #pelvic,
+  #handsurgery,
+  .sg-case-section {
+    max-width: 1950px;
+  }
+
+  .abp-hero__heading {
+    font-size: 4.5rem;
+  }
+
+  .abp-hero__lead {
+    font-size: 1.5rem;
+  }
+
+  .sec-head h2,
+  .types-text h3,
+  .pathway-head h3 {
+    font-size: 3rem;
+  }
+}
+
+/* ---------- 2K / QHD ----------
+   2560px – 3839px
+------------------------------------------ */
+@media (min-width: 2560px) and (max-width: 3839px) {
+
+  .abp-container,
+  .wrap {
+    max-width: 2300px;
+  }
+
+  .abp-banner {
+    min-height: 700px;
+  }
+
+  .abp-hero__heading {
+    font-size: 5rem;
+  }
+
+  .abp-hero__lead {
+    font-size: 2rem;
+  }
+
+  .sec-head h2,
+  .types-text h3,
+  .pathway-head h3 {
+    font-size: 4rem;
+  }
+
+  .prolapse-card-content,
+  .proc-media,
+  .quickfacts,
+  .shelf-card {
+    padding: 40px;
+  }
+}
+
+/* ---------- 4K & Above ----------
+   3840px+
+------------------------------------------ */
+@media (min-width: 3840px) {
+
+  .abp-container,
+  .wrap {
+    max-width: 3000px;
+  }
+
+  .abp-banner {
+    min-height: 900px;
+  }
+
+  .abp-hero__heading {
+    font-size: 7rem;
+  }
+
+  .abp-hero__lead {
+    font-size: 2.5rem;
+  }
+
+  .sec-head h2,
+  .types-text h3,
+  .pathway-head h3 {
+    font-size: 5rem;
+  }
+
+  body {
+    font-size: 22px;
   }
 }

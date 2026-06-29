@@ -219,23 +219,20 @@ body {
 }
 
 .abp-hero__grid{
- 
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:40px;
     align-items:center;
+
     grid-template-areas:
-"content"
-"image";
+    "content image";
 }
 
 .abp-hero-content{
-    order:1;
     grid-area: "content";
 }
 
 .abp-hero__image{
-    order:2;
     grid-area: "image";
 }
 .abp-hero__eyebrow {
@@ -285,11 +282,7 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(107, 45, 92, .2);
 }
-.abp-hero-content{
-    order: 1;
-    
-    
-}
+
 .abp-hero__image {
     display: flex;
     justify-content: center;
