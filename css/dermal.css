@@ -24,9 +24,9 @@
     --grad-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111);
 
     /* Fluid container width: grows past 1200px on big screens, caps on 4K */
-    --container-max: 1200px;
-    --container-max-xl: 1600px;
-    --container-max-4k: 2300px;
+    --container-max:1950px;
+   --container-max-xl:1950px;
+   --container-max-4k:2800px;
 }
 
 /* ─── RESET ───────────────────────────────────────────── */
@@ -63,9 +63,11 @@ a {
 }
 
 /* ─── UTILITIES ───────────────────────────────────────── */
-.abp-container {
-    width: min(92%, var(--container-max));
-    margin-inline: auto;
+.abp-container{
+   width:100%;
+   max-width:1950px;
+   margin-inline:auto;
+   padding-inline:30px;
 }
 
 .abp-badge {
@@ -298,21 +300,10 @@ a {
 }
 
 /* ─── TREATMENT OPTIONS (video-section) ───────────────── */
-.video-section {
-    padding: clamp(40px, 5vw, 60px) 0;
-}
+
 
 .section-inner {
     width: 100%;
-}
-
-.video-inner {
-    display: grid;
-    gap: clamp(28px, 4vw, 48px);
-}
-
-.video-text {
-    text-align: left;
 }
 
 .section-eyebrow {
@@ -334,41 +325,6 @@ a {
     font-size: clamp(1.5rem, 1.3vw + 1.1rem, 2.4rem);
     color: var(--navy);
     line-height: 1.2;
-}
-
-.divider-bar {
-    width: 64px;
-    height: 4px;
-    margin: 16px 0 22px;
-    border-radius: 4px;
-    background: var(--grad-bar);
-}
-
-.dfu-treatment-subtitle-x91 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 12px;
-}
-
-.dfu-treatment-list-x91 {
-    padding-left: 28px;
-    margin-bottom: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.dfu-treatment-item-x91 {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: var(--text-dark);
-}
-
-.video-text p {
-    font-size: 1.1rem;
-    line-height: 1.85;
-    color: var(--text-dark);
 }
 
 .dfu-treatment-highlight-x91 {
@@ -533,7 +489,10 @@ a {
 
 /* ================= CASE STUDIES (Optimized & Responsive) ================= */
 .case-study {
-    width: min(92%, 1280px);
+     width:100%;
+   max-width:1950px;
+   margin:auto;
+   padding-inline:30px;
     margin: clamp(36px, 5vw, 60px) auto;
 }
 
@@ -671,177 +630,6 @@ a {
     }
 }
 
-/* ──────────────────────────────────────────────────────────
-   RESPONSIVE BREAKPOINTS
-   Mobile-first-safe overrides layered on top of the fluid
-   clamp() values above, which already do most of the work.
-   ────────────────────────────────────────────────────────── */
-
-/* Large desktop / laptop */
-
-
-/* Tablet */
-@media (max-width: 1024px) {
-    .abp-cards__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .case-study-grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
-    }
-}
-
-/* Small tablet / large phone */
-@media (max-width: 768px) {
-    .abp-hero__grid {
-        grid-template-columns:1fr;
-        text-align: center; 
-         grid-template-areas:
-        "content"
-        "image";
-    }
-    .abp-hero-content{
-        grid-area: content;
-    }
-    .abp-hero__image {
-        margin-top: 30px;
-        order: -1;
-        grid-area: image;
-    }
-
-
-
-
-    .abp-strip {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-
-    .concept-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .case-study {
-        width: 92%;
-    }
-
-    .case-study-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Phone */
-@media (max-width: 540px) {
-    .abp-cards__grid,
-    .abp-pillars__grid,
-    .abp-timeline__grid,
-    .abp-reconstruct__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .abp-nano__steps {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .sub-title,
-    .orange-title {
-        width: 100%;
-    }
-
-    .abp-card__body {
-        padding: 18px 16px 20px;
-    }
-}
-
-/* Very small phone */
-@media (max-width: 380px) {
-    .abp-nano__steps {
-        grid-template-columns: 1fr;
-        gap: 28px 0;
-    }
-
-    .abp-nano__steps::before {
-        display: none;
-    }
-
-    .abp-strip {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .dfu-treatment-list-x91 {
-        padding-left: 18px;
-    }
-}
-
-/* ──────────────────────────────────────────────────────────
-   LARGE SCREENS / 4K COVERAGE
-   Most fluid sizing above already plateaus correctly via
-   clamp(), so these tiers mainly widen the layout container
-   and lightly bump a few fixed-px elements that don't use
-   clamp(), so nothing looks starved on a 27"+ / 4K display.
-   ────────────────────────────────────────────────────────── */
-
-/* Large desktop monitors (~1600px+, e.g. 1440p) */
-@media (min-width: 1600px) {
-    .abp-container {
-        width: min(90%, var(--container-max-xl));
-    }
-
-    .case-study {
-        width: min(90%, 1500px);
-    }
-
-    .dfu-treatment-container-x91 {
-        max-width: var(--container-max-xl);
-    }
-
-    .dfu-section {
-        max-width: 1100px;
-    }
-
-    .abp-card__img {
-        height: clamp(380px, 26vw, 480px);
-    }
-}
-
-/* 4K / ultra-wide (2560px+) */
-@media (min-width: 2560px) {
-    .abp-container {
-        width: min(90%, var(--container-max-4k));
-    }
-
-    .case-study {
-        width: min(86%, var(--container-max-4k));
-    }
-
-    .dfu-treatment-container-x91 {
-        max-width: var(--container-max-4k);
-    }
-
-    .dfu-section {
-        max-width: 2300px;
-    }
-
-    /* Bump root font-size slightly so rem spacing/padding doesn't look thin
-       relative to the much larger viewport, while clamp() caps keep most
-       type from growing further than the limits already set above. */
-    body {
-        font-size: 19px;
-        width: 2560px;
-    }
-.abp-cards{
-    width: auto;
-}
-    .abp-card__img {
-        height: 420px;
-    }
-
-    .abp-banner {
-        min-height: 620px;
-    }
-}
-
 /* abp-cards-grid: used by the Hand Surgery / Third Degree Burn photo
    timelines (4 photos each). Desktop: 4 across. Tablet: 2 across.
    Mobile: 1 across. Mirrors .abp-cards__grid sizing so every photo
@@ -852,22 +640,6 @@ a {
     gap: 20px;
     align-items: stretch;
 }
-
-/* Tablet */
-@media (max-width: 992px) {
-    .abp-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-    .abp-cards-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 
 /* ─── TECHNICAL REASONS (dfu-treatment-wrap-x91) ──────── */
 .dfu-treatment-wrap-x91 {
@@ -1000,19 +772,7 @@ a {
   color: var(--plum);
 }
 
-@media (max-width: 900px) {
-  .docvault-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .docvault-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-**** DFU */
+/**** DFU */
 .dfu-section {
     max-width: 900px;
     margin: auto;
@@ -1166,11 +926,6 @@ a {
   border: 0;
 }
 
-@media (max-width: 900px) {
-  .so-video-inner {
-    grid-template-columns: 1fr;
-  }
-}
 
 .dfu-treatment-highlight-x91 {
     margin-top: 22px;
@@ -1305,207 +1060,7 @@ a {
 .so-mv-case{
     font-size:clamp(1.2rem,.5vw + 1rem,2rem);
 }
-/* ===========================
-   Responsive Layout
-=========================== */
 
-/* 4K / Ultra Wide */
-@media (min-width:2560px){
-
-    .so-section-inner{
-        width:min(94%,2200px);
-    }
-
-    .so-video-inner{
-        max-width:2200px;
-        gap:90px;
-        grid-template-columns:1.35fr 1fr;
-    }
-
-    .so-section-title{
-        font-size:3.2rem;
-    }
-
-    .so-video-text p,
-    .so-dfu-treatment-item,
-    .so-dfu-treatment-highlight{
-        font-size:1.45rem;
-        line-height:2;
-    }
-
-    .so-mv-case{
-        font-size:2rem;
-    }
-
-    .so-video-container{
-        border-width:6px;
-    }
-
-    .concept-grid{
-        gap:40px;
-    }
-
-    .concept-card{
-        min-height:340px;
-        padding:40px;
-    }
-
-    .concept-card h3{
-        font-size:2rem;
-    }
-
-    .concept-card p{
-        font-size:1.4rem;
-    }
-
-    .highlight-box{
-        padding:40px;
-    }
-
-    .highlight-box h3{
-        font-size:2.1rem;
-    }
-
-    .highlight-box p{
-        font-size:1.4rem;
-    }
-}
-
-/* Desktop */
-@media (max-width:1400px){
-
-    .so-video-inner{
-        gap:48px;
-    }
-
-}
-
-/* Laptop */
-@media (max-width:1200px){
-
-    .so-video-inner{
-        grid-template-columns:1.2fr 1fr;
-        gap:40px;
-    }
-
-}
-
-/* Tablet */
-@media (max-width:992px){
-
-    .so-video-inner{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .concept-grid{
-        grid-template-columns:1fr;
-    }
-
-    .so-video-text{
-        order:1;
-    }
-
-    .so-case-study{
-        order:2;
-    }
-
-}
-
-/* Mobile */
-@media (max-width:768px){
-
-    .so-video-section{
-        padding:60px 0;
-    }
-
-    .so-section-inner{
-        width:92%;
-    }
-
-    .so-section-title{
-        font-size:2rem;
-    }
-
-    .so-video-text p,
-    .so-dfu-treatment-item,
-    .so-dfu-treatment-highlight{
-        font-size:1rem;
-        line-height:1.8;
-    }
-
-    .so-mv-case{
-        font-size:1.2rem;
-    }
-
-    .so-video-container{
-        padding-bottom:56.25%;
-    }
-
-    .concept-card{
-        min-height:auto;
-    }
-}
-
-/* Small Mobile */
-@media (max-width:576px){
-
-    .so-video-section{
-        padding:50px 0;
-    }
-
-    .so-section-inner{
-        width:94%;
-    }
-
-    .so-section-title{
-        font-size:1.7rem;
-    }
-
-    .so-divider-bar{
-        width:50px;
-    }
-
-    .so-dfu-treatment-list{
-        padding-left:20px;
-    }
-
-    .so-video-text p,
-    .so-dfu-treatment-item,
-    .so-dfu-treatment-highlight{
-        font-size:.96rem;
-    }
-
-    .so-dfu-treatment-highlight{
-        padding:15px 18px;
-    }
-
-    .main-title,
-    .sub-title,
-    .orange-title{
-        padding:14px 18px;
-    }
-
-    .concept-card,
-    .highlight-box{
-        padding:20px;
-    }
-
-}
-
-/* Extra Small */
-@media (max-width:360px){
-
-    .so-section-title{
-        font-size:1.5rem;
-    }
-
-    .so-video-text p,
-    .so-dfu-treatment-item{
-        font-size:.92rem;
-    }
-
-}
 .abp-card__img {
     width: 100%;
     aspect-ratio: 4 / 5;   /* keeps consistent card shape */
@@ -1516,31 +1071,196 @@ a {
     transition: transform 0.5s ease;
 }
 
-/* Optional hover effect (desktop only) */
-@media (hover: hover) and (pointer: fine) {
-    .abp-card__img:hover {
-        transform: scale(1.05);
+
+/* ==========================================================
+   ADVANCED BIOTECH RESPONSIVE SYSTEM
+   BASE WIDTH : 1950px
+========================================================== */
+
+/* Mobile */
+@media (max-width:479px){
+
+    .abp-container,
+    .case-study,
+    .so-section-inner,
+    .dfu-treatment-container-x91{
+        padding-inline:15px;
+    }
+
+    .abp-hero__grid,
+    .concept-grid,
+    .abp-cards__grid,
+    .abp-cards-grid,
+    .docvault-grid,
+    .so-video-inner,
+    .abp-nano__steps{
+        grid-template-columns:1fr;
+    }
+
+    .abp-strip{
+        padding:15px;
+        text-align:center;
+    }
+
+    .abp-hero__heading{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .abp-hero__lead,
+    .video-text p,
+    .abp-intro__body{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .abp-card__img{
+        aspect-ratio:3/4;
+    }
+
+    .so-video-container,
+    .video-container{
+        padding-bottom:56.25%;
     }
 }
 
-/* Mobile fine-tuning */
-@media (max-width: 576px) {
-    .abp-card__img {
-        aspect-ratio: 3 / 4; /* slightly wider feel for small screens */
+/* Large Mobile */
+@media (min-width:480px) and (max-width:767px){
+
+    .abp-container,
+    .case-study,
+    .so-section-inner{
+        padding-inline:20px;
+    }
+
+    .abp-hero__grid,
+    .concept-grid,
+    .so-video-inner{
+        grid-template-columns:1fr;
+    }
+
+    .abp-cards__grid,
+    .abp-cards-grid,
+    .docvault-grid{
+        grid-template-columns:1fr;
+    }
+
+    .abp-nano__steps{
+        grid-template-columns:repeat(2,1fr);
     }
 }
 
 /* Tablet */
-@media (min-width: 577px) and (max-width: 1024px) {
-    .abp-card__img {
-        aspect-ratio: 4 / 5;
+@media (min-width:768px) and (max-width:991px){
+
+    .abp-container{
+        max-width:900px;
+    }
+
+    .abp-hero__grid,
+    .so-video-inner{
+        grid-template-columns:1fr;
+    }
+
+    .concept-grid,
+    .abp-cards__grid,
+    .abp-cards-grid,
+    .docvault-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .abp-nano__steps{
+        grid-template-columns:repeat(2,1fr);
     }
 }
 
-/* Large screens (4K scaling safety) */
-@media (min-width: 1920px) {
-    .abp-card__img {
-        aspect-ratio: 4 / 5;
-        max-height: 520px; /* prevents overly large stretching */
+/* Small Laptop */
+@media (min-width:992px) and (max-width:1199px){
+
+    .abp-container{
+        max-width:1100px;
+    }
+
+    .abp-cards__grid,
+    .abp-cards-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .docvault-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width:1200px) and (max-width:1439px){
+
+    .abp-container{
+        max-width:1400px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width:1440px) and (max-width:1919px){
+
+    .abp-container{
+        max-width:1800px;
+    }
+}
+
+/* Full HD */
+@media (min-width:1920px) and (max-width:2559px){
+
+    .abp-container,
+    .case-study,
+    .so-video-inner{
+        max-width:1950px;
+    }
+
+    .abp-card__img{
+        max-height:520px;
+    }
+}
+
+/* 2K */
+@media (min-width:2560px) and (max-width:3839px){
+
+    body{
+        font-size:18px;
+    }
+
+    .abp-container,
+    .case-study,
+    .so-video-inner{
+        max-width:2400px;
+    }
+
+    .abp-banner{
+        min-height:700px;
+    }
+
+    .abp-card__img{
+        max-height:650px;
+    }
+}
+
+/* 4K */
+@media (min-width:3840px){
+
+    body{
+        font-size:20px;
+    }
+
+    .abp-container,
+    .case-study,
+    .so-video-inner{
+        max-width:2800px;
+    }
+
+    .abp-banner{
+        min-height:900px;
+    }
+
+    .abp-card__img{
+        max-height:800px;
     }
 }
