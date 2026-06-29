@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,191 +12,167 @@
   <link rel="stylesheet" href="../css/surgicaloncology.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
- 
 </head>
+
 <body>
 
   <!--Header-->
   <div id="rs-header"></div>
   <script>
-    fetch("../page/nav.html")
+    fetch("/page/nav.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
         initNavbar();
-      });</script>
+      });
+  </script>
 
- 
   <!-- Page Banner -->
+  <section class="so-page_banner">
 
-  <section class="page_banner">
-
-    <div class="banner-img">
+    <div class="so-banner-img">
       <img src="../home/page_banner.png" alt="Dermal Surgical Banner">
     </div>
 
-    <h1 class="ds_title">
+    <h1 class="so-ds_title">
       Surgical Oncology
     </h1>
 
   </section>
 
-  <!-- ═══ HERO / PRODUCT INTRO ════════════════════════════ -->
-  <section class="abp-hero">
-    <div class="abp-container">
-      <div class="abp-hero__grid">
-        <div class="abp-hero-content">
-          <div class="abp-hero__eyebrow">
-            <span class="abp-badge">Advanced Tissue Regeneration</span>
-          </div>
-          <h1 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
-          <p class="abp-hero__sub">Dermal Surgical Solution</p>
-          <p class="abp-hero__lead">
-            Implantable, bioresorbable, tissue regenerative sterile Type-I Collagen matrix.
-            Designed for reconstructive surgery, chronic wounds, diabetic ulcers, burns and soft tissue repair.
-          </p>
-          <a href="../indications/Dermal Surgical/Diabetic Ulcer/White paper_SM Diabetic Foot Ulcer.pdf"
-            class="abp-hero__cta" target="_blank"
-   rel="noopener noreferrer">
-            <i class="fa-solid fa-download"></i> Download Brochure
-          </a>
-        </div>
-        <div class="abp-hero__image">
-          <img src="../home/Surgicoll-Mesh High Res Box.png" alt="Surgicoll-Mesh product box" />
-        </div>
+  <!-- Surgical Oncology Section -->
+  <section class="so-surgicoll-oncology-section">
+    <div class="so-surgicoll-oncology-container">
+
+      <div class="so-surgicoll-oncology-content">
+
+        <h2 class="so-surgicoll-oncology-title">
+          Advanced Support in Cancer Reconstruction
+        </h2>
+
+        <p class="so-surgicoll-oncology-description">
+          <strong>Surgical oncology</strong> is the branch of medicine that uses surgery to diagnose, stage, and treat
+          cancer.
+          <strong>Surgicoll-Mesh<sup>®</sup></strong> is a biocompatible collagen matrix used by surgeons during
+          reconstructive procedures, including those required to repair defects left by the surgical removal of
+          cancerous tumors.
+        </p>
       </div>
+
     </div>
   </section>
 
-<!-- Surgical Oncology Section -->
-<section class="surgicoll-oncology-section">
-    <div class="surgicoll-oncology-container">
-
-        <div class="surgicoll-oncology-content">
-           
-
-            <h2 class="surgicoll-oncology-title">
-                Advanced Support in Cancer Reconstruction
-            </h2>
-
-            <p class="surgicoll-oncology-description">
-                <strong>Surgical oncology</strong> is the branch of medicine that uses surgery to diagnose, stage, and treat cancer. 
-                <strong>Surgicoll-Mesh<sup>®</sup></strong> is a biocompatible collagen matrix used by surgeons during reconstructive procedures, including those required to repair defects left by the surgical removal of cancerous tumors.
-            </p>
-        </div>
-
-    </div>
-</section>
-<!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
+  <!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
   <div class="abp-strip">
     <h2>Intra Oral Cancer</h2>
   </div>
+
   <!-- ─── ORAL CANCER INTRODUCTION ─── -->
-  <section class="intro-section" id="introduction">
-    <div class="section-inner">
-        <div class="row align-items-center mb-5"></div>
-        
-        <span class="section-label">What is Oral Cancer?</span>
-        <div class="definition">
-            <p>
-                Oral cancer refers to malignant neoplasms that arise in the tissues of the mouth and
-                oropharynx. These include cancers of the lips, tongue, gums, floor of the mouth,
-                cheeks, hard and soft palate, and throat. The vast majority are squamous cell
-                carcinomas originating from the mucosal lining.
-            </p>
-        </div>
+  <section class="so-intro-section" id="introduction">
+    <div class="so-section-inner">
 
-        <h2 class="intro-title">Introduction</h2>
-        <p class="body-text">
-            Oral cancer is one of the most prevalent cancers worldwide, particularly in South and
-            Southeast Asia where risk factors such as tobacco use, areca nut (betel nut) chewing,
-            and alcohol consumption are common. It imposes a significant burden on individuals,
-            families, and healthcare systems due to its impact on basic functions including
-            speaking, eating, and swallowing.
+      <span class="so-section-label">What is Oral Cancer?</span>
+      <div class="so-definition">
+        <p>
+          Oral cancer refers to malignant neoplasms that arise in the tissues of the mouth and
+          oropharynx. These include cancers of the lips, tongue, gums, floor of the mouth,
+          cheeks, hard and soft palate, and throat. The vast majority are squamous cell
+          carcinomas originating from the mucosal lining.
         </p>
-        <p class="body-text">
-            Early detection is critical when diagnosed at a localised stage, the five-year
-            survival rate improves substantially. However, a large proportion of cases are still
-            diagnised at an advanced stage, making treatment more complex and outcomes less
-            favourable. Raising awareness among patients and healthcare providers remains one of
-            the most effective public health strategies.
+      </div>
+
+      <h2 class="so-intro-title">Introduction</h2>
+      <p class="so-body-text">
+        Oral cancer is one of the most prevalent cancers worldwide, particularly in South and
+        Southeast Asia where risk factors such as tobacco use, areca nut (betel nut) chewing,
+        and alcohol consumption are common. It imposes a significant burden on individuals,
+        families, and healthcare systems due to its impact on basic functions including
+        speaking, eating, and swallowing.
+      </p>
+      <p class="so-body-text">
+        Early detection is critical when diagnosed at a localised stage, the five-year
+        survival rate improves substantially. However, a large proportion of cases are still
+        diagnised at an advanced stage, making treatment more complex and outcomes less
+        favourable. Raising awareness among patients and healthcare providers remains one of
+        the most effective public health strategies.
+      </p>
+
+      <h2 class="so-intro-title">Common Affected Sites</h2>
+      <p class="so-body-text">
+        Oral cancer can develop at multiple sites within the oral cavity and oropharynx.
+        The most frequently involved locations include:
+      </p>
+      <div class="so-site-list">
+        <span class="so-site-tag">Tongue (lateral border)</span>
+        <span class="so-site-tag">Floor of the Mouth</span>
+        <span class="so-site-tag">Lips</span>
+        <span class="so-site-tag">Buccal Mucosa (inner cheek)</span>
+        <span class="so-site-tag">Hard &amp; Soft Palate</span>
+        <span class="so-site-tag">Gingiva (gums)</span>
+        <span class="so-site-tag">Oropharynx</span>
+        <span class="so-site-tag">Retromolar Trigone</span>
+      </div>
+      <p class="so-body-text">
+        Pre-cancerous lesions such as leukoplakia (white patches) and erythroplakia (red patches)
+        often precede malignant transformation and are critical to identify during routine
+        dental or clinical examinations.
+      </p>
+
+      <hr class="section-div">
+
+      <!-- 4-Column Horizontal Image Grid Block -->
+      <span class="so-section-label">Clinical Progression &amp; Surgical Intervention</span>
+      <div class="so-image-grid-horizontal">
+        <div class="so-image-grid-item">
+          <img src="/image/oral-1.png" alt="Intraoral lesion status">
+          <div class="so-image-caption"> Defect Closure with Surgicoll-mesh</div>
+        </div>
+        <div class="so-image-grid-item">
+          <img src="/image/oral-2.png" alt="Surgical excision site">
+          <div class="so-image-caption"> Defect closure with conventional collagen</div>
+        </div>
+        <div class="so-image-grid-item">
+          <img src="/image/oral-3.png" alt="Matrix application phase">
+          <div class="so-image-caption"> 4 weeks post-op healing using surgicoll-mesh</div>
+        </div>
+        <div class="so-image-grid-item">
+          <img src="/image/oral-4.png" alt="Post-operative tissue healing">
+          <div class="so-image-caption"> 4 Weeks post-op healing using conventional collagen </div>
+        </div>
+      </div>
+
+      <div class="so-highlight-box">
+        <h3>Treatment &amp; Tissue Repair</h3>
+        <p>
+          Surgical excision remains the cornerstone of oral cancer treatment. Following tumour
+          removal, reconstruction of the defect site is essential for restoring form and function.
+        </p>
+        <p>
+          <strong>Bioresorbable collagen matrices</strong> such as Surgicoll-Mesh<sup>®</sup> (Membrane Form)
+          represent an innovative approach to oral cancer excision repair. Acting as a scaffold
+          that is naturally and progressively integrated, remodelled, and eventually replaced by
+          functional host tissue, they offer clear advantages over synthetic alternatives in
+          supporting healing after oncological surgery.
         </p>
 
-        <h2 class="intro-title">Common Affected Sites</h2>
-        <p class="body-text">
-            Oral cancer can develop at multiple sites within the oral cavity and oropharynx.
-            The most frequently involved locations include:
-        </p>
-        <div class="site-list">
-            <span class="site-tag">Tongue (lateral border)</span>
-            <span class="site-tag">Floor of the Mouth</span>
-            <span class="site-tag">Lips</span>
-            <span class="site-tag">Buccal Mucosa (inner cheek)</span>
-            <span class="site-tag">Hard &amp; Soft Palate</span>
-            <span class="site-tag">Gingiva (gums)</span>
-            <span class="site-tag">Oropharynx</span>
-            <span class="site-tag">Retromolar Trigone</span>
-        </div>
-        <p class="body-text">
-            Pre-cancerous lesions such as leukoplakia (white patches) and erythroplakia (red patches)
-            often precede malignant transformation and are critical to identify during routine
-            dental or clinical examinations.
-        </p>
-
-        <hr class="section-div">
-
-        <!-- 4-Column Horizontal Image Grid Block -->
-        <span class="section-label">Clinical Progression & Surgical Intervention</span>
-        <div class="image-grid-horizontal">
-            <div class="image-grid-item">
-                <img src="/image/oral-1.png" alt="Intraoral lesion status">
-                <div class="image-caption">  Defect Closure with Surgicoll-mesh</div>
-            </div>
-            <div class="image-grid-item">
-                <img src="/image/oral-2.png" alt="Surgical excision site">
-                <div class="image-caption"> Defect closure with conventional collagen</div>
-            </div>
-            <div class="image-grid-item">
-                <img src="/image/oral-3.png" alt="Matrix application phase">
-                <div class="image-caption">  4 weeks post-op healing using surgicoll-mesh</div>
-            </div>
-            <div class="image-grid-item">
-                <img src="/image/oral-4.png" alt="Post-operative tissue healing">
-                <div class="image-caption">  4 Weeks post-op healing using conventional collagen </div>
-            </div>
-        </div>
-
-        <div class="highlight-box">
-            <h3>Treatment &amp; Tissue Repair</h3>
-            <p>
-                Surgical excision remains the cornerstone of oral cancer treatment. Following tumour
-                removal, reconstruction of the defect site is essential for restoring form and function.
-            </p>
-            <p>
-                <strong>Bioresorbable collagen matrices</strong> such as Surgicoll-Mesh<sup>®</sup> (Membrane Form)
-               represent an innovative approach to oral cancer excision repair. Acting as a scaffold
-                that is naturally and progressively integrated, remodelled, and eventually replaced by
-                functional host tissue, they offer clear advantages over synthetic alternatives in
-                supporting healing after oncological surgery.
-            </p>
-            
-        </div>
+      </div>
 
     </div>
-</section>
+  </section>
 
 
   <!-- ─── VIDEO SECTION ─── -->
-  <section class="video-section">
-    <div class="section-inner">
-      <div class="video-inner">
-        <div class="video-text">
-          <span class="section-eyebrow">In Action</span>
-          <h2 class="section-title">Watch Surgicoll-Mesh<sup>®</sup> in Oral Cancer Surgery</h2>
-          <div class="divider-bar"></div>
+  <section class="so-video-section">
+    <div class="so-section-inner">
+      <div class="so-video-inner">
+        <div class="so-video-text">
+          <span class="so-section-eyebrow">In Action</span>
+          <h2 class="so-section-title">Watch Surgicoll-Mesh<sup>®</sup> in Oral Cancer Surgery</h2>
+          <div class="so-divider-bar"></div>
           <p>
             See the clinical application of Surgicoll-Mesh<sup>®</sup> in the management of post-surgical mucosal
             defects following oral cancer excision. The membrane becomes soft and supple when hydrated
@@ -207,388 +185,532 @@
             with the membrane undergoing resorption by day 7 revealing healthy epithelial tissue underneath.
           </p>
         </div>
-        <section class="case-study">
-        <div class="case-study-grid">
-            <div class="case_video">
-                <div class="video-container">
-                    <iframe src="https://drive.google.com/file/d/1C6K81340QTfDPWvpszIJ5rapcS8W5bd7/preview"
-                        allow="autoplay"></iframe>
-                </div>
+        <section class="so-case-study">
+          <div class="so-case-study-grid">
+            <div class="so-case_video">
+              <div class="so-video-container">
+                <iframe src="https://drive.google.com/file/d/1C6K81340QTfDPWvpszIJ5rapcS8W5bd7/preview"
+                  allow="autoplay"></iframe>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
       </div>
     </div>
   </section>
 
   <!-- ─── CLINICAL EVIDENCE ─── -->
-  <section class="clinical-section" id="clinical">
-    <div class="section-inner">
-      <h2 class="section-title">Oral Surgical Mucosal Defects</h2>
-      <div class="divider-bar"></div>
-      <p class="section-desc">Two independent clinical studies confirming the superior wound healing performance of Surgicoll-Mesh<sup>®</sup> in oral mucosal defects.</p>
+  <section class="so-clinical-section" id="clinical">
+    <div class="so-section-inner">
+      <h2 class="so-section-title">Oral Surgical Mucosal Defects</h2>
+      <div class="so-divider-bar"></div>
+      <p class="so-section-desc">Two independent clinical studies confirming the superior wound healing performance of
+        Surgicoll-Mesh<sup>®</sup> in oral mucosal defects.</p>
 
-      <div class="studies-tabs">
-        <button class="tab-btn active" onclick="showTab('study1', this)">Study 1 - Shanmugam et al. (2018)</button>
-        <button class="tab-btn" onclick="showTab('study2', this)">Study 2 - Kalyani P et al. (2024)</button>
+      <div class="so-studies-tabs">
+        <button class="so-tab-btn active" onclick="showTab('study1', this)">Study 1 - Shanmugam et al. (2018)</button>
+        <button class="so-tab-btn" onclick="showTab('study2', this)">Study 2 - Kalyani P et al. (2024)</button>
       </div>
 
       <!-- Study 1 -->
-      <div class="study-panel active" id="study1">
-        <div class="study-card">
-          <div class="study-header">
-            
-            <div class="study-header-text">
+      <div class="so-study-panel active" id="study1">
+        <div class="so-study-card">
+          <div class="so-study-header">
+
+            <div class="so-study-header-text">
               <h3>Evaluation of Bovine-Derived Collagen Membrane in Oral Surgical Mucosal Defects</h3>
-              <p>J. Maxillofac. Oral Surg. Devakumari Shanmugam &amp; Neil Dominic · Indira Gandhi Medical College &amp; Research Institute, Puducherry · Published Nov 2018</p>
+              <p>J. Maxillofac. Oral Surg. Devakumari Shanmugam &amp; Neil Dominic · Indira Gandhi Medical College &amp;
+                Research Institute, Puducherry · Published Nov 2018</p>
             </div>
           </div>
-          <div class="study-body">
+          <div class="so-study-body">
             <div>
-              <p class="study-section-label">Study Overview</p>
-              <p class="study-text">
-                A clinical study evaluating the effectiveness of bovine-derived collagen (Surgicoll-Mesh<sup>®</sup>, 0.5 mm)
+              <p class="so-study-section-label">Study Overview</p>
+              <p class="so-study-text">
+                A clinical study evaluating the effectiveness of bovine-derived collagen (Surgicoll-Mesh<sup>®</sup>,
+                0.5 mm)
                 in surgical oral mucosal defects. Thirty-two patients (8 female, 24 male, ages 18–65) who underwent
                 surgery for benign, premalignant, and malignant oral cavity lesions were enrolled from 2012–2018.
                 Cases included leukoplakia, oral submucous fibrosis (OSMF), mucocele, fibromas, and malignant lesions.
               </p>
               <br>
-              <p class="study-text">
+              <p class="so-study-text">
                 The membrane was soaked in normal saline for minimum 5 minutes, adapted to the mucosal defect,
                 trimmed with scissors, and secured with 3-0 Vicryl sutures. Patients evaluated at day 3, 7, 30,
                 and 3 months using the Bessho et al. scoring criteria.
               </p>
-             
+
             </div>
             <div>
-              <p class="study-section-label">Clinical Outcome Results (%)</p>
-              <table class="results-table">
+              <p class="so-study-section-label">Clinical Outcome Results (%)</p>
+              <table class="so-results-table">
                 <thead>
-                  <tr><th>Parameter</th><th>Good</th><th>Fair</th><th>Poor</th></tr>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Good</th>
+                    <th>Fair</th>
+                    <th>Poor</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Haemostasis</td><td><span class="badge-good">81.25%</span></td><td>18.75%</td><td>0%</td></tr>
-                  <tr><td>Pain Relief</td><td><span class="badge-good">68.75%</span></td><td>31.25%</td><td>0%</td></tr>
-                  <tr><td>Granulation Tissue</td><td><span class="badge-good">87.5%</span></td><td>12.5%</td><td>0%</td></tr>
-                  <tr><td>Epithelialisation</td><td><span class="badge-good">93.75%</span></td><td>6.25%</td><td>0%</td></tr>
-                  <tr><td>Contracture Control</td><td><span class="badge-good">62.5%</span></td><td>25%</td><td>12.5%</td></tr>
-                  <tr><td><strong>Overall Effectiveness</strong></td><td><span class="badge-good">81.25%</span></td><td>18.75%</td><td>0%</td></tr>
+                  <tr>
+                    <td>Haemostasis</td>
+                    <td><span class="so-badge-good">81.25%</span></td>
+                    <td>18.75%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Pain Relief</td>
+                    <td><span class="so-badge-good">68.75%</span></td>
+                    <td>31.25%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Granulation Tissue</td>
+                    <td><span class="so-badge-good">87.5%</span></td>
+                    <td>12.5%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Epithelialisation</td>
+                    <td><span class="so-badge-good">93.75%</span></td>
+                    <td>6.25%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Contracture Control</td>
+                    <td><span class="so-badge-good">62.5%</span></td>
+                    <td>25%</td>
+                    <td>12.5%</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Overall Effectiveness</strong></td>
+                    <td><span class="so-badge-good">81.25%</span></td>
+                    <td>18.75%</td>
+                    <td>0%</td>
+                  </tr>
                 </tbody>
               </table>
-              <p style="font-size:15px; color:var(--text-light); margin-top:10px;">Within 1 week, 75% of patients reverted back to normal eating habits. No allergic reactions reported in any patient.</p>
+              <p style="font-size:15px; color:var(--text-light); margin-top:10px;">Within 1 week, 75% of patients
+                reverted back to normal eating habits. No allergic reactions reported in any patient.</p>
             </div>
           </div>
-           <div class="stats-grid">
-                <div class="stat-box"><div class="stat-val">32</div><div class="stat-label">Patients Enrolled</div></div>
-                <div class="stat-box"><div class="stat-val">81.25%</div><div class="stat-label">Overall Effectiveness — "Very Effective"</div></div>
-                <div class="stat-box"><div class="stat-val">93.75%</div><div class="stat-label">Good Epithelialisation at 1 Month</div></div>
-                <div class="stat-box"><div class="stat-val">0%</div><div class="stat-label">Patients Rated Ineffective</div></div>
-              </div>
+          <div class="so-stats-grid">
+            <div class="so-stat-box">
+              <div class="so-stat-val">32</div>
+              <div class="so-stat-label">Patients Enrolled</div>
+            </div>
+            <div class="so-stat-box">
+              <div class="so-stat-val">81.25%</div>
+              <div class="so-stat-label">Overall Effectiveness — "Very Effective"</div>
+            </div>
+            <div class="so-stat-box">
+              <div class="so-stat-val">93.75%</div>
+              <div class="so-stat-label">Good Epithelialisation at 1 Month</div>
+            </div>
+            <div class="so-stat-box">
+              <div class="so-stat-val">0%</div>
+              <div class="so-stat-label">Patients Rated Ineffective</div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Study 2 -->
-      <div class="study-panel" id="study2">
-        <div class="study-card">
-          <div class="study-header">
-            <div class="study-header-text">
-              <h3>Comparison of Novel Matrix-Modified Bovine Collagen Membrane (SurgiColl-Mesh<sup>®</sup>) vs. Conventional Collagen - Oral Mucosal Defects</h3>
-              <p>Cureus Journal · DOI: 10.7759/cureus.53696 Kalyani P, Kathiravan Selvarasu et al. · Saveetha Dental College &amp; Hospitals, Saveetha University, Chennai · Published Feb 2024</p>
-            </div> 
+      <div class="so-study-panel" id="study2">
+        <div class="so-study-card">
+          <div class="so-study-header">
+            <div class="so-study-header-text">
+              <h3>Comparison of Novel Matrix-Modified Bovine Collagen Membrane (SurgiColl-Mesh<sup>®</sup>) vs.
+                Conventional Collagen - Oral Mucosal Defects</h3>
+              <p>Cureus Journal · DOI: 10.7759/cureus.53696 Kalyani P, Kathiravan Selvarasu et al. · Saveetha Dental
+                College &amp; Hospitals, Saveetha University, Chennai · Published Feb 2024</p>
+            </div>
           </div>
-          <div class="study-body">
+          <div class="so-study-body">
             <div>
-              <p class="study-section-label">Study Design</p>
-              <p class="study-text">
+              <p class="so-study-section-label">Study Design</p>
+              <p class="so-study-text">
                 Phase 1 double-blind randomized controlled clinical trial (CTRI-REF/2023/12/076231). 20 patients
-                divided into two equal groups. Group 1: novel SurgiColl-Mesh<sup>®</sup>; Group 2: conventional bovine collagen
+                divided into two equal groups. Group 1: novel SurgiColl-Mesh<sup>®</sup>; Group 2: conventional bovine
+                collagen
                 membrane. Parameters assessed at 2 weeks: epithelialization, granulation tissue formation, and wound
                 contraction. Independent sample t-test at 95% confidence interval.
               </p>
-             
+
             </div>
             <div>
-              <p class="study-section-label">SurgiColl-Mesh<sup>®</sup> vs. Conventional Collagen (Good outcomes at 2 weeks)</p>
-              <div class="comparison-grid">
-                <div class="comparison-box surgicoll">
-                  <h5><i class="fas fa-star" style="color:var(--purple-brand);"></i> SurgiColl-Mesh<sup>®</sup> (Group 1)</h5>
-                  <div class="comparison-metric">
+              <p class="so-study-section-label">SurgiColl-Mesh<sup>®</sup> vs. Conventional Collagen (Good outcomes at 2
+                weeks)</p>
+              <div class="so-comparison-grid">
+                <div class="so-comparison-box surgicoll">
+                  <h5><i class="fas fa-star" style="color:var(--purple-brand);"></i> SurgiColl-Mesh<sup>®</sup> (Group
+                    1)</h5>
+                  <div class="so-comparison-metric">
                     <span>Epithelialization</span>
-                    <div class="metric-bar-wrap">
-                      <div class="metric-bar" style="width:90px;"><div class="metric-fill" style="width:70%;"></div></div>
-                      <span class="metric-pct">35%</span>
+                    <div class="so-metric-bar-wrap">
+                      <div class="so-metric-bar" style="width:90px;">
+                        <div class="so-metric-fill" style="width:70%;"></div>
+                      </div>
+                      <span class="so-metric-pct">35%</span>
                     </div>
                   </div>
-                  <div class="comparison-metric">
+                  <div class="so-comparison-metric">
                     <span>Granulation</span>
-                    <div class="metric-bar-wrap">
-                      <div class="metric-bar" style="width:90px;"><div class="metric-fill" style="width:70%;"></div></div>
-                      <span class="metric-pct">35%</span>
+                    <div class="so-metric-bar-wrap">
+                      <div class="so-metric-bar" style="width:90px;">
+                        <div class="so-metric-fill" style="width:70%;"></div>
+                      </div>
+                      <span class="so-metric-pct">35%</span>
                     </div>
                   </div>
-                  <div class="comparison-metric">
+                  <div class="so-comparison-metric">
                     <span>Wound Contraction</span>
-                    <div class="metric-bar-wrap">
-                      <div class="metric-bar" style="width:90px;"><div class="metric-fill" style="width:80%;"></div></div>
-                      <span class="metric-pct">40%</span>
+                    <div class="so-metric-bar-wrap">
+                      <div class="so-metric-bar" style="width:90px;">
+                        <div class="so-metric-fill" style="width:80%;"></div>
+                      </div>
+                      <span class="so-metric-pct">40%</span>
                     </div>
                   </div>
                 </div>
-                <div class="comparison-box conventional">
+                <div class="so-comparison-box conventional">
                   <h5>Conventional Collagen (Group 2)</h5>
-                  <div class="comparison-metric">
+                  <div class="so-comparison-metric">
                     <span>Epithelialization</span>
-                    <div class="metric-bar-wrap">
-                      <div class="metric-bar" style="width:90px;"><div class="metric-fill" style="width:20%; background:var(--lavender-accent);"></div></div>
-                      <span class="metric-pct" style="color:var(--text-light);">10%</span>
+                    <div class="so-metric-bar-wrap">
+                      <div class="so-metric-bar" style="width:90px;">
+                        <div class="so-metric-fill" style="width:20%; background:var(--lavender-accent);"></div>
+                      </div>
+                      <span class="so-metric-pct" style="color:var(--text-light);">10%</span>
                     </div>
                   </div>
-                  <div class="comparison-metric">
+                  <div class="so-comparison-metric">
                     <span>Granulation</span>
-                    <div class="metric-bar-wrap">
-                      <div class="metric-bar" style="width:90px;"><div class="metric-fill" style="width:30%; background:var(--lavender-accent);"></div></div>
-                      <span class="metric-pct" style="color:var(--text-light);">30%</span>
+                    <div class="so-metric-bar-wrap">
+                      <div class="so-metric-bar" style="width:90px;">
+                        <div class="so-metric-fill" style="width:30%; background:var(--lavender-accent);"></div>
+                      </div>
+                      <span class="so-metric-pct" style="color:var(--text-light);">30%</span>
                     </div>
                   </div>
-                  <div class="comparison-metric">
+                  <div class="so-comparison-metric">
                     <span>Wound Contraction</span>
-                    <div class="metric-bar-wrap">
-                      <div class="metric-bar" style="width:90px;"><div class="metric-fill" style="width:20%; background:var(--lavender-accent);"></div></div>
-                      <span class="metric-pct" style="color:var(--text-light);">10%</span>
+                    <div class="so-metric-bar-wrap">
+                      <div class="so-metric-bar" style="width:90px;">
+                        <div class="so-metric-fill" style="width:20%; background:var(--lavender-accent);"></div>
+                      </div>
+                      <span class="so-metric-pct" style="color:var(--text-light);">10%</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <p style="font-size:17px;color:var(--text-light);margin-top:12px;">SurgiColl-Mesh<sup>®</sup> has average porosity of 20 microns (vs &gt;800 microns conventional) yielding better cell infiltration and regenerative factor availability. No adverse reactions in either group.</p>
+              <p style="font-size:17px;color:var(--text-light);margin-top:12px;">SurgiColl-Mesh<sup>®</sup> has average
+                porosity of 20 microns (vs &gt;800 microns conventional) yielding better cell infiltration and
+                regenerative factor availability. No adverse reactions in either group.</p>
             </div>
           </div>
-           <div class="p-value-row">
-                <div class="p-badge"><strong>p = 0.015</strong><span>Epithelialization - Statistically Significant</span></div>
-                <div class="p-badge"><strong>p = 0.015</strong><span>Granulation Tissue - Statistically Significant</span></div>
-                <div class="p-badge"><strong>p = 0.005</strong><span>Wound Contraction - Statistically Significant</span></div>
-              </div>
+          <div class="so-p-value-row">
+            <div class="so-p-badge"><strong>p = 0.015</strong><span>Epithelialization - Statistically Significant</span>
+            </div>
+            <div class="so-p-badge"><strong>p = 0.015</strong><span>Granulation Tissue - Statistically Significant</span>
+            </div>
+            <div class="so-p-badge"><strong>p = 0.005</strong><span>Wound Contraction - Statistically Significant</span>
+            </div>
+          </div>
         </div>
-        
+
       </div>
     </div>
   </section>
 
-<!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
+  <!-- ═══ PRODUCT HEADING STRIP ═══════════════════════════ -->
   <div class="abp-strip">
     <h2>Breast Cancer Reconstruction</h2>
   </div>
 
-<!-- ─── APPLICATIONS ─── -->
-<!-- Breast Cancer Reconstruction Section -->
-<section class="bcr-section">
-  <div class="bcr-container">
-    
-    
-    <div class="bcr-content">
-      <span class="bcr-tag">Breast Reconstruction</span>
+  <!-- Breast Cancer Reconstruction Section -->
+  <section class="so-bcr-section">
+    <div class="so-bcr-container">
 
-      <h2>
-        What is <span>Breast Cancer Reconstruction?</span>
-      </h2>
+      <div class="so-bcr-content">
+        <span class="so-bcr-tag">Breast Reconstruction</span>
 
-      <p>
-        <strong>Breast cancer reconstruction</strong> (also called
-        <strong>breast reconstruction surgery</strong>) is a surgical
-        procedure used to rebuild the shape, appearance, and symmetry of
-        the breast after breast cancer treatment, usually after a
-        <strong>mastectomy</strong> (removal of the breast) or
-        <strong>lumpectomy</strong> (partial removal of breast tissue).
-      </p>
+        <h2>
+          What is <span>Breast Cancer Reconstruction?</span>
+        </h2>
 
-      <div class="bcr-highlight">
-        <div class="bcr-card">
-          <h4>Shape Restoration</h4>
-          <p>Helps restore the natural contour and structure of the breast.</p>
-        </div>
+        <p>
+          <strong>Breast cancer reconstruction</strong> (also called
+          <strong>breast reconstruction surgery</strong>) is a surgical
+          procedure used to rebuild the shape, appearance, and symmetry of
+          the breast after breast cancer treatment, usually after a
+          <strong>mastectomy</strong> (removal of the breast) or
+          <strong>lumpectomy</strong> (partial removal of breast tissue).
+        </p>
 
-        <div class="bcr-card">
-          <h4>Symmetry Support</h4>
-          <p>Improves balance and appearance after treatment.</p>
-        </div>
+        <div class="so-bcr-highlight">
+          <div class="so-bcr-card">
+            <h4>Shape Restoration</h4>
+            <p>Helps restore the natural contour and structure of the breast.</p>
+          </div>
 
-        <div class="bcr-card">
-          <h4>Post-Surgery Recovery</h4>
-          <p>Supports physical and emotional healing after cancer care.</p>
+          <div class="so-bcr-card">
+            <h4>Symmetry Support</h4>
+            <p>Improves balance and appearance after treatment.</p>
+          </div>
+
+          <div class="so-bcr-card">
+            <h4>Post-Surgery Recovery</h4>
+            <p>Supports physical and emotional healing after cancer care.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="bcr-image">
-      <img src="/image/breast_excision.png" alt="Breast Cancer Reconstruction">
-    </div> -->
 
-  </div>
-</section>
-<section class="process-section">
-    <div class="process-card">
- 
-        <div class="process-header">
-            <h2>Breast Cancer Excision Site Reconstruction by <strong>SURGICOLL-MESH®</strong></h2>
+    </div>
+  </section>
+<!-- Breast Cancer Excision Reconstruction -->
+
+<section class="so-process-section">
+
+    <div class="so-process-card">
+
+        <div class="so-process-header">
+            <h2>
+                Breast Cancer Excision Site Reconstruction by
+                <strong>SURGICOLL-MESH®</strong>
+            </h2>
         </div>
- 
-        <div class="process-steps">
- 
-            <img src="/image/breast_excision.png" alt="">
- 
+
+        <div class="so-process-steps">
+
+            <div class="so-process-step">
+                <img src="/image/breast_excision_0.png" alt="Tumor Excision">
+            </div>
+
+            <div class="so-process-step">
+                <img src="/image/breast_excision_1.png" alt="Excision Site">
+            </div>
+
+            <div class="so-process-step">
+                <img src="/image/breast_excision_2.png" alt="Collagen Scaffold Placement">
+            </div>
+
+            <div class="so-process-step">
+                <img src="/image/breast_excision_3.png" alt="Tissue Regeneration">
+            </div>
+
+            <div class="so-process-step">
+                <img src="/image/breast_excision_4.png" alt="Final Reconstruction">
+            </div>
+
         </div>
- 
-        <div class="process-summary">
+
+        <div class="so-process-summary">
             <p>
-                <strong>SURGICOLL-MESH®</strong> bridges the gap left after tumor excision. Once placed,
-                the bioresorbable collagen matrix acts as a temporary scaffold that extends the pectoralis
-                muscle, giving surgeons a stable structure for implant-based reconstruction. Over the following
-                weeks, the patient's own cells migrate into the matrix, new blood vessels form, and the
-                scaffold is gradually resorbed and replaced by natural tissue &mdash; restoring breast contour
-                with a result that looks and feels like the patient's own.
+                <strong>SURGICOLL-MESH®</strong> bridges the gap left after tumor excision.
+                Once placed, the bioresorbable collagen matrix acts as a temporary scaffold
+                that extends the pectoralis muscle, giving surgeons a stable structure for
+                implant-based reconstruction.
+
+                Over the following weeks, the patient's own cells migrate into the matrix,
+                new blood vessels form, and the scaffold is gradually resorbed and replaced
+                by natural tissue—restoring breast contour with a result that looks and
+                feels like the patient's own.
             </p>
         </div>
- 
+
     </div>
+
 </section>
-<!-- ─── CLINICAL DATA ─── -->
 
-<section class="section-padding bg-light" id="clinical-data">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>Prospective Multicenter Clinical Trial Findings</h2>
-      <div class="bar"></div>
-      <p style="margin-top:16px;">Evaluating the safety, efficacy, and biological tissue regeneration of High-Purity Type-I Collagen (HPTC) scaffolds in breast cancer excision repair.</p>
-    </div>
-
-    <div class="trial-showcase-container reveal">
-    <!-- Meta Content Details Section -->
-    <div class="trial-meta-card">
-        <div class="trial-badge">Published in <strong>Cureus (Part of Springer Nature)</strong></div>
-        <h3>1. Regenerative High Purity Type-I Collagen Scaffold for Breast Cancer Excision Repair and Reconstruction</h3>
-        <p class="authors"><strong>(A)</strong> Skin marking of the breast tumour with concurrent axillary dissection in progress. <strong>(B)</strong>Post-excision defect in
-the upper outer quadrant demonstrating the residual cavity after tumour resection. <strong>(C)</strong> Hydration and preparation
-of the high-purity type I collagen scaffold prior to implantation.</p>
-      <!-- Accompanying Figure Section -->
-    <div class="trial-image-wrapper">
-        <img src="/image/BR-1.png" alt="Regenerative Collagen Scaffold Clinical Case Presentation" class="trial-figure-img">
-    </div>
+  <!-- ─── CLINICAL DATA ─── -->
+  <section class="section-padding" id="clinical-data">
+    <div class="so-container">
+      <div class="so-section-header text-center">
+        <h2>Prospective Multicenter Clinical Trial Findings</h2>
+        <div class="so-bar"></div>
+        <p style="margin-top:16px;">Evaluating the safety, efficacy, and biological tissue regeneration of High-Purity
+          Type-I Collagen (HPTC) scaffolds in breast cancer excision repair.</p>
       </div>
 
-    
+      <div class="so-trial-showcase-container so-reveal">
+        <!-- Meta Content Details Section -->
+        <div class="so-trial-meta-card">
+          <div class="so-trial-badge">Published in <strong>Cureus (Part of Springer Nature)</strong></div>
+          <h3>1. Regenerative High Purity Type-I Collagen Scaffold for Breast Cancer Excision Repair and Reconstruction
+          </h3>
+          <p class="authors"><strong>(A)</strong> Skin marking of the breast tumour with concurrent axillary dissection
+            in progress. <strong>(B)</strong>Post-excision defect in
+            the upper outer quadrant demonstrating the residual cavity after tumour resection. <strong>(C)</strong>
+            Hydration and preparation
+            of the high-purity type I collagen scaffold prior to implantation.</p>
+          <!-- Accompanying Figure Section -->
+          <div class="so-trial-image-wrapper">
+
+    <div class="so-trial-image-card">
+        <img src="/image/BR-1.png"
+             alt="Clinical Trial Image 1"
+             class="so-trial-figure-img">
+    </div>
+
+    <div class="so-trial-image-card">
+        <img src="/image/BR-2.png"
+             alt="Clinical Trial Image 2"
+             class="so-trial-figure-img">
+    </div>
+
+    <div class="so-trial-image-card">
+        <img src="/image/BR-3.png"
+             alt="Clinical Trial Image 3"
+             class="so-trial-figure-img">
+    </div>
+
 </div>
- <div class="trial-showcase-container reveal">
-    <!-- Meta Content Details Section -->
-    <div class="trial-meta-card">
-        <div class="trial-badge">Published in <strong>Cureus (Part of Springer Nature)</strong></div>
-        <h3>2: Intraoperative steps of high-purity type I collagen scaffold–
-assisted breast volume restoration following breast cancer resection</h3>
-        <p class="authors"><strong>(A)</strong>Placement of the high-purity type I collagen scaffold into the excision cavity to restore volume. <strong>(B)</strong> Scaffold
-fixation secured with absorbable sutures to surrounding breast parenchyma. <strong>(C)</strong> Completed layered skin closure.
-following scaffold implantation.</p>
-      <!-- Accompanying Figure Section -->
-    <div class="trial-image-wrapper">
-        <img src="/image/BR-2.png" alt="Regenerative Collagen Scaffold Clinical Case Presentation" class="trial-figure-img">
-    </div>
-      </div>
-    <div class="grid-3">
-      <div class="data-box reveal">
-        <h4>The Challenge</h4>
-        <p>Breast-conserving surgery (BCS) causes volume displacement defects, asymmetry, and contour deformities that significantly lower post-operative patient satisfaction scores. Standard tissue substitutes carry donor site morbidity.</p>
-      </div> 
-      <div class="data-box reveal">
-        <h4>Efficacy Findings</h4>
-        <p>Implantation of the HPTC scaffold immediately following excision provides stable volume restoration, excellent early structural retention, and clear radiologic integration visible on imaging follow-up.</p>
-      </div>
-      <div class="data-box reveal">
-        <h4>Safety Profile</h4>
-        <p>Demonstrated to be a completely safe and biologically active matrix option, showing high cosmetic satisfaction scores with minimal complications, zero allergic reactions, and no tissue rejection across all study patients.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
 
-<!-- ─── RESOURCES ─── -->
-<section class="docvault-section" id="resources">
-  <div class="container">
-    <div class="docvault-header text-center">
-      <h2>Clinical Documentation Vault</h2>
-      <div class="docvault-bar"></div>
-      <p class="docvault-subtext">Review or download comprehensive specifications, product literature, and peer-reviewed publications.</p>
+
+      </div>
+      <div class="so-trial-showcase-container so-reveal">
+        <!-- Meta Content Details Section -->
+        <div class="so-trial-meta-card">
+          <div class="so-trial-badge">Published in <strong>Cureus (Part of Springer Nature)</strong></div>
+          <h3>2: Intraoperative steps of high-purity type I collagen scaffold–
+            assisted breast volume restoration following breast cancer resection</h3>
+          <p class="authors"><strong>(A)</strong>Placement of the high-purity type I collagen scaffold into the excision
+            cavity to restore volume. <strong>(B)</strong> Scaffold
+            fixation secured with absorbable sutures to surrounding breast parenchyma. <strong>(C)</strong> Completed
+            layered skin closure.
+            following scaffold implantation.</p>
+          <!-- Accompanying Figure Section -->
+          <div class="so-trial-image-wrapper">
+
+    <div class="so-trial-image-card">
+        <img src="/image/BRs-1.png"
+             alt="Clinical Trial Image 1"
+             class="so-trial-figure-img">
     </div>
 
-    <div class="docvault-grid">
-      <div class="docvault-card">
-        <div class="docvault-icon"><i class="fa-solid fa-file-pdf"></i></div>
-        <h3>Product Monograph</h3>
-        <a href="../indications/Surgical Oncology/Breast Cancer Reconstruction/Adv_SM for Breast Reconstruction.pdf" class="docvault-btn" target="_blank">
-          <i class="fas fa-download"></i> Download PDF
-        </a>
-      </div>
-      <div class="docvault-card">
-        <div class="docvault-icon"><i class="fa-solid fa-file-invoice"></i></div>
-        <h3>Cureus Clinical Trial</h3>
-        <a href="../indications/Surgical Oncology/Breast Cancer Reconstruction/Clin Study_SM Breast Cancer Excision Repai.pdf" class="docvault-btn" target="_blank">
-          <i class="fas fa-download"></i> Download PDF
-        </a>
-      </div>
-      <div class="docvault-card">
-        <div class="docvault-icon"><i class="fa-solid fa-file-lines"></i></div>
-        <h3>Technology White Paper</h3>
-        <a href="../indications/Surgical Oncology/Breast Cancer Reconstruction/White paper_SM for Breast Cancer.pdf" class="docvault-btn" target="_blank">
-          <i class="fas fa-download"></i> Download PDF
-        </a>
+    <div class="so-trial-image-card">
+        <img src="/image/BRs-2.png"
+             alt="Clinical Trial Image 2"
+             class="so-trial-figure-img">
+    </div>
+
+    <div class="so-trial-image-card">
+        <img src="/image/BRs-3.png"
+             alt="Clinical Trial Image 3"
+             class="so-trial-figure-img">
+    </div>
+
+</div>
+        </div>
+        <div class="so-grid-3">
+          <div class="so-data-box so-reveal">
+            <h4>The Challenge</h4>
+            <p>Breast-conserving surgery (BCS) causes volume displacement defects, asymmetry, and contour deformities
+              that significantly lower post-operative patient satisfaction scores. Standard tissue substitutes carry
+              donor site morbidity.</p>
+          </div>
+          <div class="so-data-box so-reveal">
+            <h4>Efficacy Findings</h4>
+            <p>Implantation of the HPTC scaffold immediately following excision provides stable volume restoration,
+              excellent early structural retention, and clear radiologic integration visible on imaging follow-up.</p>
+          </div>
+          <div class="so-data-box so-reveal">
+            <h4>Safety Profile</h4>
+            <p>Demonstrated to be a completely safe and biologically active matrix option, showing high cosmetic
+              satisfaction scores with minimal complications, zero allergic reactions, and no tissue rejection across
+              all study patients.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ─── RESOURCES ─── -->
+  <section class="so-docvault-section" id="resources">
+    <div class="so-resources-containers">
+      <div class="so-docvault-header text-center">
+        <h2>Clinical Documentation Vault</h2>
+        <div class="so-docvault-bar"></div>
+        <p class="so-docvault-subtext">Review or download comprehensive specifications, product literature, and
+          peer-reviewed publications.</p>
+      </div>
 
+      <div class="so-docvault-grid">
+        <div class="so-docvault-card">
+          <div class="so-docvault-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <h3>Product Monograph</h3>
+          <a href="../indications/Surgical Oncology/Breast Cancer Reconstruction/Adv_SM for Breast Reconstruction.pdf"
+            class="so-docvault-btn" target="_blank">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+        <div class="so-docvault-card">
+          <div class="so-docvault-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <h3>Cureus Clinical Trial</h3>
+          <a href="../indications/Surgical Oncology/Breast Cancer Reconstruction/Clin Study_SM Breast Cancer Excision Repai.pdf"
+            class="so-docvault-btn" target="_blank">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+        <div class="so-docvault-card">
+          <div class="so-docvault-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>Technology White Paper</h3>
+          <a href="../indications/Surgical Oncology/Breast Cancer Reconstruction/White paper_SM for Breast Cancer.pdf"
+            class="so-docvault-btn" target="_blank">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ─── SCRIPTS ─── -->
+  <script>
 
+    // Scroll reveal
+    const soRo = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          soRo.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-<!-- ─── SCRIPTS ─── -->
-<script>
+    document.querySelectorAll('.so-reveal').forEach(el => soRo.observe(el));
 
-// Scroll reveal
-const ro = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      ro.unobserve(e.target);
+    // Active nav link highlight
+    const soSections = document.querySelectorAll('section[id], div[id]');
+    const soNavLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      soSections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 100) current = s.id;
+      });
+      soNavLinks.forEach(a => {
+        a.style.color = '';
+        if (a.getAttribute('href') === '#' + current) {
+          a.style.color = 'var(--purple-brand)';
+        }
+      });
+    }, { passive: true });
+
+    // Contact grid responsive
+    function soFixContactGrid() {
+      const cg = document.querySelector('.contact-grid');
+      if (!cg) return;
+      if (window.innerWidth < 768) {
+        cg.style.gridTemplateColumns = '1fr';
+      } else {
+        cg.style.gridTemplateColumns = '1fr 1fr';
+      }
     }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
-
-// Active nav link highlight
-const sections = document.querySelectorAll('section[id], div[id]');
-const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
-  });
-  navLinks.forEach(a => {
-    a.style.color = '';
-    if (a.getAttribute('href') === '#' + current) {
-      a.style.color = 'var(--purple-brand)';
-    }
-  });
-}, { passive: true });
-
-// Contact grid responsive
-function fixContactGrid() {
-  const cg = document.querySelector('.contact-grid');
-  if (!cg) return;
-  if (window.innerWidth < 768) {
-    cg.style.gridTemplateColumns = '1fr';
-  } else {
-    cg.style.gridTemplateColumns = '1fr 1fr';
-  }
-}
-fixContactGrid();
-window.addEventListener('resize', fixContactGrid);
-</script>
+    soFixContactGrid();
+    window.addEventListener('resize', soFixContactGrid);
+  </script>
 
   <!-- ─── FOOTER ─── -->
   <div id="rs-footer"></div>
@@ -600,14 +722,14 @@ window.addEventListener('resize', fixContactGrid);
 
   <script>
     function showTab(id, btn) {
-      document.querySelectorAll('.study-panel').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.so-study-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.so-tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById(id).classList.add('active');
       btn.classList.add('active');
     }
 
     // Scroll reveal
-    const observer = new IntersectionObserver(entries => {
+    const soObserver = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.style.opacity = '1';
@@ -616,13 +738,14 @@ window.addEventListener('resize', fixContactGrid);
       });
     }, { threshold: 0.08 });
 
-    document.querySelectorAll('.case-card, .stat-box, .stat-card').forEach(el => {
+    document.querySelectorAll('.so-case-card, .so-stat-box, .so-stat-card').forEach(el => {
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
       el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(el);
+      soObserver.observe(el);
     });
   </script>
-<script src="../js/nav.js"></script>
+  <script src="../js/nav.js"></script>
 </body>
+
 </html>
