@@ -33,7 +33,7 @@
     /* Extremely light purple-tinted background from image */
 
     /* Text Colors */
-    --text-dark: #182230;
+    --text-dark: #000;
     /* Main high-contrast bold headline text */
     --text-mid: #434B57;
     /* Readable description/body text */
@@ -79,7 +79,6 @@ html{
 }
 /* ─── HERO ─── */
 #hero {
-    min-height: 100vh;
     background: var(--purple-mid);
     position: relative;
     display: flex;
@@ -194,9 +193,8 @@ html{
 
 .hero-sub {
     font-size: 1.05rem;
-    color: var(--text-mid);
+    color: var(--text-dark);
     line-height: 1.7;
-    max-width: 720px;
     margin-bottom: 36px;
     text-align: justify;
 }
@@ -309,57 +307,13 @@ html{
     margin-top: 10px;
 }
 
-
-/* ─── SECTION COMMONS ─── */
-section {
-    padding: 96px 0;
-}
-
-.section-inner {
-    max-width: 1950px;
-    margin: 0 auto;
-    padding: 0 32px;
-}
-
-
-
-.section-h2 {
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 700;
-    color: var(--navy-brand);
-    line-height: 1.2;
-    margin-bottom: 16px;
-}
-
-.section-header {
-    margin-bottom: 56px;
-}
-
-.section-header.center {
-    text-align: center;
-}
-
-
-
-.divider {
-    width: 52px;
-    height: 3px;
-    background: var(--gradient-accent);
-    border-radius: 3px;
-    margin: 16px 0;
-}
-
-.divider.center {
-    margin: 16px auto;
-}
-
 /* ─── SECTION COMMONS ABOUT ─── */
 section {
     padding: 96px 0;
 }
 
 .section-inner {
-    max-width: 1280px;
+    max-width: 1950px;
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -447,7 +401,7 @@ section {
 
 .tags .tag-sub {
     font-size: .95rem;
-    color: var(--text-mid);
+    color: var(--text-dark);
     line-height: 1.75;
 }
 
@@ -561,7 +515,7 @@ section {
 
 .testi-quote {
     font-size: .95rem;
-    color: var(--text-mid);
+    color: var(--text-dark);
     line-height: 1.7;
     margin-bottom: 20px;
     font-style: italic;
@@ -625,7 +579,7 @@ section {
 
 .faq-content-text{
     font-size:15px;
-    color:var(--text-mid);
+    color:var(--text-dark);
     line-height:1.8;
     margin-bottom:28px;
 }
@@ -645,11 +599,10 @@ section {
     align-items:center;
     gap:20px;
     text-align:left;
-
     font-size:17px;
     font-weight:600;
     line-height:1.6;
-    color:var(--navy-brand);
+    color:var(--text-dark);
 }
 
 .faq-q span:first-child{
@@ -661,7 +614,7 @@ section {
     height:40px;
     min-width:40px;
     border-radius:50%;
-    background:#f3f7ff;
+    background:var(--purple-brand);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -672,16 +625,16 @@ section {
 .faq-arrow svg{
     width:16px;
     height:16px;
-    fill:var(--blue);
+    fill:var(--white);
     transition:.35s ease;
 }
 
 .faq-item.active .faq-arrow{
-    background:var(--blue);
+    background:var(--purple-mid);
 }
 
 .faq-item.active .faq-arrow svg{
-    fill:#fff;
+    fill:#000;
     transform:rotate(180deg);
 }
 
@@ -698,7 +651,7 @@ section {
 
 .faq-a p{
     font-size:15px;
-    color:var(--text-mid);
+    color:var(--text-dark);
     line-height:1.8;
 }
 
@@ -947,13 +900,6 @@ section {
 ------------------------------------------ */
 @media (min-width: 1920px) and (max-width: 2559px) {
 
-    .hero-grid {
-        max-width: 1700px;
-    }
-
-    .section-inner {
-        max-width: 1600px;
-    }
 
     .hero-h1 {
         font-size: 4rem;
