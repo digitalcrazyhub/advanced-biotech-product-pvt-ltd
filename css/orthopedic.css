@@ -506,7 +506,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     color: var(--purple-brand);
     margin-bottom: 1rem;
@@ -545,7 +545,7 @@
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     padding: .8rem 1rem;
     margin: .85rem 0 0;
-    font-size: 12.5px;
+    font-size: 14px;
     color: var(--purple-brand);
     line-height: 1.65;
   }
@@ -587,7 +587,7 @@
     border: 0.5px solid var(--border);
     border-radius: var(--radius-sm);
     padding: .6rem .9rem;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-dark);
   }
 
@@ -683,15 +683,7 @@
       grid-template-columns: 1fr;
     }
 
-    .footer-grid {
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-    }
 
-    .footer-bottom {
-      flex-direction: column;
-      align-items: flex-start;
-    }
 
     section {
       padding: 2rem 0;
@@ -699,11 +691,6 @@
   }
 
   @media (max-width: 480px) {
-    .spec-row {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: .25rem;
-    }
 
     .spec-row .val {
       text-align: left;
@@ -814,6 +801,9 @@ section + section {
   .orth-card p{
     font-size: 12px;
   }
+ .orth-card-title{
+  font-size: 12px;
+ }
 }
 
 /* 2. Mobile-Large 481–700px */

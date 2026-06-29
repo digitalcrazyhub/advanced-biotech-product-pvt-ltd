@@ -626,7 +626,7 @@ img {
  
 .day-item {
   background: #fff;
-  border: 1px solid var(--border);
+  
   border-radius: var(--radius-sm);
   padding: 15px;
   text-align: center;
@@ -652,6 +652,7 @@ img {
   font-size: clamp(0.85rem, 1.3vw, 1.1rem);
   line-height: 1.5;
   color: var(--text-dark);
+  font-weight: 700;
 }
  
 /* Tablet */
@@ -691,18 +692,18 @@ img {
   font-size: clamp(1.25rem, 3vw, 2rem);
   font-weight: 700;
   color: var(--navy-brand);
-  text-transform: uppercase;
   line-height: 1.3;
 }
  
 /* GRID */
 .sg-case-grid {
+  font-family: "Jost" sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   justify-content: center;
 }
- 
+
 /* CARD */
 .sg-case-card {
   background: #fff;

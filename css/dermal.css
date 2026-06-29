@@ -92,6 +92,7 @@ a {
 
 .abp-section-title span {
     color: var(--purple);
+    font-size: 30px;
 }
 
 .abp-subtitle {
@@ -490,7 +491,6 @@ a {
 
 .abp-card {
     background: #fff;
-    border: 0.5px solid var(--text-dark);
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
@@ -876,7 +876,7 @@ a {
 
 .dfu-treatment-container-x91 {
     
-    margin-inline: auto;
+    margin-inline: 50px;
 }
 
 .dfu-treatment-heading-x91 {
@@ -1505,4 +1505,42 @@ a {
         font-size:.92rem;
     }
 
+}
+.abp-card__img {
+    width: 100%;
+    aspect-ratio: 4 / 5;   /* keeps consistent card shape */
+    height: auto;          /* let aspect-ratio control height */
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+/* Optional hover effect (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+    .abp-card__img:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 576px) {
+    .abp-card__img {
+        aspect-ratio: 3 / 4; /* slightly wider feel for small screens */
+    }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .abp-card__img {
+        aspect-ratio: 4 / 5;
+    }
+}
+
+/* Large screens (4K scaling safety) */
+@media (min-width: 1920px) {
+    .abp-card__img {
+        aspect-ratio: 4 / 5;
+        max-height: 520px; /* prevents overly large stretching */
+    }
 }
