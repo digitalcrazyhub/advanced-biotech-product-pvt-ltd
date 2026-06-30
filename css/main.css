@@ -192,7 +192,7 @@ html{
 }
 
 .hero-sub {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     color: var(--text-dark);
     line-height: 1.7;
     margin-bottom: 36px;
@@ -421,7 +421,7 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 
@@ -714,7 +714,7 @@ section {
     }
 
     .hero-sub {
-        font-size: 14px;
+        font-size: 0.9rem;
         text-align: left;
     }
 

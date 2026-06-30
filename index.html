@@ -18,12 +18,17 @@
   <!--Header-->
   <div id="rs-header"></div>
   <script>
-    fetch("../page/nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
-      });</script>
+    fetch("./page/nav.html")
+  .then(res => {
+      if (!res.ok) throw new Error("Navbar not found");
+      return res.text();
+  })
+  .then(data => {
+      document.getElementById("rs-header").innerHTML = data;
+      initNavbar();
+  })
+  .catch(err => console.error(err));
+  </script>
   <!-- Hero -->
   <section id="hero">
     <div class="hero-bg-shapes">
@@ -309,7 +314,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-content">
-              <p>Surgicoll-Mesh<sup>®</sup> is an implantable, bioresorbable, sterile Type-1 Collagen matrix designed to support tissue regeneration, wound healing, and surgical reconstruction. It is[...]
+                <p>Surgicoll-Mesh<sup>®</sup> is an implantable, bioresorbable, sterile Type-1 Collagen matrix designed to support tissue regeneration, wound healing, and surgical reconstruction. It is manufactured using patented high-purity Collagen technology for superior biocompatibility and clinical performance.</p>
             </div>
           </div>
         </div>
@@ -325,7 +330,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-content">
-              <p>Unlike conventional Collagen products, Surgicoll-Mesh<sup>®</sup> contains ultra-pure Type-1 Collagen that is free from contaminants such as elastin, lipids, and immunogenic proteins[...]
+                <p>Unlike conventional Collagen products, Surgicoll-Mesh<sup>®</sup> contains ultra-pure Type-1 Collagen that is free from contaminants such as elastin, lipids, and immunogenic proteins. Its phosphorylated Collagen structure enhances cellular signaling and promotes faster tissue regeneration.</p>
             </div>
           </div>
         </div>
@@ -341,7 +346,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-content">
-              <p>The phosphorylated Type-1 Collagen helps attract cells, improve cell communication, and stimulate tissue remodeling. Clinical observations have shown neo-vascularization and capillary[...]
+               <p>The phosphorylated Type-1 Collagen helps attract cells, improve cell communication, and stimulate tissue remodeling. Clinical observations have shown neo-vascularization and capillary formation within 4 to 5 days after application, supporting faster healing and tissue integration.</p>
             </div>
           </div>
         </div>
@@ -357,7 +362,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-content">
-              <p>Yes. Surgicoll-Mesh<sup>®</sup> is highly biocompatible, non-immunogenic, and designed to integrate naturally with surrounding tissues. It is manufactured under stringent quality sta[...]
+                <p>Yes. Surgicoll-Mesh<sup>®</sup> is highly biocompatible, non-immunogenic, and designed to integrate naturally with surrounding tissues. It is manufactured under stringent quality standards and sterilized using ethylene oxide for safe clinical use.</p>
             </div>
           </div>
         </div>
@@ -373,7 +378,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-content">
-              <p>Surgicoll-Mesh<sup>®</sup> is used in oral and maxillofacial surgery, burn care, diabetic ulcer treatment, orthopedic procedures, cartilage regeneration, hernia repair, pelvic floor [...]
+              <p>Surgicoll-Mesh<sup>®</sup> is used in oral and maxillofacial surgery, burn care, diabetic ulcer treatment, orthopedic procedures, cartilage regeneration, hernia repair, pelvic floor reconstruction, cardiovascular surgery, and neurosurgical applications such as dura repair and nerve wrapping.</p>
             </div>
           </div>
         </div>
@@ -389,7 +394,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-content">
-              <p>Yes. It is suitable for osteochondral resurfacing, cartilage regeneration, tendon repair, rotator cuff reconstruction, Achilles tendon repair, and other orthopedic soft tissue applica[...]
+                <p>Yes. It is suitable for osteochondral resurfacing, cartilage regeneration, tendon repair, rotator cuff reconstruction, Achilles tendon repair, and other orthopedic soft tissue applications where tissue support and regeneration are required.</p>
             </div>
           </div>
         </div>
