@@ -18,7 +18,7 @@
   <!--Header-->
   <div id="rs-header"></div>
   <script>
-    fetch("./page/nav.html")
+    fetch("../page/nav.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
