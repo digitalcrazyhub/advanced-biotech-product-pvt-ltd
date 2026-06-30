@@ -884,16 +884,212 @@ section + section {
     gap: 34px;
   }
 }
-/* ─── PRODUCT HEADING STRIP ──────────────────────────── */
-.abp-strip {
-    background: var(--purple-brand);
-    padding: clamp(16px, 1.5vw, 18px) clamp(20px, 4vw, 100px) clamp(14px, 1.2vw, 14px);
-    margin-top: 20px;
+
+
+/*=============================
+       HEADING-STRIP
+==============================*/
+
+.du-header{
+    width:100%;
+    min-height:clamp(75px,8vw,80px);
+    
+    display:flex;
+    align-items:center;
+
+    position:relative;
+    background:var(--purple-mid);
+
+    /* border:2px solid #9b2f86;
+    border-radius:14px; */
+
+    overflow:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.abp-strip h2 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    font-size: clamp(1.3rem, 1vw + 1rem, 2.1rem);
-    color: #fff;
+
+/*=============================
+        LEFT SIDE
+==============================*/
+
+.du-left{
+
+    width:clamp(110px,15vw,350px);
+    height:150px;
+
+    background:linear-gradient(135deg,#732566,#a12f8a);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    position:relative;
+}
+
+
+.du-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    right:clamp(-60px,-4vw,-30px);
+
+    width:clamp(55px,6vw,120px);
+    height:100%;
+
+    background:var(--purple-mid);
+
+    transform:skewX(25deg);
+}
+
+
+/*=============================
+        ICON
+==============================*/
+
+.du-icon{
+
+    width:clamp(40px,4vw,90px);
+    height:clamp(40px,4vw,90px);
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    z-index:2;
+}
+
+.du-icon i{
+
+    color:#922c7f;
+
+    font-size:clamp(18px,2vw,42px);
+}
+
+
+/*=============================
+        CONTENT
+==============================*/
+
+.du-content{
+
+    flex:1;
+
+    padding-left:clamp(15px,3vw,70px);
+    padding-right:clamp(25px,5vw,120px);
+
+    position:relative;
+    z-index:2;
+}
+
+.du-content h2{
+
+    margin:0 0 6px;
+
+    color:var(--purple-brand);
+
+    font-weight:700;
+
+    font-size:clamp(20px,2.3vw,58px);
+
+    line-height:1.1;
+}
+
+.du-content p{
+
+    margin:0;
+
+    color:#9b2f86;
+
+    font-weight:600;
+
+    font-size:clamp(12px,1.25vw,30px);
+
+    line-height:1.2;
+}
+
+
+/*=============================
+        RIGHT ANGLE
+==============================*/
+
+.du-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-2px;
+    right:clamp(-45px,-2vw,-18px);
+
+    width:clamp(35px,4vw,100px);
+    height:calc(100% + 4px);
+
+    background:var(--purple-mid);
+
+    /* border-top:2px solid #9b2f86;
+    border-right:2px solid #9b2f86;
+    border-bottom:2px solid #9b2f86; */
+
+    border-radius:0 12px 12px 0;
+
+    transform:skewX(-35deg);
+}
+
+
+/* ==========================================
+   4K Displays (2560px and above)
+========================================== */
+@media (min-width: 2560px) {
+
+    .du-header {
+        min-height: 150px;
+    }
+
+    .du-left {
+        width: 420px;
+        height: 150px;
+    }
+
+    .du-left::after {
+        width: 140px;
+        right: -70px;
+    }
+
+    .du-icon {
+        width: 95px;
+        height: 95px;
+    }
+
+    .du-icon i {
+        font-size: 44px;
+    }
+
+    .du-content {
+        padding-left: 80px;
+        padding-right: 120px;
+    }
+
+    .du-content h2 {
+        font-size: 58px;
+    }
+
+    .du-content p {
+        font-size: 28px;
+    }
+
+    .du-header::after {
+        width: 110px;
+        right: -45px;
+    }
 }

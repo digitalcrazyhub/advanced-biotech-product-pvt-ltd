@@ -242,18 +242,7 @@ a {
     filter: drop-shadow(0 20px 40px rgba(107, 45, 92, .15));
 }
 
-/* ─── PRODUCT HEADING STRIP ──────────────────────────── */
-.abp-strip {
-    background: var(--purple);
-    padding: clamp(16px, 1.5vw, 18px) clamp(20px, 4vw, 100px) clamp(14px, 1.2vw, 14px);
-}
 
-.abp-strip h2 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 800;
-    font-size: clamp(1.3rem, 1vw + 1rem, 2.1rem);
-    color: #fff;
-}
 
 /* ─── INTRO SECTION ───────────────────────────────────── */
 .abp-intro {
@@ -1097,10 +1086,7 @@ a {
         grid-template-columns:1fr;
     }
 
-    .abp-strip{
-        padding:15px;
-        text-align:center;
-    }
+    
 
     .abp-hero__heading{
         font-size:2rem;
@@ -1262,5 +1248,477 @@ a {
 
     .abp-card__img{
         max-height:800px;
+    }
+}
+/*=============================
+       HEADING-STRIP
+==============================*/
+
+.du-header{
+    width:100%;
+    min-height:clamp(75px,8vw,80px);
+    
+    display:flex;
+    align-items:center;
+
+    position:relative;
+    background:var(--purple-mid);
+
+    /* border:2px solid #9b2f86;
+    border-radius:14px; */
+
+    overflow:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/*=============================
+        LEFT SIDE
+==============================*/
+
+.du-left{
+
+    width:clamp(110px,15vw,350px);
+    height:150px;
+
+    background:linear-gradient(135deg,#732566,#a12f8a);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    position:relative;
+}
+
+
+.du-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    right:clamp(-60px,-4vw,-30px);
+
+    width:clamp(55px,6vw,120px);
+    height:100%;
+
+    background:var(--purple-mid);
+
+    transform:skewX(25deg);
+}
+
+
+/*=============================
+        ICON
+==============================*/
+
+.du-icon{
+
+    width:clamp(40px,4vw,90px);
+    height:clamp(40px,4vw,90px);
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    z-index:2;
+}
+
+.du-icon i{
+
+    color:#922c7f;
+
+    font-size:clamp(18px,2vw,42px);
+}
+
+
+/*=============================
+        CONTENT
+==============================*/
+
+.du-content{
+
+    flex:1;
+
+    padding-left:clamp(15px,3vw,70px);
+    padding-right:clamp(25px,5vw,120px);
+
+    position:relative;
+    z-index:2;
+}
+
+.du-content h2{
+
+    margin:0 0 6px;
+
+    color:var(--purple);
+
+    font-weight:700;
+
+    font-size:clamp(20px,2.3vw,58px);
+
+    line-height:1.1;
+}
+
+.du-content p{
+
+    margin:0;
+
+    color:#9b2f86;
+
+    font-weight:600;
+
+    font-size:clamp(12px,1.25vw,30px);
+
+    line-height:1.2;
+}
+
+
+/*=============================
+        RIGHT ANGLE
+==============================*/
+
+.du-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-2px;
+    right:clamp(-45px,-2vw,-18px);
+
+    width:clamp(35px,4vw,100px);
+    height:calc(100% + 4px);
+
+    background:var(--purple-mid);
+
+    /* border-top:2px solid #9b2f86;
+    border-right:2px solid #9b2f86;
+    border-bottom:2px solid #9b2f86; */
+
+    border-radius:0 12px 12px 0;
+
+    transform:skewX(-35deg);
+}
+
+
+/* ==========================================
+   4K Displays (2560px and above)
+========================================== */
+@media (min-width: 2560px) {
+
+    .du-header {
+        min-height: 150px;
+    }
+
+    .du-left {
+        width: 420px;
+        height: 150px;
+    }
+
+    .du-left::after {
+        width: 140px;
+        right: -70px;
+    }
+
+    .du-icon {
+        width: 95px;
+        height: 95px;
+    }
+
+    .du-icon i {
+        font-size: 44px;
+    }
+
+    .du-content {
+        padding-left: 80px;
+        padding-right: 120px;
+    }
+
+    .du-content h2 {
+        font-size: 58px;
+    }
+
+    .du-content p {
+        font-size: 28px;
+    }
+
+    .du-header::after {
+        width: 110px;
+        right: -45px;
+    }
+}
+
+
+/* ==========================================
+   Desktop (1920px - 2559px)
+========================================== */
+@media (max-width:2559px) {
+
+    .du-header {
+        min-height: 120px;
+    }
+
+    .du-left {
+        width: 320px;
+        height: 120px;
+    }
+
+    .du-left::after {
+        width: 110px;
+        right: -55px;
+    }
+
+    .du-content h2 {
+        font-size: 42px;
+    }
+
+    .du-content p {
+        font-size: 22px;
+    }
+}
+
+
+/* ==========================================
+   Laptop (1440px)
+========================================== */
+@media (max-width:1440px) {
+
+    .du-header {
+        min-height: 100px;
+    }
+
+    .du-left {
+        width: 250px;
+        height: 100px;
+    }
+
+    .du-left::after {
+        width: 90px;
+        right: -45px;
+    }
+
+    .du-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .du-icon i {
+        font-size: 28px;
+    }
+
+    .du-content {
+        padding-left: 40px;
+        padding-right: 60px;
+    }
+
+    .du-content h2 {
+        font-size: 34px;
+    }
+
+    .du-content p {
+        font-size: 18px;
+    }
+}
+
+
+/* ==========================================
+   Small Laptop / Tablet Landscape
+========================================== */
+@media (max-width:1024px) {
+
+    .du-header {
+        min-height: 90px;
+    }
+
+    .du-left {
+        width: 190px;
+        height: 90px;
+    }
+
+    .du-left::after {
+        width: 70px;
+        right: -35px;
+    }
+
+    .du-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .du-icon i {
+        font-size: 22px;
+    }
+
+    .du-content {
+        padding-left: 28px;
+        padding-right: 40px;
+    }
+
+    .du-content h2 {
+        font-size: 28px;
+    }
+
+    .du-content p {
+        font-size: 16px;
+    }
+
+    .du-header::after {
+        width: 55px;
+        right: -24px;
+    }
+}
+
+
+/* ==========================================
+   Tablet Portrait
+========================================== */
+@media (max-width:768px) {
+
+    .du-header {
+        min-height: 80px;
+    }
+
+    .du-left {
+        width: 150px;
+        height: 80px;
+    }
+
+    .du-left::after {
+        width: 55px;
+        right: -28px;
+    }
+
+    .du-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .du-icon i {
+        font-size: 20px;
+    }
+
+    .du-content {
+        padding-left: 22px;
+        padding-right: 30px;
+    }
+
+    .du-content h2 {
+        font-size: 24px;
+    }
+
+    .du-content p {
+        font-size: 14px;
+    }
+
+    .du-header::after {
+        width: 42px;
+        right: -18px;
+    }
+}
+
+
+/* ==========================================
+   Large Mobile
+========================================== */
+@media (max-width:576px) {
+
+    .du-header {
+        min-height: 70px;
+    }
+
+    .du-left {
+        width: 120px;
+        height: 70px;
+    }
+
+    .du-left::after {
+        width: 45px;
+        right: -22px;
+    }
+
+    .du-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .du-icon i {
+        font-size: 16px;
+    }
+
+    .du-content {
+        padding-left: 16px;
+        padding-right: 20px;
+    }
+
+    .du-content h2 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    .du-content p {
+        font-size: 11px;
+    }
+
+    .du-header::after {
+        width: 30px;
+        right: -14px;
+    }
+}
+
+
+/* ==========================================
+   Small Mobile (320px–400px)
+========================================== */
+@media (max-width:400px) {
+
+    .du-header {
+        min-height: 60px;
+    }
+
+    .du-left {
+        width: 95px;
+        height: 60px;
+    }
+
+    .du-left::after {
+        width: 35px;
+        right: -18px;
+    }
+
+    .du-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .du-icon i {
+        font-size: 14px;
+    }
+
+    .du-content {
+        padding-left: 12px;
+        padding-right: 16px;
+    }
+
+    .du-content h2 {
+        font-size: 16px;
+    }
+
+    .du-content p {
+        font-size: 10px;
+    }
+
+    .du-header::after {
+        width: 24px;
+        right: -12px;
     }
 }
