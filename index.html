@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Advanced Biotech Products Pvt Ltd</title>
+  <meta name="description" content="Advanced Biotech Products develops Surgicoll-Mesh, a high-purity Type-I collagen mesh for regenerative surgical reinforcement and tissue repair.">
+  <meta property="og:title" content="Home | Advanced Biotech Products Pvt Ltd">
+  <meta property="og:description" content="Advanced Biotech Products develops Surgicoll-Mesh, a high-purity Type-I collagen mesh for regenerative surgical reinforcement and tissue repair.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./home/ABP-symbol.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/nav_footer.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -25,7 +31,7 @@
   })
   .then(data => {
       document.getElementById("rs-header").innerHTML = data;
-      initNavbar();
+      if (typeof initNavbar === "function") { initNavbar(); }
   })
   .catch(err => console.error(err));
   </script>

@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dental Surgical | Advanced Biotec Product [P] Ltd</title>
+  <title>Dental Surgical | Advanced Biotech Products [P] Ltd</title>
+  <meta name="description" content="Dental and oral surgical applications for Surgicoll-Mesh with clinical cases, regenerative scaffold features, and treatment resources.">
+  <meta property="og:title" content="Dental Surgical | Advanced Biotech Products [P] Ltd">
+  <meta property="og:description" content="Dental and oral surgical applications for Surgicoll-Mesh with clinical cases, regenerative scaffold features, and treatment resources.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/nav_footer.css">
-  <link rel="icon" href="../image/ABP-symbol.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="/css/dental.css">
+    <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/dental.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +28,7 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });</script>
 
   <!-- Page Banner -->
@@ -46,7 +51,7 @@
           <div class="abp-hero__eyebrow">
             <span class="abp-badge">Advanced Tissue Regeneration</span>
           </div>
-          <h1 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
+          <h2 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
           <p class="abp-hero__sub">Dental Surgical</p>
           <p class="abp-hero__lead">
             Implantable, bioresorbable, tissue regenerative sterile Type-I Collagen matrix.
@@ -133,7 +138,7 @@
 
       <!-- Header -->
       <div class="sgm-header-section">
-        <h1 class="sgm-main-title">
+        <h2 class="sgm-main-title">
           Surgicoll-Mesh<sup>®</sup>, an innovative, high purity Type-I Collagen has the following description and
           unique features:
         </h1>
@@ -290,7 +295,7 @@
         <div class="case-card reveal">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C36.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C36.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -300,7 +305,7 @@
         <div class="case-card reveal" style="transition-delay:0.1s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C37.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C37.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -310,7 +315,7 @@
         <div class="case-card reveal" style="transition-delay:0.2s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/dental-case3.png" alt="Pre-op oral cancer" />
+              <img src="../image/dental-case3.png" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -328,7 +333,7 @@
         <div class="case-card reveal">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C21.jpg" alt="Pre-op oral cancer" />
+              <img src="../image/C21.jpg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -338,7 +343,7 @@
         <div class="case-card reveal" style="transition-delay:0.1s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C26.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C26.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -349,7 +354,7 @@
         <div class="case-card reveal" style="transition-delay:0.2s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C29_2.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C29_2.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -360,7 +365,7 @@
         <div class="case-card reveal" style="transition-delay:0.2s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C29_3.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C29_3.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -371,7 +376,7 @@
         <div class="case-card reveal" style="transition-delay:0.2s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C29_9.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C29_9.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -383,7 +388,7 @@
         <div class="case-card reveal" style="transition-delay:0.2s">
           <div class="case-img-pair">
             <div class="case-img-wrap">
-              <img src="/image/C29_8.jpeg" alt="Pre-op oral cancer" />
+              <img src="../image/C29_8.jpeg" alt="Pre-op oral cancer" />
             </div>
           </div>
           <div class="case-body">
@@ -402,7 +407,7 @@
                 <h2 class="mv-case">Surgicoll-Mesh<sup>®</sup> Prep & Application</h2>
                 <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1C6K81340QTfDPWvpszIJ5rapcS8W5bd7/preview"
-                        allow="autoplay"></iframe>
+                        title="Surgicoll-Mesh oral surgical application video" loading="lazy" allow="autoplay"></iframe>
                 </div>
             </div>
         </div>

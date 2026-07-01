@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy policy | Advanced Biotech Products [P] Ltd</title>
+  <title>Privacy Policy | Advanced Biotech Products [P] Ltd</title>
+  <meta name="description" content="Privacy policy for the Surgicoll-Mesh website from Advanced Biotech Products, including data use, disclosure, retention, and rights information.">
+  <meta property="og:title" content="Privacy Policy | Advanced Biotech Products [P] Ltd">
+  <meta property="og:description" content="Privacy policy for the Surgicoll-Mesh website from Advanced Biotech Products, including data use, disclosure, retention, and rights information.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta http-equiv="Content-Security-Policy" content="frame-src https://drive.google.com https://docs.google.com;">
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
-  <link rel="stylesheet" href="/css/nav_footer.css">
+  <link rel="stylesheet" href="../css/nav_footer.css">
   <link rel="stylesheet" href="../css/privacy-policy.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -21,12 +27,12 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });</script>
 <div class="wrap">
 
   <div class="doc-header">
-    <div class="shield"><img src="../home/ABP-symbol.png" width="30px" alt=""></div>
+    <div class="shield"><img src="../home/ABP-symbol.png" width="30" height="30" alt="Advanced Biotech Products symbol"></div>
     <div>
       <div class="doc-title">Surgicoll-Mesh<sup>®</sup> Website Privacy Policy</div>
 <div class="doc-sub">
@@ -40,7 +46,7 @@
   <div class="toc">
     <div class="toc-label"><i class="ti ti-list"></i> Contents</div>
     <div class="toc-grid">
-      <a class="toc-link" href="#"><i class="ti ti-chevron-right"></i>Information we collect</a>
+      <a class="toc-link" href="#s1"><i class="ti ti-chevron-right"></i>Information we collect</a>
       <a class="toc-link" href="#s2"><i class="ti ti-chevron-right"></i>How we use it</a>
       <a class="toc-link" href="#s3"><i class="ti ti-chevron-right"></i>Third-party disclosure</a>
       <a class="toc-link" href="#s4"><i class="ti ti-chevron-right"></i>Data retention</a>

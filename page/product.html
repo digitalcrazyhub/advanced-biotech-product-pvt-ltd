@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Technology | Advanced Biotech Product [P] Ltd</title>
+    <title>Product Technology | Advanced Biotech Products [P] Ltd</title>
+  <meta name="description" content="Explore Surgicoll-Mesh product technology, clinical advantages, surgical applications, and downloadable technical literature from Advanced Biotech Products.">
+  <meta property="og:title" content="Product Technology | Advanced Biotech Products [P] Ltd">
+  <meta property="og:description" content="Explore Surgicoll-Mesh product technology, clinical advantages, surgical applications, and downloadable technical literature from Advanced Biotech Products.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/nav_footer.css">
-    <link rel="icon" href="../image/ABP-symbol.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/product.css">
+        <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +27,7 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });</script>
 
     <!-- heros -->
@@ -31,7 +36,7 @@
 
         <!-- Background Video -->
         <video class="heros-video" autoplay muted loop playsinline>
-            <source src="/product/banner_video.mp4" type="video/mp4">
+            <source src="../product/banner_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -288,7 +293,7 @@
         <div class="container-wireframe">
             <div class="product-grid">
                 <div class="product-image">
-                    <a href="#" target="_blank">
+                    <a href="../product/Adv_SM Neovascularization.jpg" target="_blank" rel="noopener noreferrer">
                         <img src="../product/Adv_SM Neovascularization.jpg"
                             alt="Adv_SM Neovascularization">
                     </a>
@@ -301,7 +306,7 @@
 
             <div class="product-grid">
                 <div class="product-image">
-                    <a href="#" target="_blank">
+                    <a href="../product/Img_Other Collagen Signaling.jpg" target="_blank" rel="noopener noreferrer">
                         <img src="../product/Img_Other Collagen Signaling.jpg"
                             alt="Img_Other Collagen Signaling">
                     </a>
@@ -314,7 +319,7 @@
 
             <div class="product-grid">
                 <div class="product-image">
-                    <a href="#" target="_blank">
+                    <a href="../product/Img_SM Collagen Signaling.jpg" target="_blank" rel="noopener noreferrer">
                         <img src="../product/Img_SM Collagen Signaling.jpg"
                             alt="Img_SM Collagen Signaling">
                     </a>
@@ -333,14 +338,14 @@
                 <h2 class="mv-case">Surgicoll-Mesh<sup>®</sup> Prep & Application</h2>
                 <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1Z8wwaKE0WnJK1ejmsISYZJVcvHx_nptx/preview"
-                        allow="autoplay"></iframe>
+                        title="Surgicoll-Mesh preparation and application video" loading="lazy" allow="autoplay"></iframe>
                 </div>
             </div>
             <div class="case_video">
                 <h2 class="mv-case">Significance of Surgicoll-Mesh<sup>®</sup> Audio-Visual Presentation</h2>
                 <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1sC2iXun7TqtjIXvBiAPyZ_AQQPKj6FA1/preview"
-                        allow="autoplay"></iframe>
+                        title="Surgicoll-Mesh audio visual presentation" loading="lazy" allow="autoplay"></iframe>
                 </div>
             </div>
         </div>
@@ -438,7 +443,7 @@
             </div>
 
             <div class="list-image">
-                <img src="../product/SM Application 5.jpeg" alt="">
+                <img src="../product/SM Application 5.jpeg" alt="Surgicoll-Mesh application example">
             </div>
 
         </div>
@@ -468,7 +473,7 @@
                 <div class="app-card">
 
                     <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=1200&auto=format&fit=crop"
-                        alt="">
+                        alt="Clinical team reviewing surgical care">
 
                     <div class="app-content">
 

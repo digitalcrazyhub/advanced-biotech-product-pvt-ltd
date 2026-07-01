@@ -5,10 +5,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soft Tissue | Advanced Biotech Product [P] Ltd</title>
+  <title>Soft Tissue Reinforcement | Advanced Biotech Products [P] Ltd</title>
+  <meta name="description" content="Soft tissue reinforcement applications for Surgicoll-Mesh including hernia repair, pelvic floor reconstruction, tendon repair, and complex wound cases.">
+  <meta property="og:title" content="Soft Tissue Reinforcement | Advanced Biotech Products [P] Ltd">
+  <meta property="og:description" content="Soft tissue reinforcement applications for Surgicoll-Mesh including hernia repair, pelvic floor reconstruction, tendon repair, and complex wound cases.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
-  <link rel="stylesheet" href="/css/nav_footer.css">
-  <link rel="stylesheet" href="/css/softtissue.css">
+  <link rel="stylesheet" href="../css/nav_footer.css">
+  <link rel="stylesheet" href="../css/softtissue.css">
   <!--Font awesome link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -20,11 +26,11 @@
   <!--Header-->
   <div id="rs-header"></div>
   <script>
-    fetch("/page/nav.html")
+    fetch("../page/nav.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });
   </script>
 
@@ -42,7 +48,7 @@
           <div class="abp-hero__eyebrow">
             <span class="abp-badge">Advanced Tissue Regeneration</span>
           </div>
-          <h1 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
+          <h2 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
           <p class="abp-hero__sub">Soft Tissue Reinforcement</p>
           <p class="abp-hero__lead">
             Implantable, bioresorbable, tissue regenerative sterile Type-I Collagen matrix.
@@ -82,7 +88,7 @@
       <!-- Hero strip -->
       <div class="hero-strip">
         <div class="hero-img-card">
-          <img src="/image/Types of Hernia.jpg" alt="">
+          <img src="../image/Types of Hernia.jpg" alt="Illustration of common hernia types">
         </div>
         <div class="hero-side">
           <div class="shelf-card">
@@ -102,7 +108,7 @@
       <!-- Types of hernia -->
       <div class="types-block">
         <div class="types-visual">
-          <img src="/image/Types of hernia(1).jpg" alt="">
+          <img src="../image/Types of hernia(1).jpg" alt="Diagram of abdominal hernia locations">
           <div class="cap">Hernia sites across the abdominal wall and groin</div>
         </div>
         <div class="types-text">
@@ -156,11 +162,11 @@
             </div>
             <div class="proc-media dual">
               <figure>
-                <img src="/image/enterocele mesh repair.png" alt="">
+                <img src="../image/enterocele mesh repair.png" alt="Enterocele mesh repair before and after">
                 <figcaption>Hernia vs. after repair</figcaption>
               </figure>
               <figure>
-                <img src="/image/Abdominal Hernia repair 1.jpg" alt="">
+                <img src="../image/Abdominal Hernia repair 1.jpg" alt="Abdominal hernia repair placement detail">
                 <figcaption>Pre- &amp; post-placement detail</figcaption>
               </figure>
             </div>
@@ -179,7 +185,7 @@
                 disruption to surrounding tissue.</p>
             </div>
             <div class="proc-media proc-media--lapsc">
-              <img src="/image/inguinal_hernia_patch.png" alt="">
+              <img src="../image/inguinal_hernia_patch.png" alt="Inguinal hernia patch placement">
               <div class="cap">Laparoscopic access &amp; mesh placement</div>
             </div>
           </div>
@@ -197,11 +203,11 @@
             </div>
             <div class="proc-media dual">
               <figure>
-                <img src="/image/InguinalHernia.png" alt="">
+                <img src="../image/InguinalHernia.png" alt="Inguinal hernia anatomy">
                 <figcaption>Inguinal hernia</figcaption>
               </figure>
               <figure>
-                <img src="/image/inguinal_hernia_patch.png" alt="">
+                <img src="../image/inguinal_hernia_patch.png" alt="Inguinal hernia patch placement">
                 <figcaption>Post-repair</figcaption>
               </figure>
             </div>
@@ -220,7 +226,7 @@
                 technique.</p>
             </div>
             <div class="proc-media">
-              <img src="/image/umbilical hernia.png" alt="">
+              <img src="../image/umbilical hernia.png" alt="Umbilical hernia repair sequence">
               <div class="cap">Open repair → mesh placement → laparoscopic repair</div>
             </div>
           </div>
@@ -250,7 +256,7 @@
               </div>
             </div>
             <div class="proc-media">
-              <img src="/image/Strangulated Hernia.jpg" alt="">
+              <img src="../image/Strangulated Hernia.jpg" alt="Strangulated hernia progression diagram">
               <div class="cap">Herniation → strangulation/volvulus → intussusception</div>
             </div>
           </div>
@@ -400,25 +406,25 @@
     <div class="timeline-row">
       <div class="day-item">
         <div class="di-label">Pre-Op</div>
-        <img src="../image/H1.jpeg" alt="">
+        <img src="../image/H1.jpeg" alt="Pre-operative hand wound before reconstruction">
         <p>Hand deformation before surgery complex wound with exposed structures</p>
       </div>
 
       <div class="day-item">
         <div class="di-label">Day 1</div>
-        <img src="../image/H2.jpeg" alt="">
+        <img src="../image/H2.jpeg" alt="Surgicoll-Mesh applied to exposed bones and joints">
         <p>Surgicoll-Mesh<sup>®</sup> applied to exposed bones and joints</p>
       </div>
 
       <div class="day-item">
         <div class="di-label">Day 3</div>
-        <img src="../image/H3.jpeg" alt="">
+        <img src="../image/H3.jpeg" alt="Granulation tissue formation after Surgicoll-Mesh application">
         <p>Active granulation tissue formation and scaffold integration</p>
       </div>
 
       <div class="day-item">
         <div class="di-label">Day 10</div>
-        <img src="../image/H4.jpeg" alt="">
+        <img src="../image/H4.jpeg" alt="Hand wound healing ten days after Surgicoll-Mesh application">
         <p>90% healing achieved without flap coverage</p>
       </div>
     </div>
@@ -489,7 +495,7 @@
 
     <!-- SOFT TISSUE -->
     <div class="sg-section-title">
-      <h2>For Soft Tissue Repair &amp Reconstruction</h2>
+      <h2>For Soft Tissue Repair &amp; Reconstruction</h2>
     </div>
 
     <div class="sg-case-grid">
@@ -538,7 +544,7 @@
     <div class="sg-case-grid">
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/B1.jpeg" alt="">
+          <img src="../image/B1.jpeg" alt="Burn reconstruction wound on day zero">
         </div>
         <div class="sg-case-content">
           <h3>Day-0</h3>
@@ -547,7 +553,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/B2.jpeg" alt="">
+          <img src="../image/B2.jpeg" alt="Burn reconstruction surgical opening">
         </div>
         <div class="sg-case-content">
           <h3>Surgical Opening</h3>
@@ -556,7 +562,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/B3.jpeg" alt="">
+          <img src="../image/B3.jpeg" alt="Surgicoll-Mesh Equi applied and stapled on day one">
         </div>
         <div class="sg-case-content">
           <h3>Day-1: Surgicoll-Mesh<sup>®</sup> Equi applied and stapled</h3>
@@ -565,7 +571,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/B4.jpeg" alt="">
+          <img src="../image/B4.jpeg" alt="Burn reconstruction healing after skin graft application">
         </div>
         <div class="sg-case-content">
           <h3>21 days upon Skin-graft application over Surgicoll-Mesh<sup>®</sup> Equi on day 5</h3>
@@ -581,7 +587,7 @@
     <div class="sg-case-grid">
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/P1.jpeg" alt="">
+          <img src="../image/P1.jpeg" alt="Stage 4 sacral pressure sore">
         </div>
         <div class="sg-case-content">
           <h3>Stage 4 Pressure Sore</h3>
@@ -590,7 +596,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/p2.jpeg" alt="">
+          <img src="../image/p2.jpeg" alt="Sacral pressure sore ten days after Surgicoll-Mesh Equi application">
         </div>
         <div class="sg-case-content">
           <h3>10 Days Post Surgicoll-Mesh<sup>®</sup> Equi Application</h3>
@@ -599,7 +605,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/sacral 3.png" alt="">
+          <img src="../image/sacral 3.png" alt="Healed sacral pressure sore using Surgicoll-Mesh Equi">
         </div>
         <div class="sg-case-content">
           <h3>Completely Healed Using Surgicoll-Mesh<sup>®</sup> Equi</h3>
@@ -615,7 +621,7 @@
     <div class="sg-case-grid">
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/K1.png" alt="">
+          <img src="../image/K1.png" alt="Keloid excision wound on day zero">
         </div>
         <div class="sg-case-content">
           <h3>Day - 0</h3>
@@ -624,7 +630,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/K2.png" alt="">
+          <img src="../image/K2.png" alt="Surgicoll-Mesh Equi inserted into keloid excision wound">
         </div>
         <div class="sg-case-content">
           <h3>Day-1: Insertion of Surgicoll-Mesh<sup>®</sup> Equi into the wound</h3>
@@ -633,7 +639,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/K3.png" alt="">
+          <img src="../image/K3.png" alt="Keloid excision wound healing on day fifteen">
         </div>
         <div class="sg-case-content">
           <h3>Day - 15</h3>
@@ -642,7 +648,7 @@
 
       <div class="sg-case-card">
         <div class="sg-case-image">
-          <img src="../image/K4.png" alt="">
+          <img src="../image/K4.png" alt="Keloid excision result after five years with no recurrence">
         </div>
         <div class="sg-case-content">
           <h3>5 Years - No Recurrence</h3>
@@ -676,14 +682,14 @@
   <!-- _____footer_______-->
   <div id="rs-footer"></div>
   <script>
-    fetch("/page/footer.html")
+    fetch("../page/footer.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-footer").innerHTML = data;
       });
   </script>
 
-  <script src="/js/nav.js"></script>
+  <script src="../js/nav.js"></script>
 </body>
 
 </html>
