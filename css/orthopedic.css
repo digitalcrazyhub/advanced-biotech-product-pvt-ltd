@@ -5,34 +5,35 @@
 
   
   /* ── Root tokens ─────────────────────────────────────────── */
-  :root {
-    --purple-brand: #6B2D5C;
-    --navy-brand: #131E51;
-    --purple-mid: #fdecf9;
-    --lavender-accent: #E2D6E6;
-    --lavender-light: #F6F0F8;
-    --plum-bright: #A13D84;
-    --white: #FFFFFF;
-    --off-white: #FDF9FF;
-    --text-dark: #182230;
-    --text-mid: #434B57;
-    --text-light: #807D8C;
-    --border: rgba(107, 45, 92, 0.12);
-    --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
-    --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
-    --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
-    --glass: rgba(255, 255, 255, 0.85);
-    --gradient-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
-    --gradient-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111111);
-    --gradient-accent: linear-gradient(90deg, #E2D6E6 0%, #F2E9F5 50%, #FFFFFF 100%);
-    --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
-    --radius: 18px;
-    --radius-sm: 10px;
-    /* Fluid container width: grows past 1200px on big screens, caps on 4K */
-    --container-max: 1800px;
-    --container-max-xl: 1600px;
-    --container-max-4k: 2300px;
-  }
+:root {
+  --purple-brand: #6B2D5C;
+  --navy-brand: #131E51;
+  --purple-mid: #fdecf9;
+  --lavender-accent: #E2D6E6;
+  --lavender-light: #F6F0F8;
+  --plum-bright: #A13D84;
+  --white: #FFFFFF;
+  --off-white: #FDF9FF;
+  --text-dark: #182230;
+  --text-mid: #434B57;
+  --text-light: #807D8C;
+  --border: rgba(107, 45, 92, 0.12);
+  --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
+  --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
+  --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
+  --glass: rgba(255, 255, 255, 0.85);
+  --gradient-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
+  --gradient-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111111);
+  --gradient-accent: linear-gradient(90deg, #E2D6E6 0%, #F2E9F5 50%, #FFFFFF 100%);
+  --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
+  --radius: 18px;
+  --radius-sm: 10px;
+  /* Fluid container width: grows past 1200px on big screens, caps on 4K */
+  --container-max: 1800px;
+  --container-max-xl: 1600px;
+  --container-max-4k: 2300px;
+}
+
 
   /* ── Reset ───────────────────────────────────────────────── */
   *,

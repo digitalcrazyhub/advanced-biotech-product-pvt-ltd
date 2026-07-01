@@ -1,33 +1,39 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ /** Montserrat Font **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/**Jost Font **/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ─── TOKENS ─────────────────────────────────────────── */
 :root {
-    --purple: #6B2D5C;
-    --purple-mid: #fdecf9;
-    --navy: #131E51;
-    --plum: #A13D84;
-    --lavender: #E2D6E6;
-    --lav-light: #F6F0F8;
-    --white: #FFFFFF;
-    --off-white: #FDF9FF;
-    --text-dark: #182230;
-    --text-mid: #434B57;
-    --text-light: #807D8C;
-    --border: rgba(107, 45, 92, 0.12);
-    --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
-    --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
-    --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
-    --radius: 18px;
-    --radius-sm: 10px;
-    --grad-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
-    --grad-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111);
-
-    /* Fluid container width: grows past 1200px on big screens, caps on 4K */
-    --container-max:1950px;
-   --container-max-xl:1950px;
-   --container-max-4k:2800px;
+  --purple-brand: #6B2D5C;
+  --navy-brand: #131E51;
+  --purple-mid: #fdecf9;
+  --lavender-accent: #E2D6E6;
+  --lavender-light: #F6F0F8;
+  --plum-bright: #A13D84;
+  --white: #FFFFFF;
+  --off-white: #FDF9FF;
+  --text-dark: #182230;
+  --text-mid: #434B57;
+  --text-light: #807D8C;
+  --border: rgba(107, 45, 92, 0.12);
+  --shadow-sm: 0 2px 12px rgba(19, 30, 81, 0.06);
+  --shadow-md: 0 8px 32px rgba(107, 45, 92, 0.08);
+  --shadow-lg: 0 20px 60px rgba(107, 45, 92, 0.12);
+  --glass: rgba(255, 255, 255, 0.85);
+  --gradient-hero: linear-gradient(135deg, #6B2D5C 0%, #FFFFFF 100%);
+  --gradient-bar: linear-gradient(135deg, #6B2D5C, #A13D84, #111111);
+  --gradient-accent: linear-gradient(90deg, #E2D6E6 0%, #F2E9F5 50%, #FFFFFF 100%);
+  --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
+  --radius: 18px;
+  --radius-sm: 10px;
+  /* Fluid container width: grows past 1200px on big screens, caps on 4K */
+  --container-max: 1800px;
+  --container-max-xl: 1600px;
+  --container-max-4k: 2300px;
 }
+
 
 /* ─── RESET ───────────────────────────────────────────── */
 *,
@@ -72,7 +78,7 @@ a {
 
 .abp-badge {
     display: inline-block;
-    background: var(--purple);
+    background: var(--purple-brand);
     color: #fff;
     font-size: clamp(.72rem, .5vw + .6rem, .85rem);
     font-weight: 700;
@@ -93,7 +99,7 @@ a {
 }
 
 .abp-section-title span {
-    color: var(--purple);
+    color: var(--purple-brand);
     font-size: 30px;
 }
 
@@ -163,7 +169,7 @@ a {
 
 /* ─── HERO / PRODUCT INTRO ────────────────────────────── */
 .abp-hero {
-    background: var(--lav-light);
+    background: var(--lavender-light);
     padding: clamp(48px, 6vw, 100px) 0;
 }
 
@@ -192,14 +198,14 @@ a {
 .abp-hero__sub {
     font-size: clamp(1.05rem, .3vw + .95rem, 1.25rem);
     font-weight: 600;
-    color: var(--purple);
+    color: var(--purple-brand);
     margin-top: 6px;
     font-family: 'Jost', sans-serif;
 }
 
 .abp-hero__lead {
     margin-top: 18px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.85;
     color: var(--text-dark);
 }
@@ -209,8 +215,8 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    border: 1.5px solid var(--purple);
-    color: var(--purple);
+    border: 1.5px solid var(--purple-brand);
+    color: var(--purple-brand);
     font-weight: 600;
     font-size: clamp(.9rem, .15vw + .85rem, 1rem);
     padding: 13px 26px;
@@ -219,7 +225,7 @@ a {
 }
 
 .abp-hero__cta:hover {
-    background: var(--purple);
+    background: var(--purple-brand);
     color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(107, 45, 92, .2);
@@ -252,7 +258,7 @@ a {
 .abp-intro__tag {
     font-size: clamp(1.1rem, .4vw + 1rem, 1.45rem);
     font-weight: 700;
-    color: var(--purple);
+    color: var(--purple-brand);
     font-family: 'Jost', sans-serif;
     margin-bottom: 8px;
 }
@@ -273,7 +279,7 @@ a {
     margin-top: 28px;
     display: inline-block;
     background: var(--purple-mid);
-    border-left: 4px solid var(--purple);
+    border-left: 4px solid var(--purple-brand);
     padding: 16px 24px;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-size: 1.1rem;
@@ -297,7 +303,7 @@ a {
 
 .section-eyebrow {
     display: inline-block;
-    background: var(--purple);
+    background: var(--purple-brand);
     color: #fff;
     font-size: clamp(.72rem, .5vw + .6rem, .85rem);
     font-weight: 700;
@@ -319,7 +325,7 @@ a {
 .dfu-treatment-highlight-x91 {
     margin-top: 22px;
     background: var(--purple-mid);
-    border-left: 4px solid var(--purple);
+    border-left: 4px solid var(--purple-brand);
     padding: 16px 24px;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-size: 1.1rem;
@@ -329,7 +335,7 @@ a {
 
 /* Main Title */
 .main-title {
-    background: var(--purple);
+    background: var(--purple-brand);
     text-align: center;
     padding: clamp(14px, 1.5vw, 18px) 20px;
     border-radius: 12px;
@@ -344,7 +350,7 @@ a {
     width: fit-content;
     max-width: 100%;
     margin: 0 auto 30px;
-    background: var(--plum);
+    background: var(--plum-bright);
     padding: 14px clamp(18px, 2.5vw, 35px);
     border-radius: 10px;
     font-size: clamp(1rem, 1vw + .85rem, 1.85rem);
@@ -391,7 +397,7 @@ a {
     width: fit-content;
     max-width: 100%;
     margin: auto;
-    background: var(--plum);
+    background: var(--plum-bright);
     padding: 14px clamp(18px, 2.5vw, 35px);
     border-radius: 10px;
     font-size: clamp(1.1rem, 1vw + .95rem, 1.9rem);
@@ -527,7 +533,7 @@ a {
 /* ─── NANO MECHANISM ──────────────────────────────────── */
 .abp-nano {
     padding: clamp(48px, 5vw, 70px) 0;
-    background: var(--lav-light);
+    background: var(--lavender-light);
 }
 
 .abp-nano__steps {
@@ -545,7 +551,7 @@ a {
     left: 12.5%;
     width: 75%;
     height: 2px;
-    background: var(--grad-bar);
+    background: var(--gradient-bar);
     z-index: 0;
 }
 
@@ -560,7 +566,7 @@ a {
     width: clamp(60px, 5vw, 80px);
     height: clamp(60px, 5vw, 80px);
     border-radius: 50%;
-    background: var(--grad-bar);
+    background: var(--gradient-bar);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -664,7 +670,7 @@ a {
 /* PDF */
 .docvault-section {
   padding: clamp(60px, 6vw, 100px) 0;
-  background: var(--lav-light);
+  background: var(--lavender-light);
 }
 
 .docvault-header {
@@ -683,7 +689,7 @@ a {
   height: 4px;
   margin: 14px auto 0;
   border-radius: 4px;
-  background: var(--grad-bar);
+  background: var(--gradient-bar);
 }
 
 .docvault-subtext {
@@ -728,7 +734,7 @@ a {
   align-items: center;
   justify-content: center;
   background: var(--purple-mid);
-  color: var(--purple);
+  color: var(--purple-brand);
   font-size: 1.5rem;
 }
 
@@ -746,7 +752,7 @@ a {
   margin-top: 10px;
   padding: 10px 22px;
   border-radius: var(--radius-sm);
-  background: var(--purple);
+  background: var(--purple-brand);
   color: var(--white);
   font-size: 0.9rem;
   font-weight: 600;
@@ -757,8 +763,8 @@ a {
 .docvault-btn:hover {
   background: var(--white);
   transform: translateY(-2px);
-  border: 2px solid var(--plum);
-  color: var(--plum);
+  border: 2px solid var(--plum-bright);
+  color: var(--plum-bright);
 }
 
 /**** DFU */
@@ -919,7 +925,7 @@ a {
 .dfu-treatment-highlight-x91 {
     margin-top: 22px;
     background: var(--purple-mid);
-    border-left: 4px solid var(--purple);
+    border-left: 4px solid var(--purple-brand);
     padding: 16px 24px;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-size: 1.1rem;
@@ -929,7 +935,7 @@ a {
 
 /* Main Title */
 .main-title {
-    background: var(--purple);
+    background: var(--purple-brand);
     text-align: center;
     padding: clamp(14px, 1.5vw, 18px) 20px;
     border-radius: 12px;
@@ -944,7 +950,7 @@ a {
     width: fit-content;
     max-width: 100%;
     margin: 0 auto 30px;
-    background: var(--plum);
+    background: var(--plum-bright);
     padding: 14px clamp(18px, 2.5vw, 35px);
     border-radius: 10px;
     font-size: clamp(1rem, 1vw + .85rem, 1.85rem);
@@ -991,7 +997,7 @@ a {
     width: fit-content;
     max-width: 100%;
     margin: auto;
-    background: var(--plum);
+    background: var(--plum-bright);
     padding: 14px clamp(18px, 2.5vw, 35px);
     border-radius: 10px;
     font-size: clamp(1.1rem, 1vw + .95rem, 1.9rem);
@@ -1360,7 +1366,7 @@ a {
 
     margin:0 0 6px;
 
-    color:var(--purple);
+    color:var(--purple-brand);
 
     font-weight:700;
 

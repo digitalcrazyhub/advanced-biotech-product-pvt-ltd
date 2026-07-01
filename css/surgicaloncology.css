@@ -26,7 +26,12 @@
   --gradient-section: linear-gradient(135deg, #FDF9FF 0%, #F2EAF5 100%);
   --radius: 18px;
   --radius-sm: 10px;
+  /* Fluid container width: grows past 1200px on big screens, caps on 4K */
+  --container-max: 1800px;
+  --container-max-xl: 1600px;
+  --container-max-4k: 2300px;
 }
+
  
 *,
 *::before,
@@ -207,7 +212,7 @@ body {
 
 .abp-hero__lead {
     margin-top: 18px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.85;
     color: var(--text-dark);
 }
