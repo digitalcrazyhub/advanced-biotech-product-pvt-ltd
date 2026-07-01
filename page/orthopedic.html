@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orthopedic | Advanced Biotech Product [P] Ltd</title>
+  <title>Orthopedic Surgery | Advanced Biotech Products [P] Ltd</title>
+  <meta name="description" content="Orthopedic surgery applications for Surgicoll-Mesh including osteochondral resurfacing, synovial tissue repair, exposed bone wounds, and tendon support.">
+  <meta property="og:title" content="Orthopedic Surgery | Advanced Biotech Products [P] Ltd">
+  <meta property="og:description" content="Orthopedic surgery applications for Surgicoll-Mesh including osteochondral resurfacing, synovial tissue repair, exposed bone wounds, and tendon support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta http-equiv="Content-Security-Policy" content="frame-src https://drive.google.com https://docs.google.com;">
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
-  <link rel="stylesheet" href="/css/nav_footer.css">
+  <link rel="stylesheet" href="../css/nav_footer.css">
   <link rel="stylesheet" href="../css/orthopedic.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -24,7 +30,7 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });</script>
 
   <!-- ═══ PAGE BANNER ══════════════════════════════════════ -->
@@ -43,7 +49,7 @@
           <div class="abp-hero__eyebrow">
             <span class="abp-badge">Advanced Tissue Regeneration</span>
           </div>
-          <h1 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
+          <h2 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
           <p class="abp-hero__sub">Orthopedic Surgery</p>
           <p class="abp-hero__lead">
             Implantable, bioresorbable, tissue regenerative sterile Type-I Collagen matrix.
@@ -260,24 +266,24 @@
         <div class="stages">
           <div class="stage">
             <img style="border-radius: 5px; padding-bottom: 15px;"
-              src="/image/L1.jpeg" alt="Before Surgery">
+              src="../image/L1.jpeg" alt="Before Surgery">
             <div class="stage-label">Before Surgery</div>
           </div>
           <div class="stage">
             <img style="border-radius: 5px; padding-bottom: 15px;"
-              src="/image/L2.jpeg"
+              src="../image/L2.jpeg"
               alt="Surgical intervention Day 1 with Surgicoll-Mesh equi">
             <div class="stage-label">Surgical intervention Day 1 with Surgicoll-Mesh<sup>®</sup> equi</div>
           </div>
           <div class="stage">
             <img style="border-radius: 5px; padding-bottom: 15px;"
-              src="/image/L3.jpeg"
+              src="../image/L3.jpeg"
               alt="Day 7, a gel like substance covering the bare bones">
             <div class="stage-label">Day 7, a gel like substance covering the bare bones</div>
           </div>
           <div class="stage healed">
             <img style="border-radius: 5px; padding-bottom: 15px;"
-              src="/image/L4.jpeg" alt="Good graft take & healing, Day 25">
+              src="../image/L4.jpeg" alt="Good graft take & healing, Day 25">
             <div class="stage-label">Good graft take & healing, Day 25</div>
           </div>
         </div>
@@ -331,7 +337,7 @@
   <!-- _____footer_______-->
   <div id="rs-footer"></div>
   <script>
-    fetch("/page/footer.html")
+    fetch("../page/footer.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-footer").innerHTML = data;

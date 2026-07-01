@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dental Surgical | Advanced Biotec Product [P] Ltd</title>
+  <title>Cardio-Vascular | Advanced Biotech Products [P] Ltd</title>
+  <meta name="description" content="Cardiac and cardiovascular repair concepts for Surgicoll-Mesh collagen scaffold, including septal defect closure and pericardial reconstruction.">
+  <meta property="og:title" content="Cardio-Vascular | Advanced Biotech Products [P] Ltd">
+  <meta property="og:description" content="Cardiac and cardiovascular repair concepts for Surgicoll-Mesh collagen scaffold, including septal defect closure and pericardial reconstruction.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/nav_footer.css">
-  <link rel="icon" href="../image/ABP-symbol.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="/css/cardio-vascular.css">
+    <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/cardio-vascular.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +27,7 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });</script>
 
 <section class="hero">

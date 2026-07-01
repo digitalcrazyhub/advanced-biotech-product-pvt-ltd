@@ -5,7 +5,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surgical Oncology — Advanced Biotech Products</title>
+  <title>Surgical Oncology | Advanced Biotech Products</title>
+  <meta name="description" content="Surgical oncology applications for Surgicoll-Mesh in intra-oral cancer reconstruction and breast cancer excision repair.">
+  <meta property="og:title" content="Surgical Oncology | Advanced Biotech Products">
+  <meta property="og:description" content="Surgical oncology applications for Surgicoll-Mesh in intra-oral cancer reconstruction and breast cancer excision repair.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../home/Surgicoll-Mesh%20High%20Res%20Box.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta http-equiv="Content-Security-Policy" content="frame-src https://drive.google.com https://docs.google.com;">
   <link rel="icon" href="../home/ABP-symbol.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/nav_footer.css">
@@ -23,11 +29,11 @@
   <!--Header-->
   <div id="rs-header"></div>
   <script>
-    fetch("/page/nav.html")
+    fetch("../page/nav.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("rs-header").innerHTML = data;
-        initNavbar();
+        if (typeof initNavbar === "function") { initNavbar(); }
       });
   </script>
 
@@ -50,7 +56,7 @@
           <div class="abp-hero__eyebrow">
             <span class="abp-badge">Advanced Tissue Regeneration</span>
           </div>
-          <h1 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
+          <h2 class="abp-hero__heading">Surgicoll-Mesh<sup>®</sup></h1>
           <p class="abp-hero__sub">Surgical Oncology</p>
           <p class="abp-hero__lead">
             Implantable, bioresorbable, tissue regenerative sterile Type-I Collagen matrix.
@@ -143,19 +149,19 @@
       <span class="so-section-label">Clinical Progression &amp; Surgical Intervention</span>
       <div class="so-image-grid-horizontal">
         <div class="so-image-grid-item">
-          <img src="/image/oral-1.png" alt="Intraoral lesion status">
+          <img src="../image/oral-1.png" alt="Intraoral lesion status">
           <div class="so-image-caption"> Defect Closure with Surgicoll-mesh</div>
         </div>
         <div class="so-image-grid-item">
-          <img src="/image/oral-2.png" alt="Surgical excision site">
+          <img src="../image/oral-2.png" alt="Surgical excision site">
           <div class="so-image-caption"> Defect closure with conventional collagen</div>
         </div>
         <div class="so-image-grid-item">
-          <img src="/image/oral-3.png" alt="Matrix application phase">
+          <img src="../image/oral-3.png" alt="Matrix application phase">
           <div class="so-image-caption"> 4 weeks post-op healing using surgicoll-mesh</div>
         </div>
         <div class="so-image-grid-item">
-          <img src="/image/oral-4.png" alt="Post-operative tissue healing">
+          <img src="../image/oral-4.png" alt="Post-operative tissue healing">
           <div class="so-image-caption"> 4 Weeks post-op healing using conventional collagen </div>
         </div>
       </div>
@@ -205,7 +211,7 @@
             <div class="so-case_video">
               <div class="so-video-container">
                 <iframe src="https://drive.google.com/file/d/1C6K81340QTfDPWvpszIJ5rapcS8W5bd7/preview"
-                  allow="autoplay"></iframe>
+                  title="Surgicoll-Mesh oral cancer surgery video" loading="lazy" allow="autoplay"></iframe>
               </div>
             </div>
           </div>
@@ -512,23 +518,23 @@
         <div class="so-process-steps">
 
             <div class="so-process-step">
-                <img src="/image/breast_excision_0.png" alt="Tumor Excision">
+                <img src="../image/breast_excision_0.png" alt="Tumor Excision">
             </div>
 
             <div class="so-process-step">
-                <img src="/image/breast_excision_1.png" alt="Excision Site">
+                <img src="../image/breast_excision_1.png" alt="Excision Site">
             </div>
 
             <div class="so-process-step">
-                <img src="/image/breast_excision_2.png" alt="Collagen Scaffold Placement">
+                <img src="../image/breast_excision_2.png" alt="Collagen Scaffold Placement">
             </div>
 
             <div class="so-process-step">
-                <img src="/image/breast_excision_3.png" alt="Tissue Regeneration">
+                <img src="../image/breast_excision_3.png" alt="Tissue Regeneration">
             </div>
 
             <div class="so-process-step">
-                <img src="/image/breast_excision_4.png" alt="Final Reconstruction">
+                <img src="../image/breast_excision_4.png" alt="Final Reconstruction">
             </div>
 
         </div>
@@ -576,19 +582,19 @@
           <div class="so-trial-image-wrapper">
 
     <div class="so-trial-image-card">
-        <img src="/image/BR-1.png"
+        <img src="../image/BR-1.png"
              alt="Clinical Trial Image 1"
              class="so-trial-figure-img">
     </div>
 
     <div class="so-trial-image-card">
-        <img src="/image/BR-2.png"
+        <img src="../image/BR-2.png"
              alt="Clinical Trial Image 2"
              class="so-trial-figure-img">
     </div>
 
     <div class="so-trial-image-card">
-        <img src="/image/BR-3.png"
+        <img src="../image/BR-3.png"
              alt="Clinical Trial Image 3"
              class="so-trial-figure-img">
     </div>
@@ -613,19 +619,19 @@
           <div class="so-trial-image-wrapper">
 
     <div class="so-trial-image-card">
-        <img src="/image/BRs-1.png"
+        <img src="../image/BRs-1.png"
              alt="Clinical Trial Image 1"
              class="so-trial-figure-img">
     </div>
 
     <div class="so-trial-image-card">
-        <img src="/image/BRs-2.png"
+        <img src="../image/BRs-2.png"
              alt="Clinical Trial Image 2"
              class="so-trial-figure-img">
     </div>
 
     <div class="so-trial-image-card">
-        <img src="/image/BRs-3.png"
+        <img src="../image/BRs-3.png"
              alt="Clinical Trial Image 3"
              class="so-trial-figure-img">
     </div>
@@ -742,7 +748,7 @@
   <!-- ─── FOOTER ─── -->
   <div id="rs-footer"></div>
   <script>
-    fetch("/page/footer.html")
+    fetch("../page/footer.html")
       .then(r => r.text())
       .then(data => { document.getElementById("rs-footer").innerHTML = data; });
   </script>

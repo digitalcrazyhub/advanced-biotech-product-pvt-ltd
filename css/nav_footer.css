@@ -168,6 +168,14 @@
     color: var(--off-white);
 }
 
+.mv-nav-link:focus-visible,
+.mv-dropdown-link:focus-visible,
+.abpf-link:focus-visible,
+.abpf-policy:focus-visible {
+    outline: 3px solid #FFC400;
+    outline-offset: 3px;
+}
+
 /* DESKTOP DROPDOWN */
 
 .mv-dropdown-menu {
@@ -188,7 +196,8 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.mv-has-dropdown:hover .mv-dropdown-menu {
+.mv-has-dropdown:hover .mv-dropdown-menu,
+.mv-has-dropdown:focus-within .mv-dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -221,9 +230,16 @@
     display: none;
     align-items: center;
     justify-content: center;
+    border: 0;
     border-radius: 12px;
+    background: transparent;
     cursor: pointer;
     transition: 0.3s ease;
+}
+
+.mv-mobile-toggle:focus-visible {
+    outline: 3px solid #FFC400;
+    outline-offset: 3px;
 }
 
 .mv-mobile-toggle i {
